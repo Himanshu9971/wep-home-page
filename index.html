@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Header with Navigation</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #hiddenSection {
+      transition: transform 0.5s ease-in-out;
+    }
+  </style>
 </head>
 <body>
 
@@ -53,46 +58,55 @@
   <!-- Header Section end -->
 
   <!-- Hero Section Start -->
-    <div class="md:h-[85vh] h-screen relative flex justify-center items-center">
-
-      <video id="video" class="w-full h-full object-cover" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent md:opacity-80 opacity-50"></div>
-
-      <div class="w-full absolute left-0 right-0 md:bottom-12 md:top-auto top-[25%] max-w-screen-2xl mx-auto flex md:flex-row flex-col md:justify-between justify-center md:items-end items-center md:p-6 p-4 md:gap-0 gap-4">
-        <div class="flex items-center gap-4">
-          <button id="playPauseButton" class="md:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
-            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z" />
-            </svg>
-            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z" />
-            </svg>
-          </button>
-          <span class="text-white md:block hidden">watch the video</span>
-        </div>
-        <div class="md:flex hidden flex-col gap-4 items-start">
-            <h2 class="text-white text-5xl font-bold md:block hidden">Aapka </br>Bhavishya, </br>Aapki Virashat</h2>
-            <p class="text-white md:text-lg text-xs font-normal">join a moment to build a legacy of protection, care</br> and security for generations to come with Kotak.</p>
-            <button class="md:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg md:text-xl text-lg font-medium">
-                Explore your plan
-            </button>
-        </div>
+  <div class="md:h-[85vh] h-[90vh] relative flex justify-center items-center">
+    <!-- Video and overlay -->
+    <video id="video" class="w-full h-full object-cover" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent md:opacity-80 opacity-50"></div>
+  
+    <div class="w-full absolute left-0 right-0 md:bottom-12 md:top-auto top-1/2 transform -translate-y-1/2 max-w-screen-2xl mx-auto flex md:flex-row flex-col md:justify-between justify-center md:items-end items-center md:p-6 p-4 md:gap-0 gap-4">
+      <div class="flex items-center gap-4">
+        <button id="playPauseButton" class="md:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
+          <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+          </svg>
+          <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z"></path>
+          </svg>
+        </button>
+        <span class="text-white md:block hidden">watch the video</span>
       </div>
-      <div class="px-8 py-4 absolute bottom-20 left-0 right-0 md:hidden flex flex-col gap-4 items-start">
-        <h2 class="text-white text-4xl font-bold">Aapka </br>Bhavishya, </br>Aapki Virashat</h2>
-        <p class="text-white md:text-lg text-xs font-normal">join a moment to build a legacy of protection, care</br> and security for generations to come with Kotak.</p>
+      <div class="md:flex hidden flex-col gap-4 items-start">
+        <h2 class="text-white text-5xl font-bold md:block hidden">Aapka <br>Bhavishya, <br>Aapki Virashat</h2>
+        <p class="text-white md:text-lg text-xs font-normal">join a moment to build a legacy of protection, care<br> and security for generations to come with Kotak.</p>
         <button class="md:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg md:text-xl text-lg font-medium">
             Explore your plan
         </button>
       </div>
-
     </div>
+  
+    <!-- Hidden section initially -->
+    <div class="px-8 py-4 absolute bottom-0 left-0 right-0 md:hidden flex flex-col gap-4 items-start transition-transform transform translate-y-full" id="hiddenSection">
+      <h2 class="text-white text-4xl font-bold">Aapka <br>Bhavishya, <br>Aapki Virashat</h2>
+      <p class="text-white md:text-lg text-xs font-normal">join a moment to build a legacy of protection, care<br> and security for generations to come with Kotak.</p>
+      <button class="md:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg md:text-xl text-lg font-medium">
+          Explore your plan
+      </button>
+    </div>
+  
+    <!-- Scroll Down Button -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer md:hidden" id="scrollDownBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7 7 7-7"></path>
+      </svg>
+    </div>
+  </div>
   <!-- Hero Section End -->
 
   <!-- Grid Section Layout Start -->
-  <section class="md:py-16 py-8 bg-[#F4F3F6]">
+  <section class="md:py-16 py-8 bg-[#F4F3F6] md:h-auto h-screen">
+
     <div class="container mx-auto text-center md:px-0 px-4">
       
       <h1 class="md:text-4xl text-2xl font-light text-[#2C2C2C]">What is Virasat?</h1>
@@ -142,11 +156,13 @@
 
       </div>
     </div>
+
   </section>
   <!-- Grid Section Layout end -->
 
   <!-- Grid Section Image Start -->
-  <section class="md:py-16 py-8 bg-white">
+  <section class="md:py-16 py-8 bg-white md:h-auto h-screen">
+
     <div class="container mx-auto text-center md:px-0 px-4">
       <h1 class="md:text-4xl text-2xl font-light text-[#2C2C2C]">Virasat Is For You</h1>
       <p class="md:mt-4 md:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our product stand out from the rest.</p>
@@ -206,11 +222,13 @@
         </div>
       </div>
     </div>
+
   </section>
   <!-- Grid Section Image End -->
 
   <!-- Grow Virasat Section Start -->
-  <section class="md:py-16 py-8 bg-white">
+  <section class="md:py-16 py-8 bg-white md:h-auto h-screen">
+
     <div class="container mx-auto text-center md:px-0 px-4">
       
       <h1 class="text-4xl font-light text-[#2C2C2C] md:block hidden">How can you make your Virasat</br>continue to grow?</h1>
@@ -413,11 +431,12 @@
       </div>
       
     </div>
+
   </section>
   <!-- Grow Virasat Section End -->
 
   <!-- Why Kotak Life Starts -->
-  <div class="relative w-full h-full bg-[#F3F4F6] md:pt-16 pt-8">
+  <div class="relative w-full h-full bg-[#F3F4F6] md:pt-16 pt-8 md:h-auto h-screen">
     
     <div class="container mx-auto md:px-0 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="flex flex-col justify-center md:items-start items-center">
@@ -488,7 +507,8 @@
   <!-- Why Kotak Life Ends -->
 
   <!-- Faq Section starts -->
-  <div class="relative container bg-white md:py-16 py-8 mx-auto">
+  <div class="container bg-white md:py-16 py-8 mx-auto md:h-auto h-screen">
+
     <div class="mx-auto md:px-0 px-4">
       <div class="flex flex-col items-center">
           <h2 class="md:text-4xl text-2xl font-light text-[#2C2C2C] mb-4 md:text-left text-center">Got Questions? We Have Answers!</h2>
@@ -569,11 +589,13 @@
       </div>
 
     </div>
+
   </div>
   <!-- Faq Section Ends -->
 
   <!-- Bottom Banner Starts -->
-  <div class="container mx-auto text-center md:py-16 py-8 md:px-0 px-4">
+  <div class="container mx-auto text-center md:py-16 py-8 md:px-0 px-4 md:h-auto h-screen">
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-8 md:px-20 px-8 rounded-3xl bg-red-500">      
       <div class="flex flex-col justify-start items-start md:pt-16 pt-0">
         <h2 class="text-left md:text-4xl text-2xl font-medium text-white mb-4">
@@ -590,11 +612,12 @@
         <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg">
       </div>
     </div>
+
   </div>
   <!-- Bottom Banner Ends -->
 
   <!-- Footer Blocks Starts -->
-   <section class="md:bg-black text-white md:pt-12 pt-6 md:pb-8 pb-4 w-full">
+  <section class="md:bg-black text-white md:pt-12 pt-6 md:pb-8 pb-4 w-full">
     <div class="md:container max-w-[90%] mx-auto rounded-lg md:bg-[#191A17] bg-[#E9E7E7] justify-between items-center p-6 flex md:flex-row flex-col md:gap-0 gap-4">
       <img class="w-[180px]" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kotak_Life_Logo-1.png?20210921072346" alt="logo" />
       <div class="flex gap-4 justify-between items-center">
@@ -623,7 +646,7 @@
     <div class="md:flex hidden justify-center items-center w-full mt-4">
       <p class="text-white text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
     </div>
-   </section>
+  </section>
   <!-- Footer Blocks Ends -->
 
   <script>
@@ -655,8 +678,7 @@
 
     let startX;
     const slider = document.querySelector('.overflow-x-auto');
-
-    // Handle touch start and move for horizontal scrolling
+    
     slider.addEventListener('touchstart', (e) => {
       startX = e.touches[0].clientX;
     });
@@ -667,41 +689,55 @@
       slider.scrollLeft -= moveX;
       startX = e.touches[0].clientX;
     });
-
-    // Function to switch between tabs
+    
     function switchTab(tabId) {
-      // Ensure at least one tab remains active
+      
       const allTabButtons = document.querySelectorAll('.tab-button');
       
       allTabButtons.forEach(button => {
-        button.classList.remove('bg-red-500'); // Remove active background
-        button.classList.add('bg-transparent'); // Set background to transparent
-        button.classList.remove('text-white'); // Remove white text color
-        button.classList.add('text-[#2C2C2C]'); // Set inactive text color to #2C2C2C
+        button.classList.remove('bg-red-500');
+        button.classList.add('bg-transparent');
+        button.classList.remove('text-white');
+        button.classList.add('text-[#2C2C2C]');
       });
 
       const activeTabButton = document.getElementById(tabId);
-      activeTabButton.classList.remove('bg-transparent'); // Remove transparent background
-      activeTabButton.classList.add('bg-red-500'); // Add red background for active tab
-      activeTabButton.classList.remove('text-[#2C2C2C]'); // Remove inactive text color
-      activeTabButton.classList.add('text-white'); // Set active tab text color to white
-
-      // Hide all tab content
+      activeTabButton.classList.remove('bg-transparent');
+      activeTabButton.classList.add('bg-red-500');
+      activeTabButton.classList.remove('text-[#2C2C2C]');
+      activeTabButton.classList.add('text-white');
+      
       const allTabPanes = document.querySelectorAll('.tab-pane');
       allTabPanes.forEach(pane => {
         pane.classList.add('hidden');
       });
-
-      // Show selected tab content
+      
       const selectedTabContent = document.getElementById('content-' + tabId);
       selectedTabContent.classList.remove('hidden');
     }
-
-    // Initialize the first tab as active by default
+    
     window.onload = function() {
-      const defaultTabId = 'tab-1'; // Set the default tab that should always be active
+      const defaultTabId = 'tab-1';
       switchTab(defaultTabId);
     };
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const scrollDownBtn = document.getElementById('scrollDownBtn');
+    const hiddenSection = document.getElementById('hiddenSection');
+    let isSectionVisible = false; // Flag to track if section is visible or not
+    
+    // Scroll down button click event
+    scrollDownBtn.addEventListener('click', () => {
+      if (!isSectionVisible) {
+        // Slide up the hidden section
+        hiddenSection.style.transform = 'translateY(0)';
+        isSectionVisible = true; // Section is now visible
+      } else {
+        // Scroll to the next section
+        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+      }
+    });
+  });
 
   </script>
 </body>
