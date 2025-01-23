@@ -20,13 +20,19 @@
     <div class="max-w-[1288px] mx-auto px-4 py-4 flex justify-between items-center">
 
       <div id="logo" class="text-2xl font-bold text-white">
-        <a href="#">Logo</a>
+        <a href="#">
+          <img src="./assets/kotak-logo1.svg" alt="Logo" />
+        </a>
       </div>
 
       <div class="relative">
         <div class="relative">
-          <button id="languageDropdown" class="border border-gray-300 rounded-full py-2 px-4">
+          <button id="languageDropdown"
+            class="border border-gray-300 rounded-full py-2 px-4 text-white flex items-center justify-between">
             Language
+            <span class="ml-2">
+              <img id="languageDropdownIcon" src="./assets/chevron-down.svg" alt="Logo" />
+            </span>
           </button>
           <div id="languageMenu" class="absolute left-0 w-full bg-white rounded-b-lg shadow-lg mt-2 hidden">
             <ul class="">
@@ -99,68 +105,73 @@
   <!-- Grid Section Layout Start -->
   <section class="lg:py-16 py-8 bg-[#F4F3F6]">
 
-    <div class="container mx-auto text-center lg:px-0 px-4">
+    <div class=" mx-auto text-center lg:px-0 ">
 
-      <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C]">What is Virasat?</h1>
-      <p class="lg:mt-4 lg:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our product
+      <div class="flex flex-col max-w-[1280px] lg:flex-column items-center gap-4 px-4">
+        <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C]">What is Virasat?</h1>
+        <div class="lg:ml-10 lg:mt-0 mt-4">
+          <img src="./assets/image4.svg" alt="virassat" />
+        </div>
+      </div>
+
+      <p class="lg:mt-4 px-4 lg:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our
+        product
         stand out from the rest.</p>
+      <div id="myDiv"
+        class="lg:bg-[#191919] mt-2 lg:text-white lg:px-8 lg:py-8 block w-full flex justify-between items-center sticky lg:sticky-top"
+        style="top: 76px;">
+        <span class="flex flex-col items-start">
+          Wondering how much cover you need to protect your ‘Viraasat’?
+          <br>
+          <span>Calculate your cover now</span>
+        </span>
+        <div class="flex justify-end items-center">
+          <button id="myButton" class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-full mr-2">
+            Calculate my Plan
+          </button>
+          <svg id="myCloseIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 close-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12" />
+          </svg>
+        </div>
+      </div>
 
-      <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4 mt-8 lg:bg-white rounded-lg lg:py-16">
+
+
+      <div
+        class="mx-auto grid px-4 max-w-[1280px] grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4 mt-8 lg:bg-white rounded-lg lg:py-16">
 
         <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
-            </svg>
+            <img src="./assets/Icon1.svg" alt="Icon1" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Build A Legacy of Wealth That Endures</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Create a lasting legacy by building wealth that withstands the test of time, ensuring financial security for future generations</p>
         </div>
 
         <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
-            </svg>
+            <img src="./assets/Icon2.svg" alt="Icon2" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Provide Protection In Times Of Uncertainty</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Ensure your peace of mind by providing protection in times of uncertainty, safeguarding your future with reliable and secure solutions</p>
         </div>
 
         <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
-            </svg>
+            <img src="./assets/Icon3.svg" alt="Icon3" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Ensure Your Family's Financial Well-Being</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Secure your family's future by creating a financial plan that guarantees stability, growth, and peace of mind for generations to come</p>
         </div>
 
         <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
-            </svg>
+            <img src="./assets/Icon4.svg" alt="Icon4" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Guard Against Rising Costs & Evolving Needs</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">"Protect your finances from the impact of rising costs and changing needs by adopting flexible strategies that adapt to life's uncertainties</p>
         </div>
 
       </div>
@@ -738,10 +749,25 @@
       const header = document.getElementById('header');
       const logo = document.getElementById('logo');
       const navLinks = document.getElementById('nav-links');
+      const languageDropdown = document.getElementById('languageDropdown');
+      const languageDropdownIcon = document.getElementById('languageDropdownIcon');
+
+      const closeIcon = document.getElementById('myCloseIcon');
+      closeIcon.addEventListener('mouseover', () => {
+        closeIcon.style.cursor = 'pointer';
+      });
+      // const closeBtn = document.getElementById('myButton');
+      const div = document.getElementById('myDiv');
+
+      closeIcon.addEventListener('click', () => {
+        div.style.display = 'none';
+      });
 
       window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
           header.classList.add('bg-white');
+          languageDropdown.classList.remove('text-white');
+          languageDropdownIcon.style.filter = 'invert(1)';
           header.classList.add('shadow-md')
           header.classList.remove('bg-transparent');
 
@@ -754,7 +780,9 @@
           });
         } else {
           header.classList.remove('bg-white');
+          languageDropdownIcon.style.filter = 'invert(0)';
           header.classList.remove('shadow-md')
+          languageDropdown.classList.add('text-white')
           header.classList.add('bg-transparent');
           logo.classList.remove('text-black');
           logo.classList.add('text-white');
@@ -771,7 +799,9 @@
     const video = document.getElementById('video');
     const playIcon = document.getElementById('playIcon');
     const pauseIcon = document.getElementById('pauseIcon');
-    
+
+
+
     video.play();
     pauseIcon.classList.remove('hidden');
     playIcon.classList.add('hidden');
@@ -841,10 +871,10 @@
       let isSecondScrollDown = false;
       let lastScrollTop = 0;
 
-      window.addEventListener('scroll', () => {
+      const handleScroll = () => {
         const currentScroll = window.scrollY || window.pageYOffset;
 
-        if (currentScroll > lastScrollTop) {
+        if (currentScroll > lastScrollTop && isMobile()) {
           if (!isFirstScrollDown) {
             hiddenSection.style.transform = 'translateY(0)';
             hiddenSection.style.display = 'flex';
@@ -852,8 +882,8 @@
           } else if (!isSecondScrollDown) {
             isSecondScrollDown = true;
           }
-        } else {
-          if (currentScroll === 0 && isSecondScrollDown) {
+        } else if (currentScroll <= lastScrollTop && isSecondScrollDown && isMobile()) {
+          if (currentScroll === 0) {
             hiddenSection.style.transform = 'translateY(100%)';
             hiddenSection.style.display = 'none';
             isFirstScrollDown = false;
@@ -862,7 +892,15 @@
         }
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-      });
+      };
+
+      window.addEventListener('scroll', handleScroll);
+
+      // Function to check for mobile devices (replace with your logic)
+      function isMobile() {
+        const mediaQuery = window.matchMedia('(max-width: 768px)'); // Adjust breakpoint as needed
+        return mediaQuery.matches;
+      }
     });
 
     document.getElementById('languageDropdown').addEventListener('click', function (event) {
