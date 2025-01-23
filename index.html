@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,146 +12,155 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Header Section Start -->
   <header id="header" class="bg-transparent z-10 fixed top-0 w-full transition-all duration-500 ease-in-out">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="max-w-[1288px] mx-auto px-4 py-4 flex justify-between items-center">
+
       <div id="logo" class="text-2xl font-bold text-white">
         <a href="#">Logo</a>
       </div>
-      
-      <nav class="hidden md:flex space-x-6" id="nav-links">
-        <a href="#" class="text-white text-lg hover:text-blue-500">Home</a>
-        <a href="#about" class="text-white text-lg hover:text-blue-500">About</a>
-        <a href="#services" class="text-white text-lg hover:text-blue-500">Services</a>
-        <a href="#contact" class="text-white text-lg hover:text-blue-500">Contact</a>
-      </nav>
-      
-      <div class="relative hidden md:block">
-        <input type="text" placeholder="Search..." class="border border-gray-300 rounded-full py-2 px-4 w-64">
-        <button class="absolute top-0 right-0 mt-3 mr-3 text-gray-600">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-          </svg>
-        </button>
+
+      <div class="relative">
+        <div class="relative">
+          <button id="languageDropdown" class="border border-gray-300 rounded-full py-2 px-4">
+            Language
+          </button>
+          <div id="languageMenu" class="absolute left-0 w-full bg-white rounded-b-lg shadow-lg mt-2 hidden">
+            <ul class="">
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">English</a></li>
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Spanish</a></li>
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">French</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
-      <div class="md:hidden flex items-center">
-        <button id="hamburger" class="text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
+
     </div>
   </header>
-  
-  <div id="mobile-menu" class="md:hidden fixed bg-white w-full top-16 left-0 z-10 hidden">
-    <nav class="flex flex-col items-start p-4">
-      <a href="#" class="text-gray-600 text-lg py-2 hover:text-blue-500">Home</a>
-      <a href="#about" class="text-gray-600 text-lg py-2 hover:text-blue-500">About</a>
-      <a href="#services" class="text-gray-600 text-lg py-2 hover:text-blue-500">Services</a>
-      <a href="#contact" class="text-gray-600 text-lg py-2 hover:text-blue-500">Contact</a>
-    </nav>
-  </div>
   <!-- Header Section end -->
 
   <!-- Hero Section Start -->
-  <div class="md:h-[85vh] h-screen relative flex justify-center items-center">
+  <div class="lg:h-[698px] h-screen relative flex justify-center items-center">
     <!-- Video and overlay -->
-    <video id="video" class="w-full h-full object-cover" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
+    <video id="video" class="w-full h-full object-cover" autoplay muted loop
+      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent md:opacity-80 opacity-50"></div>
-  
-    <div class="w-full absolute left-0 right-0 md:bottom-12 md:top-auto top-1/2 md:transform-none transform -translate-y-1/2 max-w-screen-2xl mx-auto flex md:flex-row flex-col md:justify-between justify-center md:items-end items-center md:p-6 p-4 md:gap-0 gap-4">
+    <div
+      class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent lg:opacity-80 opacity-50">
+    </div>
+
+    <div
+      class="w-full absolute left-0 right-0 lg:bottom-12 lg:top-auto top-0 bottom-0 max-w-[1288px] mx-auto flex lg:flex-row flex-col lg:justify-between justify-start lg:items-end items-start p-4 lg:gap-0 lg:pt-4 pt-24 gap-4">
       <div class="flex items-center gap-4">
-        <button id="playPauseButton" class="md:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
-          <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+        <button id="playPauseButton"
+          class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
+          <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
           </svg>
-          <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z"></path>
+          <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z"></path>
           </svg>
         </button>
-        <span class="text-white md:block hidden">watch the video</span>
+        <span class="text-white lg:block hidden">watch the video</span>
       </div>
-      <div class="md:flex hidden flex-col gap-4 items-start">
-        <h2 class="text-white text-5xl font-bold md:block hidden">Aapka <br>Bhavishya, <br>Aapki Virashat</h2>
-        <p class="text-white md:text-lg text-xs font-normal">join a moment to build a legacy of protection, care<br> and security for generations to come with Kotak.</p>
-        <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg md:text-xl text-lg font-medium">
-            Explore your plan
+      <div class="lg:flex hidden flex-col gap-4 items-start">
+        <h2 class="text-white text-5xl font-bold">Together let’s ensure</br>that your legacy</br>continue to
+          grow,</br>hamesha.</h2>
+        <p class="text-white text-lg font-normal">Join a movement to build a legacy of protection, care,</br>and
+          security for generations to come with Kotak.</p>
+        <button class="w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-lg font-medium">
+          Explore your plan
         </button>
       </div>
     </div>
-  
+
     <!-- Hidden section initially -->
-    <div class="px-8 py-4 absolute bottom-0 left-0 right-0 md:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full" id="hiddenSection">
-      <h2 class="text-white text-4xl font-bold">Aapka <br>Bhavishya, <br>Aapki Virashat</h2>
-      <p class="text-white md:text-lg text-xs font-normal">join a moment to build a legacy of protection, care<br> and security for generations to come with Kotak.</p>
-      <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg md:text-xl text-lg font-medium">
-          Explore your plan
+    <div
+      class="px-8 py-4 absolute bottom-0 left-0 right-0 lg:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full"
+      id="hiddenSection">
+      <h2 class="text-white text-3xl font-bold">Together let’s ensure</br>that your legacy</br>continue to
+        grow,</br>hamesha.</h2>
+      <p class="text-white text-xs font-normal">Join a movement to build a legacy of protection, care, and</br>security
+        for generations to come with Kotak.</p>
+      <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
+        Explore your plan
       </button>
     </div>
-  
-    <!-- Scroll Down Button -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer md:hidden" id="scrollDownBtn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7 7 7-7"></path>
-      </svg>
-    </div>
+
   </div>
   <!-- Hero Section End -->
 
   <!-- Grid Section Layout Start -->
-  <section class="md:py-16 py-8 bg-[#F4F3F6]">
+  <section class="lg:py-16 py-8 bg-[#F4F3F6]">
 
     <div class="container mx-auto text-center lg:px-0 px-4">
-      
-      <h1 class="md:text-4xl text-2xl font-light text-[#2C2C2C]">What is Virasat?</h1>
-      <p class="md:mt-4 md:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our product stand out from the rest.</p>
-      
-      <div class="grid grid-cols-2 md:grid-cols-4 md:gap-8 gap-4 mt-8 md:bg-white rounded-lg md:py-16">
-        
-        <div class="flex flex-col md:justify-center md:items-center md:p-4">
-          <div class="md:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z"/>
+
+      <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C]">What is Virasat?</h1>
+      <p class="lg:mt-4 lg:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our product
+        stand out from the rest.</p>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4 mt-8 lg:bg-white rounded-lg lg:py-16">
+
+        <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
+          <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] md:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm md:text-center text-left">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type</p>
         </div>
-        
-        <div class="flex flex-col md:justify-center md:items-center md:p-4">
-          <div class="md:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z"/>
+
+        <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
+          <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] md:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm md:text-center text-left">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type</p>
         </div>
-        
-        <div class="flex flex-col md:justify-center md:items-center md:p-4">
-          <div class="md:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z"/>
+
+        <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
+          <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] md:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm md:text-center text-left">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type</p>
         </div>
-        
-        <div class="flex flex-col md:justify-center md:items-center md:p-4">
-          <div class="md:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z"/>
+
+        <div class="flex flex-col lg:justify-center lg:items-center lg:p-4">
+          <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 20 20"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11.049 2.927a1 1 0 011.902 0l1.09 2.13a1 1 0 00.757.537l2.328.224a1 1 0 01.555 1.788l-1.773 1.59a1 1 0 00-.263.888l.6 2.458a1 1 0 01-1.462 1.05l-2.308-1.273a1 1 0 00-.876-.063l-2.234 1.448a1 1 0 01-1.462-1.05l.6-2.458a1 1 0 00-.263-.888L5.469 7.806a1 1 0 01.555-1.788l2.328-.224a1 1 0 00.757-.537l1.09-2.13z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] md:text-center text-left">Feature 1</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm md:text-center text-left">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Feature 1</h3>
+          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type</p>
         </div>
 
       </div>
@@ -160,64 +170,85 @@
   <!-- Grid Section Layout end -->
 
   <!-- Grid Section Image Start -->
-  <section class="md:py-16 py-8 bg-white">
+  <section class="lg:py-16 py-8 bg-white">
 
     <div class="container mx-auto text-center lg:px-0 px-4">
-      <h1 class="md:text-4xl text-2xl font-light text-[#2C2C2C]">Virasat Is For You</h1>
-      <p class="md:mt-4 md:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our product stand out from the rest.</p>
-  
+      <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C]">Virasat Is For You</h1>
+      <p class="lg:mt-4 lg:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our product
+        stand out from the rest.</p>
+
       <!-- Wrapper for horizontal scrolling on mobile -->
-      <div class="mt-8 overflow-x-auto md:overflow-hidden">
-        <div class="flex space-x-4 md:space-x-0 md:grid md:grid-cols-2 gap-4 md:mt-8 md:container w-max mx-auto">
-          
+      <div class="mt-8 overflow-x-auto lg:overflow-hidden">
+        <div class="flex space-x-4 lg:space-x-0 lg:grid lg:grid-cols-2 gap-4 lg:mt-8 lg:container w-max mx-auto">
+
           <!-- Card 1 -->
-          <div class="bg-white rounded-2xl relative md:h-[720px] h-[400px] w-full md:w-auto">
-            <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50"></div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg" alt="" />
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto">
+            <div
+              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
             </div>
-            <div class="absolute bottom-0 left-0 w-full md:p-12 p-4">
-              <h3 class="text-left md:text-4xl text-2xl font-semibold text-white">Young Professionals</h3>
-              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+              <img class="w-full h-full object-cover rounded-2xl"
+                src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg"
+                alt="" />
+            </div>
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">Young Professionals</h3>
+              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,</p>
             </div>
           </div>
-          
+
           <!-- Card 2 -->
-          <div class="bg-white rounded-2xl relative md:h-[720px] h-[400px] w-full md:w-auto">
-            <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50"></div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg" alt="" />
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto">
+            <div
+              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
             </div>
-            <div class="absolute bottom-0 left-0 w-full md:p-12 p-4">
-              <h3 class="text-left md:text-4xl text-2xl font-semibold text-white">Middle Class Family</h3>
-              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+              <img class="w-full h-full object-cover rounded-2xl"
+                src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg"
+                alt="" />
+            </div>
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">Middle Class Family</h3>
+              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,</p>
             </div>
           </div>
-          
+
           <!-- Card 3 -->
-          <div class="bg-white rounded-2xl relative md:h-[720px] h-[400px] w-full md:w-auto">
-            <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50"></div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg" alt="" />
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto">
+            <div
+              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
             </div>
-            <div class="absolute bottom-0 left-0 w-full md:p-12 p-4">
-              <h3 class="text-left md:text-4xl text-2xl font-semibold text-white">Self Employed</h3>
-              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+              <img class="w-full h-full object-cover rounded-2xl"
+                src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg"
+                alt="" />
+            </div>
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">Self Employed</h3>
+              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,</p>
             </div>
           </div>
-          
+
           <!-- Card 4 -->
-          <div class="bg-white rounded-2xl relative md:h-[720px] h-[400px] w-full md:w-auto">
-            <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50"></div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg" alt="" />
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto">
+            <div
+              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
             </div>
-            <div class="absolute bottom-0 left-0 w-full md:p-12 p-4">
-              <h3 class="text-left md:text-4xl text-2xl font-semibold text-white">Working Mothers</h3>
-              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+              <img class="w-full h-full object-cover rounded-2xl"
+                src="https://img.freepik.com/free-photo/indian-business-man-reading-using-smart-phone-office_231208-2569.jpg"
+                alt="" />
+            </div>
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">Working Mothers</h3>
+              <p class="text-left text-white mt-2 text-xs">Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,</p>
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
@@ -226,106 +257,126 @@
   <!-- Grid Section Image End -->
 
   <!-- Grow Virasat Section Start -->
-  <section class="md:py-16 py-8 bg-white">
+  <section class="lg:py-16 py-8 bg-white">
 
     <div class="container mx-auto text-center lg:px-0 px-4">
-      
-      <h1 class="text-4xl font-light text-[#2C2C2C] md:block hidden">How can you make your Virasat</br>continue to grow?</h1>
-      <h1 class="md:text-4xl text-2xl font-light text-[#2C2C2C] md:hidden block">Discover the right plan for you</h1>
-      <p class="mt-4 text-md font-light text-[#7A7A7A] md:block hidden">Explore the unique features that make our product stand out from the rest.</p>
-      <div class="flex mt-4 justify-start items-center bg-[#F7F8F9] rounded-lg p-4 md:w-[370px] w-full mx-auto text-lg gap-4">
-        <button id="tab-1" class="tab-button md:text-lg text-sm px-4 py-3 rounded-lg font-medium flex justify-between items-center" onclick="switchTab('tab-1')">
+
+      <h1 class="text-4xl font-light text-[#2C2C2C] lg:block hidden">How can you make your Virasat</br>continue to grow?
+      </h1>
+      <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C] lg:hidden block">Discover the right plan for you</h1>
+      <p class="mt-4 text-md font-light text-[#7A7A7A] lg:block hidden">Explore the unique features that make our
+        product stand out from the rest.</p>
+      <div
+        class="flex mt-4 justify-start items-center bg-[#F7F8F9] rounded-lg p-4 lg:w-[370px] w-full mx-auto text-lg gap-4">
+        <button id="tab-1"
+          class="tab-button lg:text-lg text-sm px-4 py-3 rounded-lg font-medium flex justify-between items-center"
+          onclick="switchTab('tab-1')">
           Gen2Gen Protect
         </button>
-        <button id="tab-2" class="tab-button md:text-lg text-sm px-4 py-3 rounded-lg font-medium flex justify-between items-center" onclick="switchTab('tab-2')">
+        <button id="tab-2"
+          class="tab-button lg:text-lg text-sm px-4 py-3 rounded-lg font-medium flex justify-between items-center"
+          onclick="switchTab('tab-2')">
           Kotak e-Term
         </button>
       </div>
 
-      <div class="tab-content container mx-auto md:pt-16 pt-8">
+      <div class="tab-content container mx-auto lg:pt-16 pt-8">
         <!-- Parent Grid Section -->
-        <div id="content-tab-1" class="grid grid-cols-1 md:grid-cols-2 gap-8 tab-pane hidden">
+        <div id="content-tab-1" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
           <!-- Left side with image -->
           <div class="relative">
-            <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
+            <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image"
+              class="w-full h-full object-cover rounded-lg shadow-lg" />
           </div>
-      
+
           <!-- Right side with a 2-column grid -->
           <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-center">
             <!-- First item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- First SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12"></line>
                   <line x1="12" y1="12" x2="16" y2="12"></line>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 1</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
-      
+
             <!-- Second item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- Second SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 2</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
             <!-- First item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- First SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12"></line>
                   <line x1="12" y1="12" x2="16" y2="12"></line>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 1</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
-      
+
             <!-- Second item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- Second SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 2</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
             <!-- First item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- First SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12"></line>
                   <line x1="12" y1="12" x2="16" y2="12"></line>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 1</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
-      
+
             <!-- Second item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- Second SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 2</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
 
           </div>
@@ -333,88 +384,101 @@
         </div>
 
         <!-- Parent Grid Section -->
-        <div id="content-tab-2" class="grid grid-cols-1 md:grid-cols-2 gap-8 tab-pane hidden">
+        <div id="content-tab-2" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
           <!-- Left side with image -->
           <div class="relative">
-            <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
+            <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image"
+              class="w-full h-full object-cover rounded-lg shadow-lg" />
           </div>
-      
+
           <!-- Right side with a 2-column grid -->
           <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-center">
             <!-- First item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- First SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12"></line>
                   <line x1="12" y1="12" x2="16" y2="12"></line>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 1 new</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
-      
+
             <!-- Second item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- Second SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 2</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
             <!-- First item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- First SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12"></line>
                   <line x1="12" y1="12" x2="16" y2="12"></line>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 1</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
-      
+
             <!-- Second item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- Second SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 2</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
             <!-- First item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- First SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="6" x2="12" y2="12"></line>
                   <line x1="12" y1="12" x2="16" y2="12"></line>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 1</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
-      
+
             <!-- Second item in grid -->
             <div class="flex flex-col">
               <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
                 <!-- Second SVG Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
                 </svg>
               </div>
               <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Heading 2</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros non lorem volutpat gravida.</p>
+              <p class="text-[#62696C] font-light text-sm text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Proin ac eros non lorem volutpat gravida.</p>
             </div>
 
           </div>
@@ -422,78 +486,86 @@
         </div>
 
         <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
-          <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg md:text-xl text-lg font-medium">
+          <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
             Get Your Personalized Quote
           </button>
         </div>
 
       </div>
-      
+
     </div>
 
   </section>
   <!-- Grow Virasat Section End -->
 
   <!-- Why Kotak Life Starts -->
-  <div class="relative w-full h-full bg-[#F3F4F6] md:pt-16 pt-8">
-    
+  <div class="relative w-full h-full bg-[#F3F4F6] lg:pt-16 pt-8">
+
     <div class="container mx-auto lg:px-0 px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="flex flex-col justify-center lg:items-start items-center">
-        <h2 class="md:text-4xl text-2xl font-light text-[#2C2C2C] mb-4">Why Kotak Life</h2>
-        <p class="text-md font-light text-[#7A7A7A] lg:block hidden">At kotak Life insurance, we provide peace of mind with</br> our policies, earning the trust of thousands to protect</br> their futures</p>
-        <p class="text-sm text-center font-light text-[#7A7A7A] lg:hidden block">At kotak Life insurance, we provide peace of mind with our policies, earning the trust of thousands to protect their futures</p>
+        <h2 class="lg:text-4xl text-2xl font-light text-[#2C2C2C] mb-4">Why Kotak Life</h2>
+        <p class="text-md font-light text-[#7A7A7A] lg:block hidden">At kotak Life insurance, we provide peace of mind
+          with</br> our policies, earning the trust of thousands to protect</br> their futures</p>
+        <p class="text-sm text-center font-light text-[#7A7A7A] lg:hidden block">At kotak Life insurance, we provide
+          peace of mind with our policies, earning the trust of thousands to protect their futures</p>
         <div class="flex justify-center items-center mt-4 lg:flex w-full hidden">
-          <img src="https://images.rawpixel.com/image_png_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvMzk3LW1ja2luc2V5LTIxYTMwNzQtamlyLXJtNTExXzEtbDA5Y3ZjODQucG5n.png" alt="Image" class="w-auto max-h-[28rem] opacity-50" />
+          <img
+            src="https://images.rawpixel.com/image_png_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvMzk3LW1ja2luc2V5LTIxYTMwNzQtamlyLXJtNTExXzEtbDA5Y3ZjODQucG5n.png"
+            alt="Image" class="w-auto max-h-[28rem] opacity-50" />
         </div>
       </div>
-      
-      <div class="grid grid-cols-2 lg:gap-8 gap-4 lg:mt-12 md:pb-16 pb-8">
-        <div class="text-center md:p-8 p-4 bg-white rounded-2xl">
+
+      <div class="grid grid-cols-2 lg:gap-8 gap-4 lg:mt-12 lg:pb-16 pb-8">
+        <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
           <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
             </svg>
           </div>
-          <div class="font-bold md:text-3xl text-xl mt-4 text-left">5 Crore
+          <div class="font-bold lg:text-3xl text-xl mt-4 text-left">5 Crore
             <span class="text-gray-400 font-light">
               Happy Customers
             </span>
           </div>
         </div>
-        
-        <div class="text-center md:p-8 p-4 bg-white rounded-2xl">
+
+        <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
           <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
             </svg>
           </div>
-          <div class="font-bold md:text-3xl text-xl mt-4 text-left">5 Crore
+          <div class="font-bold lg:text-3xl text-xl mt-4 text-left">5 Crore
             <span class="text-gray-400 font-light">
               Happy Customers
             </span>
           </div>
         </div>
-        
-        <div class="text-center md:p-8 p-4 bg-white rounded-2xl">
+
+        <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
           <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
             </svg>
           </div>
-          <div class="font-bold md:text-3xl text-xl mt-4 text-left">5 Crore
+          <div class="font-bold lg:text-3xl text-xl mt-4 text-left">5 Crore
             <span class="text-gray-400 font-light">
               Happy Customers
             </span>
           </div>
         </div>
-        
-        <div class="text-center md:p-8 p-4 bg-white rounded-2xl">
+
+        <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
           <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
             </svg>
           </div>
-          <div class="font-bold md:text-3xl text-xl mt-4 text-left">5 Crore
+          <div class="font-bold lg:text-3xl text-xl mt-4 text-left">5 Crore
             <span class="text-gray-400 font-light">
               Happy Customers
             </span>
@@ -506,77 +578,83 @@
   <!-- Why Kotak Life Ends -->
 
   <!-- Faq Section starts -->
-  <div class="container bg-white md:py-16 py-8 mx-auto">
+  <div class="container bg-white lg:py-16 py-8 mx-auto">
 
     <div class="mx-auto lg:px-0 px-4">
       <div class="flex flex-col items-center">
-          <h2 class="md:text-4xl text-2xl font-light text-[#2C2C2C] mb-4 md:text-left text-center">Got Questions? We Have Answers!</h2>
+        <h2 class="lg:text-4xl text-2xl font-light text-[#2C2C2C] mb-4 lg:text-left text-center">Got Questions? We Have
+          Answers!</h2>
       </div>
-      <div class="mx-auto max-w-4xl md:mt-8 grid">
-        <div class="md:py-8 py-4">
+      <div class="mx-auto max-w-4xl lg:mt-8 grid">
+        <div class="lg:py-8 py-4">
           <details class="group" open>
-              <summary class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
-                  <span> How does the billing work?</span>
-                  <span class="transition group-open:rotate-180 text-4xl font-medium">
-                    <span class="group-open:hidden">+</span>
-                    <span class="group-open:block hidden">−</span>
-                  </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">Springerdata offers a variety of
-                  billing options, including monthly and annual subscription plans, as well as pay-as-you-go
-                  pricing for certain services. Payment is typically made through a credit card or other
-                  secure online payment method.
-              </p>
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              <span> How does the billing work?</span>
+              <span class="transition group-open:rotate-180 text-4xl font-medium">
+                <span class="group-open:hidden">+</span>
+                <span class="group-open:block hidden">−</span>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">Springerdata offers a
+              variety of
+              billing options, including monthly and annual subscription plans, as well as pay-as-you-go
+              pricing for certain services. Payment is typically made through a credit card or other
+              secure online payment method.
+            </p>
           </details>
         </div>
-        <div class="md:py-8 py-4">
+        <div class="lg:py-8 py-4">
           <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
-                <span> Can I get a refund for my subscription?</span>
-                  <span class="transition group-open:rotate-180 text-4xl font-medium">
-                    <span class="group-open:hidden">+</span>
-                    <span class="group-open:block hidden">−</span>
-                  </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
-                  Springerdata offers a variety of
-                  guarantee for most of its subscription plans. If you are not satisfied with your
-                  subscription within the first 30 days, you can request a full refund. Refunds for
-                  subscriptions that have been active for longer than 30 days may be considered on a
-                  case-by-case basis.
-              </p>
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              <span> Can I get a refund for my subscription?</span>
+              <span class="transition group-open:rotate-180 text-4xl font-medium">
+                <span class="group-open:hidden">+</span>
+                <span class="group-open:block hidden">−</span>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
+              Springerdata offers a variety of
+              guarantee for most of its subscription plans. If you are not satisfied with your
+              subscription within the first 30 days, you can request a full refund. Refunds for
+              subscriptions that have been active for longer than 30 days may be considered on a
+              case-by-case basis.
+            </p>
           </details>
         </div>
-        <div class="md:py-8 py-4">
+        <div class="lg:py-8 py-4">
           <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
-                <span> How do I cancel my subscription?</span>
-                  <span class="transition group-open:rotate-180 text-4xl font-medium">
-                    <span class="group-open:hidden">+</span>
-                    <span class="group-open:block hidden">−</span>
-                  </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
-                  Springerdata offers a variety of
-                  log in to your account and navigate to the subscription management page. From there, you
-                  should be able to cancel your subscription and stop future billing.
-              </p>
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              <span> How do I cancel my subscription?</span>
+              <span class="transition group-open:rotate-180 text-4xl font-medium">
+                <span class="group-open:hidden">+</span>
+                <span class="group-open:block hidden">−</span>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
+              Springerdata offers a variety of
+              log in to your account and navigate to the subscription management page. From there, you
+              should be able to cancel your subscription and stop future billing.
+            </p>
           </details>
         </div>
-        <div class="md:py-8 py-4">
+        <div class="lg:py-8 py-4">
           <details class="group">
-              <summary class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
-                <span> Is there a free trial?</span>
-                  <span class="transition group-open:rotate-180 text-4xl font-medium">
-                    <span class="group-open:hidden">+</span>
-                    <span class="group-open:block hidden">−</span>
-                  </span>
-              </summary>
-              <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
-                  Springerdata offers a variety of
-                  for a limited time. During the trial period, you will have access to a limited set of
-                  features and functionality, but you will not be charged.
-              </p>
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              <span> Is there a free trial?</span>
+              <span class="transition group-open:rotate-180 text-4xl font-medium">
+                <span class="group-open:hidden">+</span>
+                <span class="group-open:block hidden">−</span>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
+              Springerdata offers a variety of
+              for a limited time. During the trial period, you will have access to a limited set of
+              features and functionality, but you will not be charged.
+            </p>
           </details>
         </div>
       </div>
@@ -593,14 +671,17 @@
   <!-- Faq Section Ends -->
 
   <!-- Bottom Banner Starts -->
-  <div class="container mx-auto text-center lg:py-16 md:py-8 py-8 lg:px-0 px-4">
+  <div class="container mx-auto text-center lg:py-16 lg:py-8 py-8 lg:px-0 px-4">
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 py-8 lg:px-20 md:px-10 px-8 rounded-3xl bg-red-500">      
-      <div class="flex flex-col justify-start items-start lg:pt-16 md:pt-8 pt-0">
-        <h2 class="text-left md:text-4xl text-2xl font-medium text-white mb-4">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-2 gap-4 py-8 lg:px-20 lg:px-10 px-8 rounded-3xl bg-red-500">
+      <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-0">
+        <h2 class="text-left lg:text-4xl text-2xl font-medium text-white mb-4">
           Your Family Deserves a</br> Future Without</br> Worries
         </h2>
-        <p class="text-md font-light text-white text-left">Life is full of surprise, but your family's future doesn't have to be uncertain. Within virasat by Kotak Life, you take protective steps ton ensure your financial security.</p>
+        <p class="text-md font-light text-white text-left">Life is full of surprise, but your family's future doesn't
+          have to be uncertain. Within virasat by Kotak Life, you take protective steps ton ensure your financial
+          security.</p>
         <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
           <button class="lg:w-auto w-full text-red-500 bg-white px-8 py-3 rounded-lg text-xl font-medium">
             Got More Questions?
@@ -608,7 +689,8 @@
         </div>
       </div>
       <div class="flex justify-center items-center">
-        <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+        <img src="https://images.pexels.com/photos/7821915/pexels-photo-7821915.jpeg" alt="Image"
+          class="w-full h-full object-cover rounded-lg shadow-lg">
       </div>
     </div>
 
@@ -616,22 +698,24 @@
   <!-- Bottom Banner Ends -->
 
   <!-- Footer Blocks Starts -->
-  <section class="md:bg-black text-white md:pt-12 pt-6 md:pb-8 pb-4 w-full">
-    <div class="md:container max-w-[90%] mx-auto rounded-lg md:bg-[#191A17] bg-[#E9E7E7] justify-between items-center p-6 flex md:flex-row flex-col md:gap-0 gap-4">
-      <img class="w-[180px]" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kotak_Life_Logo-1.png?20210921072346" alt="logo" />
+  <section class="lg:bg-black text-white lg:pt-12 pt-6 lg:pb-8 pb-4 w-full">
+    <div
+      class="lg:container max-w-[90%] mx-auto rounded-lg lg:bg-[#191A17] bg-[#E9E7E7] justify-between items-center p-6 flex lg:flex-row flex-col lg:gap-0 gap-4">
+      <img class="w-[180px]"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kotak_Life_Logo-1.png?20210921072346" alt="logo" />
       <div class="flex gap-4 justify-between items-center">
-        <ul class="w-full justify-between items-center flex md:gap-8 gap-2">
-          <li class="md:text-md text-xs md:text-white text-black font-bold">
+        <ul class="w-full justify-between items-center flex lg:gap-8 gap-2">
+          <li class="lg:text-md text-xs lg:text-white text-black font-bold">
             <a href="">
               What is Virasat?
             </a>
           </li>
-          <li class="md:text-md text-xs md:text-white text-black font-bold">
+          <li class="lg:text-md text-xs lg:text-white text-black font-bold">
             <a href="">
               Why Kotak?
             </a>
           </li>
-          <li class="md:text-md text-xs md:text-white text-black font-bold">
+          <li class="lg:text-md text-xs lg:text-white text-black font-bold">
             <a href="">
               Get Questions?
             </a>
@@ -639,10 +723,10 @@
         </ul>
       </div>
     </div>
-    <div class="md:hidden flex justify-center items-center w-full mt-4">
+    <div class="lg:hidden flex justify-center items-center w-full mt-4">
       <p class="text-[#7A7A7A] text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
     </div>
-    <div class="md:flex hidden justify-center items-center w-full mt-4">
+    <div class="lg:flex hidden justify-center items-center w-full mt-4">
       <p class="text-white text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
     </div>
   </section>
@@ -651,96 +735,64 @@
   <script>
 
     document.addEventListener('DOMContentLoaded', () => {
-        const header = document.getElementById('header'); // Get the header element
-        const logo = document.getElementById('logo'); // Get the logo element
-        const navLinks = document.getElementById('nav-links'); // Get the navigation links
+      const header = document.getElementById('header');
+      const logo = document.getElementById('logo');
+      const navLinks = document.getElementById('nav-links');
 
-        // Function to change header background color, logo and nav link color on scroll
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) { // If scroll position is more than 50px
-                header.classList.add('bg-white'); // Add white background
-                header.classList.add('shadow-md')
-                header.classList.remove('bg-transparent'); // Remove transparent background
-
-                // Change logo color to black
-                logo.classList.add('text-black');
-                logo.classList.remove('text-white');
-
-                // Change navigation link color to black
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.classList.add('text-black');
-                    link.classList.remove('text-white');
-                });
-            } else {
-                header.classList.remove('bg-white'); // Remove white background
-                header.classList.remove('shadow-md')
-                header.classList.add('bg-transparent'); // Restore transparent background
-
-                // Restore logo color to white
-                logo.classList.remove('text-black');
-                logo.classList.add('text-white');
-
-                // Restore navigation link color to white
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.classList.remove('text-black');
-                    link.classList.add('text-white');
-                });
-            }
-        });
-    });
-
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenu = document.getElementById('mobile-menu'); // Mobile menu element
-    const header = document.getElementById('header'); // Header element
-    const hamburger = document.getElementById('hamburger'); // Hamburger button
-    
-    // Toggle mobile menu on hamburger click
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('show');
-    });
-    
-    // Hide mobile menu on scroll (optional)
-    window.addEventListener('scroll', () => {
+      window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            mobileMenu.classList.add('show'); // Show mobile menu
-            hamburger.classList.add('text-gray-900');
-            hamburger.classList.remove('text-white');
+          header.classList.add('bg-white');
+          header.classList.add('shadow-md')
+          header.classList.remove('bg-transparent');
+
+          logo.classList.add('text-black');
+          logo.classList.remove('text-white');
+
+          navLinks.querySelectorAll('a').forEach(link => {
+            link.classList.add('text-black');
+            link.classList.remove('text-white');
+          });
         } else {
-            mobileMenu.classList.remove('show'); // Hide mobile menu
-            hamburger.classList.remove('text-gray-900');
-            hamburger.classList.add('text-white');
+          header.classList.remove('bg-white');
+          header.classList.remove('shadow-md')
+          header.classList.add('bg-transparent');
+          logo.classList.remove('text-black');
+          logo.classList.add('text-white');
+
+          navLinks.querySelectorAll('a').forEach(link => {
+            link.classList.remove('text-black');
+            link.classList.add('text-white');
+          });
         }
+      });
     });
-  });
 
     const playPauseButton = document.getElementById('playPauseButton');
     const video = document.getElementById('video');
-  
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
+    
+    video.play();
+    pauseIcon.classList.remove('hidden');
+    playIcon.classList.add('hidden');
+
+    console.log(video.mute);
+
     playPauseButton.addEventListener('click', () => {
-        const playIcon = document.getElementById('playIcon');
-        const pauseIcon = document.getElementById('pauseIcon');
-        
-        if (video.paused) {
-            video.play();
-            playIcon.classList.add('hidden');
-            pauseIcon.classList.remove('hidden');
-        } else {
-            video.pause();
-            playIcon.classList.remove('hidden');
-            pauseIcon.classList.add('hidden');
-        }
+      if (video.paused) {
+        video.play();
+        playIcon.classList.add('hidden');
+        pauseIcon.classList.remove('hidden');
+      } else {
+        video.pause();
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+      }
     });
 
     let startX;
     const slider = document.querySelector('.overflow-x-auto');
-    
+
     slider.addEventListener('touchstart', (e) => {
       startX = e.touches[0].clientX;
     });
@@ -751,11 +803,11 @@
       slider.scrollLeft -= moveX;
       startX = e.touches[0].clientX;
     });
-    
+
     function switchTab(tabId) {
-      
+
       const allTabButtons = document.querySelectorAll('.tab-button');
-      
+
       allTabButtons.forEach(button => {
         button.classList.remove('bg-red-500');
         button.classList.add('bg-transparent');
@@ -768,42 +820,66 @@
       activeTabButton.classList.add('bg-red-500');
       activeTabButton.classList.remove('text-[#2C2C2C]');
       activeTabButton.classList.add('text-white');
-      
+
       const allTabPanes = document.querySelectorAll('.tab-pane');
       allTabPanes.forEach(pane => {
         pane.classList.add('hidden');
       });
-      
+
       const selectedTabContent = document.getElementById('content-' + tabId);
       selectedTabContent.classList.remove('hidden');
     }
-    
-    window.onload = function() {
+
+    window.onload = function () {
       const defaultTabId = 'tab-1';
       switchTab(defaultTabId);
     };
 
     document.addEventListener('DOMContentLoaded', () => {
-    const scrollDownBtn = document.getElementById('scrollDownBtn');
-    const hiddenSection = document.getElementById('hiddenSection');
-    let isSectionVisible = false; // Flag to track if section is visible or not
-    
-    // Scroll down button click event
-    scrollDownBtn.addEventListener('click', () => {
-      if (!isSectionVisible) {
-        // Slide up the hidden section
-        hiddenSection.style.transform = 'translateY(0)';
-        hiddenSection.style.display = 'flex';
-        isSectionVisible = true; // Section is now visible
-        // Hide the scroll down button after click
-        scrollDownBtn.style.display = 'none';
-      } else {
-        // Scroll to the next section
-        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+      const hiddenSection = document.getElementById('hiddenSection');
+      let isFirstScrollDown = false;
+      let isSecondScrollDown = false;
+      let lastScrollTop = 0;
+
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY || window.pageYOffset;
+
+        if (currentScroll > lastScrollTop) {
+          if (!isFirstScrollDown) {
+            hiddenSection.style.transform = 'translateY(0)';
+            hiddenSection.style.display = 'flex';
+            isFirstScrollDown = true;
+          } else if (!isSecondScrollDown) {
+            isSecondScrollDown = true;
+          }
+        } else {
+          if (currentScroll === 0 && isSecondScrollDown) {
+            hiddenSection.style.transform = 'translateY(100%)';
+            hiddenSection.style.display = 'none';
+            isFirstScrollDown = false;
+            isSecondScrollDown = false;
+          }
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    });
+
+    document.getElementById('languageDropdown').addEventListener('click', function (event) {
+      const menu = document.getElementById('languageMenu');
+      menu.classList.toggle('hidden');
+      event.stopPropagation();
+    });
+
+    window.addEventListener('click', function (event) {
+      const menu = document.getElementById('languageMenu');
+      const dropdownButton = document.getElementById('languageDropdown');
+      if (!dropdownButton.contains(event.target) && !menu.contains(event.target)) {
+        menu.classList.add('hidden');
       }
     });
-});
 
   </script>
 </body>
+
 </html>
