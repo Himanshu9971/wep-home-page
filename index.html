@@ -164,12 +164,19 @@
 
   <!-- Hero Section End -->
   <div id="myDiv"
-    class="bg-[#191919] lg:mt-2 lg:text-white lg:px-8 px-[16px] py-[20px] lg:py-8 w-full flex justify-between items-center fixed bottom-0 hidden"
+    class="bg-[#191919] lg:mt-2 text-white lg:px-8 px-[16px] py-[20px] lg:py-8 w-full flex lg:flex-row flex-col justify-between items-center fixed bottom-0 hidden"
     style="z-index: 10;">
-    <span class="flex flex-col items-start">
+    <span class="flex flex-col items-start lg:block hidden">
       Wondering how much cover you need to protect your ‘Viraasat’? Calculate your cover now
     </span>
-    <div class="flex justify-end items-center">
+    <p class="text-white text-[14px] text-md lg:hidden block">
+      Wondering How Much Coverage You Need?
+    </p>
+    <button
+      class="lg:hidden block w-full text-[16px] lg:w-auto mt-2 text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
+      Calculate My Plan
+    </button>
+    <div class="lg:flex justify-end items-center hidden">
       <button id="myButton" class=" bg-[#FF0000] text-white font-medium py-2 px-4 rounded-full mr-2">
         Calculate my Plan
       </button>
@@ -274,7 +281,7 @@
         <img src="./assets/image4.svg" alt="virassat" />
       </div>
 
-      <p class="lg:mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">No matter where you stand in
+      <p class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">No matter where you stand in
         life, Kotak Life Virasat offers tailored plans for you to secure your family's
         <br>future against life's uncertainties
       </p>
@@ -433,13 +440,13 @@
           Kotak e-Term
         </button>
       </div>
-      <p id="gen2gen-paragraph" class="lg:mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">
+      <p id="gen2gen-paragraph" class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">
         Kotak Gen2Gen Protect is an industry-first term plan that covers two generations under one plan. It ensures
         <br>your Viraasat is transferred from one generation to another.
       </p>
 
       <!-- Paragraph for Kotak e-Term -->
-      <p id="kotak-eterm-paragraph" class="lg:mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A] hidden">
+      <p id="kotak-eterm-paragraph" class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A] hidden">
         Kotak e-Term: An ideal choice for those who want a comprehensive yet affordable plan
       </p>
 
@@ -999,8 +1006,8 @@
   <div class="container mx-auto text-center lg:py-16 lg:py-8 py-8 px-4">
 
     <div
-      class="relative grid grid-cols-1 relative lg:grid-cols-2 lg:grid-cols-2 gap-4 py-8 lg:px-20 lg:px-10 px-8 rounded-3xl bg-[#013974]">
-      <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-0">
+      class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-20 lg:px-10 px-4 rounded-3xl bg-[#013974]">
+      <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8">
         <h2 class="text-left lg:text-[40px] text-[24px] font-medium text-white mb-4">
           Your Family Deserves a</br> Future Without</br> Worries
         </h2>
@@ -1021,7 +1028,7 @@
 
       <div class="w-full">
         <!-- Background Circle -->
-        <div class="absolute top-[-80px] right-0 bottom-0">
+        <div class="lg:absolute top-[-80px] right-0 bottom-0 lg:w-auto w-full">
           <img class="w-full h-full" src="./assets/bottom-section-bg_1.svg" alt="Circle Image" />
         </div>
         <!-- <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
@@ -1139,8 +1146,6 @@
   <script>
 
     document.addEventListener('DOMContentLoaded', () => {
-      const logo = document.getElementById('logo');
-      const navLinks = document.getElementById('nav-links');
 
       const closeIcon = document.getElementById('myCloseIcon');
       closeIcon.addEventListener('mouseover', () => {
@@ -1158,25 +1163,10 @@
       window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
           myDiv.classList.remove("hidden"); // Show the div
-          myDiv.classList.add("block"); // Ensure it's displayed
-
-          logo.classList.add('text-black');
-          logo.classList.remove('text-white');
-
-          navLinks.querySelectorAll('a').forEach(link => {
-            link.classList.add('text-black');
-            link.classList.remove('text-white');
-          });
+          myDiv.classList.add("block");
         } else {
           myDiv.classList.add("hidden"); // Hide the div
-          myDiv.classList.remove("block"); // Remove the block class
-          logo.classList.remove('text-black');
-          logo.classList.add('text-white');
-
-          navLinks.querySelectorAll('a').forEach(link => {
-            link.classList.remove('text-black');
-            link.classList.add('text-white');
-          });
+          myDiv.classList.remove("block");
         }
       });
     });
@@ -1220,8 +1210,6 @@
     video.play();
     pauseIcon.classList.remove('hidden');
     playIcon.classList.add('hidden');
-
-    console.log(video.mute);
 
     playPauseButton.addEventListener('click', () => {
       if (video.paused) {
