@@ -44,6 +44,9 @@
 .hover\:content-show:hover .gradient-overlay {
   opacity: 0.5; /* Show the gradient background on hover */
 }
+.faq-item-hidden {
+  display: none;
+}
   </style>
 </head>
 
@@ -138,8 +141,8 @@
       </div>
 
       <div class="lg:flex hidden flex-col gap-4 items-start">
-        <h2 class="text-white text-[44px] font-bold">Welcome! Together let’s <br> Ensure Aapki Viraasat <br> Banke hi
-          Rahe.</h2>
+        <h2 class="text-white text-[44px] font-bold">Welcome! ogether let’s <br> ensure aapki viraasat <br> banke hi
+          rahe.</h2>
         <p class="text-white text-[16px] font-normal">We know the love and effort it takes to build a legacy. Let’s
           ensure <br> it continues to
           build exactly the way you envision</p>
@@ -446,12 +449,12 @@
         <button id="tab-1"
           class="tab-button lg:text-[18px] text-[12px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
           onclick="switchTab('tab-1')">
-          Gen2Gen Protect
+          Kotak e-Term
         </button>
         <button id="tab-2"
           class="tab-button lg:text-[18px] text-[12px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
           onclick="switchTab('tab-2')">
-          Kotak e-Term
+          Gen2Gen Protect
         </button>
       </div>
       <p id="gen2gen-paragraph" class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">
@@ -466,7 +469,7 @@
 
       <div class="tab-content container mx-auto lg:pt-16 pt-8">
         <!-- Parent Grid Section -->
-        <div id="content-tab-1" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
+        <div id="content-tab-2" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
           <!-- Left side with image -->
           <div class="relative">
             <img src="./assets/GEN2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
@@ -556,7 +559,7 @@
         </div>
 
         <!-- Parent Grid Section -->
-        <div id="content-tab-2" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
+        <div id="content-tab-1" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
           <!-- Left side with image -->
           <div class="relative">
             <img src="./assets//kotak2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
@@ -656,7 +659,7 @@
         <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
           <button id="openModal"
             class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
-            Get Your Personalized Quote
+            Get your personalized quote
           </button>
         </div>
 
@@ -674,8 +677,8 @@
       <div class="flex flex-col justify-end items-center">
         <div class="flex flex-col items-center">
           <h2 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] mb-4 text-center">
-            <span class="text-[#FF0000]">Why Kotak</span>
-            <span class="text-[#2651C0]"> Life?</span>
+            <span class="text-[#FF0000]">Why kotak</span>
+            <span class="text-[#2651C0]"> life?</span>
 
             <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
               <img src="./assets/image4.svg" alt="virassat" />
@@ -701,7 +704,7 @@
             </div>
             <div class="font-bold lg:text-3xl text-xl mt-4 text-left">1 lakh+
               <span class="text-gray-400 font-light flex text-2xl">
-                Trusted Agentsθ
+                Trusted agents<sup>θ</sup>
               </span>
             </div>
           </div>
@@ -715,7 +718,7 @@
             </div>
             <div class="font-bold lg:text-3xl text-xl mt-4 text-left">98.29%
               <span class="text-gray-400 font-light flex text-2xl">
-                Claim Settlement Ratio#
+                Claim settlement ratio<sup>#</sup>
               </span>
             </div>
           </div>
@@ -729,7 +732,7 @@
             </div>
             <div class="font-bold lg:text-3xl text-xl mt-4 text-left">322
               <span class="text-gray-400 font-light flex text-2xl">
-                branches as on 31st Dec 2024
+                Branches as on 31<sup>st</sup> Dec 2024
               </span>
             </div>
           </div>
@@ -741,9 +744,9 @@
                 <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
               </svg>
             </div>
-            <div class="font-bold lg:text-3xl text-xl mt-4 text-left">Solvency Ratio
+            <div class="font-bold lg:text-3xl text-xl mt-4 text-left">Solvency ratio
               <span class="text-gray-400 font-light flex text-2xl">
-                2.56∞
+                2.56<sup>∞</sup>
               </span>
             </div>
           </div>
@@ -753,7 +756,7 @@
         <div class="flex justify-center items-center w-full lg:pt-8 pt-4">
           <button id="openModal"
             class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
-            Join Our Happy Policyholders
+            Join our happy policyholders
           </button>
         </div>
 
@@ -769,14 +772,14 @@
     <div class="mx-auto px-4">
       <div class="flex flex-col items-center">
         <h2 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] mb-4 lg:text-left text-center">
-          <span class="text-[#FF0000]">Have Questions?</span>
-          <span class="text-[#2651C0]"> We’ve Got the Answers!</span>
+          <span class="text-[#FF0000]">Have questions?</span>
+          <span class="text-[#2651C0]"> we’ve got the answers!</span>
 
           <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
             <img src="./assets/image4.svg" alt="virassat" />
           </div>
       </div>
-      <div class="mx-auto container lg:mt-8 grid">
+      <div class="mx-auto max-w-5xl lg:mt-8 grid">
         <div class="lg:py-8 py-4">
           <details class="group" open>
             <summary
@@ -784,8 +787,12 @@
               <span> What is Term Insurance?
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">                  
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light lg:text-[18px] text-[12px] text-left">
@@ -805,8 +812,12 @@
               <span>What is the best age to buy term insurance?
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -823,8 +834,12 @@
               <span> Is term insurance tax-free?
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -843,8 +858,12 @@
 
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -863,8 +882,12 @@
 
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -875,7 +898,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-8 py-4 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -884,8 +907,12 @@
 
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -896,7 +923,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-8 py-4 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -905,8 +932,12 @@
 
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -918,7 +949,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-8 py-4 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -927,8 +958,12 @@
 
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -939,7 +974,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-8 py-4 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -947,8 +982,12 @@
 
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">+</span>
-                <span class="group-open:block hidden">−</span>
+                <span class="group-open:hidden">
+                  <img src="./assets/open-faq.svg" alt="plus" />
+                </span>
+                <span class="group-open:block hidden">            
+                  <img src="./assets/close-faq.svg" alt="plus" />
+                </span>
               </span>
             </summary>
             <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
@@ -958,7 +997,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-8 py-4 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -980,7 +1019,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-8 py-4 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1006,8 +1045,9 @@
 
       <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
         <button
+          id="load-more"
           class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
-          Got More Questions?
+          Load More
         </button>
       </div>
 
@@ -1023,7 +1063,7 @@
       class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-20 lg:px-10 px-4 rounded-3xl bg-[#013974]">
       <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8">
         <h2 class="text-left lg:text-[40px] text-[24px] font-medium text-white mb-4">
-          Your Family Deserves a</br> Future Without</br> Worries
+          Your family deserves a</br> future without</br> worries
         </h2>
         <p class="lg:text-[16px] text-[12px] font-light text-white text-left">Life is full of surprise, but your
           family's future <br>
@@ -1034,7 +1074,7 @@
         <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
           <button id="openModal"
             class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
-            Get Your Personalized Quote
+            Get your personalized quote
           </button>
         </div>
       </div>
@@ -1377,6 +1417,14 @@
         menu.classList.add('hidden');
       }
     });
+
+    document.getElementById('load-more').addEventListener('click', function() {
+    const hiddenItems = document.querySelectorAll('.faq-item-hidden');
+    hiddenItems.forEach(item => {
+      item.classList.remove('faq-item-hidden');
+    });
+    this.style.display = 'none'; // Hide "Load More" button after it's clicked
+  });
 
   </script>
 </body>
