@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Header with Navigation</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       font-family: "Roboto", serif;
     }
+
     #hiddenSection {
       transition: transform 0.5s ease-in-out;
     }
@@ -77,20 +79,40 @@
 
     <div
       class="w-full absolute left-0 right-0 lg:bottom-12 lg:top-auto top-0 bottom-0 container mx-auto flex lg:flex-row flex-col lg:justify-between justify-start lg:items-end items-start p-4 lg:gap-0 lg:pt-4 pt-24 gap-4">
-      <div class="flex items-center gap-4">
-        <button id="playPauseButton"
-          class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
-          <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
-          </svg>
-          <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z"></path>
-          </svg>
-        </button>
-        <span class="text-white lg:block hidden">watch the video</span>
+      <div class="w-1/2 flex justify-start items-center gap-4">
+        <div class="h-auto flex justify-start gap-4 items-center">
+          <button id="playPauseButton"
+            class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
+            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+            </svg>
+            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z"></path>
+            </svg>
+          </button>
+          <span class="text-white lg:block hidden">watch the video</span>
+        </div>
+        <div class="h-auto flex justify-start gap-4 items-center">
+          <button id="muteUnmuteButton"
+            class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
+            <!-- Mute Icon (Speaker with a line) -->
+            <svg id="muteIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5v14l11-7-11-7z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 3l-6 6"></path>
+            </svg>
+            
+            <!-- Mic On Icon (Unmuted) -->
+            <svg id="unmuteIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 1v22M4 9h16c0 4.418-3.582 8-8 8s-8-3.582-8-8z"></path>
+            </svg>
+
+          </button>
+          <span class="text-white lg:block hidden">Mute/Unmute Video</span>
+        </div>
       </div>
+
       <div class="lg:flex hidden flex-col gap-4 items-start">
         <h2 class="text-white text-[44px] font-bold">Welcome! Together let’s <br> Ensure Aapki Viraasat <br> Banke hi
           Rahe.</h2>
@@ -125,7 +147,7 @@
 
   </div>
 
-  <div id="myDiv" class="bg-[#191919] hidden z-[99] py-[20px] px-[16px] w-full fixed bottom-0 left-0">
+  <!-- <div id="myDiv" class="bg-[#191919] hidden z-[99] py-[20px] px-[16px] w-full fixed bottom-0 left-0">
     <div class="flex w-full  flex-col items-center justify-center text-center">
       <p class="text-white text-[14px] text-md">
         Wondering How Much Coverage You Need?
@@ -135,12 +157,12 @@
         Calculate My Plan
       </button>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Hero Section End -->
   <div id="myDiv"
-    class="lg:bg-[#191919] mt-2 lg:text-white lg:px-8 lg:py-8 block w-full flex justify-between items-center fixed bottom-0 hidden"
+    class="bg-[#191919] lg:mt-2 lg:text-white lg:px-8 px-[16px] py-[20px] lg:py-8 w-full flex justify-between items-center fixed bottom-0 hidden"
     style="z-index: 10;">
     <span class="flex flex-col items-start">
       Wondering how much cover you need to protect your ‘Viraasat’? Calculate your cover now
@@ -416,7 +438,7 @@
 
       <!-- Paragraph for Kotak e-Term -->
       <p id="kotak-eterm-paragraph" class="lg:mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A] hidden">
-        Your legacy will last for generations, ensuring Viraasat Ban Ke Hi Rahegi.
+        Kotak e-Term: An ideal choice for those who want a comprehensive yet affordable plan
       </p>
 
       <div class="tab-content container mx-auto lg:pt-16 pt-8">
@@ -428,61 +450,82 @@
           </div>
 
           <!-- Right side with a 2-column grid -->
-          <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-center">
-            <!-- First item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                <!-- First SVG Icon -->
-                <img src="./assets/discovery_icons/covers_two_generations.svg" class="w-6 h-6" alt="gen2" />
-              </div>
-              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Covers two generations</h3>
-              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">
-                Transfer the cover to your child at no extra cost
-                <!-- <br class="lg:hidden">
-                returned
-                <br class="hidden lg:block">
-                upon maturity. -->
-              </p>
+          <div class="w-full h-full py-6">
 
-            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-start w-full">
+            <!-- First item in grid -->
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/covers_two_generations.svg" class="w-6 h-6" alt="gen2" />
+                </div>
+                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Covers two generations</h3>
+                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">
+                  Transfer the cover to your child at no extra cost
+                  <!-- <br class="lg:hidden">
+                  returned
+                  <br class="hidden lg:block">
+                  upon maturity. -->
+                </p>
+
+              </div>
 
             <!-- Second item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                <!-- First SVG Icon -->
-                <img src="./assets/discovery_icons/return_of-premiums.svg" class="w-6 h-6" alt="gen2" />
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/return_of-premiums.svg" class="w-6 h-6" alt="gen2" />
+                </div>
+                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
+                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Get back all your premiums at
+                  survival on maturity
+                  <!-- <br class="hidden lg:block"> ROP and
+                  Legacy ROP <br class="lg:hidden"> options -->
+                </p>
               </div>
-              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
-              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Get back all your premiums at survival on maturity
-                <!-- <br class="hidden lg:block"> ROP and
-                Legacy ROP <br class="lg:hidden"> options -->
-              </p>
-            </div>
             <!-- First item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                <!-- First SVG Icon -->
-                <img src="./assets/discovery_icons/multi.svg" class="w-6 h-6" alt="gen2" />
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/multi.svg" class="w-6 h-6" alt="gen2" />
+                </div>
+                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Multiple plan options</h3>
+                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Choose between Legacy ROP and
+                  Life ROP option
+                  <!-- <br class="hidden lg:block"> plan with
+                  seamless <br class="lg:hidden"> transfer of basic <br class="hidden lg:block">sum assured. -->
+                </p>
               </div>
-              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Multiple plan options</h3>
-              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Choose between Legacy ROP and Life ROP option
-                <!-- <br class="hidden lg:block"> plan with
-                seamless <br class="lg:hidden"> transfer of basic <br class="hidden lg:block">sum assured. -->
-              </p>
-            </div>
 
             <!-- Second item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                <!-- First SVG Icon -->
-                <img src="./assets/discovery_icons/enhanced_protection.svg" class="w-6 h-6" alt="gen2" />
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/enhanced_protection.svg" class="w-6 h-6" alt="gen2" />
+                </div>
+                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Enhanced Protection</h3>
+                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Get comprehensive coverage with
+                  an optional Critical Illness Rider
+                  <!-- <br>
+                  exclusively for
+                  female lives. -->
+                </p>
               </div>
-              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Enhanced Protection</h3>
-              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Get comprehensive coverage with an optional Critical Illness Rider
-                <!-- <br>
-                exclusively for
-                female lives. -->
-              </p>
+            </div>
+
+            <div class="flex justify-between items-start mt-32 w-full gap-4">
+              <div class="flex flex-col justify-start items-center">
+                <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
+                  <span class="text-[#FF0000]">With Kotak Gen2Gen Protect,</br>your legacy With Kotak Gen2Gen Protect,</span>
+                  <span class="text-[#2651C0]"> your legacy will last for generations, ensuring <b>Viraasat Ban Ke Hi Rahegi.</b></span>          
+                </h1>
+                <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
+                  <img src="./assets/image4.svg" alt="virassat">
+                </div>
+              </div>
+              <div class="flex justify-center items-center">
+                <img src="./assets/seal_image.svg" class="w-full" alt="icon" />
+              </div>
             </div>
 
           </div>
@@ -497,50 +540,91 @@
           </div>
 
           <!-- Right side with a 2-column grid -->
-          <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-center">
+          <div class="w-full h-full py-6">
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-start w-full">
+
             <!-- First item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-                <!-- First SVG Icon -->
-                <img src="./assets//gen21.svg" alt="gen2" />
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/lifelong_coverage.svg" alt="gen2" />
+                </div>
+                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Lifelong coverage</h3>
+                <p class="text-[#62696C] font-light text-sm text-left">Get cover up to 85 years*</p>
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Comprehensive Coverage</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Covers life’s uncertainties.</p>
+              <!-- First item in grid -->
+
+              <!-- First item in grid -->
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/return_of_premiums_2.svg" alt="gen2" />
+                </div>
+                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
+                <p class="text-[#62696C] font-light text-sm text-left">Get your total premiums back at the age of 60 through the Special Exit Value option</p>
+              </div>
+              <!-- First item in grid -->
+
+              <!-- First item in grid -->
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/flexi_cover_as_you_need.svg" alt="gen2" />
+                </div>
+                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Flexi cover as you need</h3>
+                <p class="text-[#62696C] font-light text-sm text-left">Adjust your life cover as per your life stages**</p>
+              </div>
+              <!-- First item in grid -->
+
+              <!-- First item in grid -->
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/comprehensive_coverage.svg" alt="gen2" />
+                </div>
+                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Comprehensive coverage</h3>
+                <p class="text-[#62696C] font-light text-sm text-left">Get enhanced protection with an optional Critical Illness Rider</p>
+              </div>
+              <!-- First item in grid -->
+
+              <!-- First item in grid -->
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/affordable_cover.svg" alt="gen2" />
+                </div>
+                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Affordable cover</h3>
+                <p class="text-[#62696C] font-light text-sm text-left">Get a high cover at an affordable premium</p>
+              </div>
+              <!-- First item in grid -->
+
+              <!-- First item in grid -->
+              <div class="flex flex-col">
+                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                  <!-- First SVG Icon -->
+                  <img src="./assets/discovery_icons/tax_savings.svg" alt="gen2" />
+                </div>
+                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Tax Savings</h3>
+                <p class="text-[#62696C] font-light text-sm text-left">Save taxes under Section 80C for added financial advantage.</p>
+              </div>
+              <!-- First item in grid -->
             </div>
 
-            <!-- Second item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-                <!-- Second SVG Icon -->
-                <img src="./assets//gen22.svg" alt="gen2" />
+            <div class="flex justify-between items-center mt-32 w-full gap-4">
+              <div class="flex flex-col justify-start items-center">
+                <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
+                  <span class="text-[#FF0000]">With Kotak e-Term,</span>
+                  <span class="text-[#2651C0]"><b>Viraasat Ban Ke hi Rahegi.</b></span>          
+                </h1>
+                <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
+                  <img src="./assets/image4.svg" alt="virassat">
+                </div>
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Customizable Plans</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Tailored to meet your unique needs.
-              </p>
-            </div>
-            <!-- First item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-                <!-- First SVG Icon -->
-                <img src="./assets//gen23.svg" alt="gen2" />
+              <div class="flex justify-center items-center">
+                <img src="./assets/seal_image.svg" class="w-full" alt="icon" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Affordable Premiums</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Budget-friendly with extensive <br> benefits</p>
             </div>
-
-            <!-- Second item in grid -->
-            <div class="flex flex-col">
-              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
-                <img src="./assets//gen24.svg" alt="gen2" />
-              </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Tax Benefits</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Enjoy savings under Section 80C.</p>
-            </div>
-            <!-- First item in grid -->
-
-
-            <!-- Second item in grid -->
-
 
           </div>
 
@@ -569,19 +653,19 @@
           <h2 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] mb-4 text-center">
             <span class="text-[#FF0000]">Why Kotak</span>
             <span class="text-[#2651C0]"> Life?</span>
-  
+
             <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
               <img src="./assets/image4.svg" alt="virassat" />
             </div>
         </div>
-        <p class="text-md font-light text-[#7A7A7A] lg:block hidden text-center">At kotak Life insurance, we provide peace of mind
+        <p class="text-md font-light text-[#7A7A7A] lg:block hidden text-center">At kotak Life insurance, we provide
+          peace of mind
           with our policies,</br> earning the trust of thousands to protect their futures</p>
-        <p class="text-sm text-center font-light text-[#7A7A7A] lg:hidden block text-center">At kotak Life insurance, we provide
+        <p class="text-sm text-center font-light text-[#7A7A7A] lg:hidden block text-center">At kotak Life insurance, we
+          provide
           peace of mind with our policies, earning the trust of thousands to protect their futures</p>
         <div class="flex justify-center items-center mt-4 lg:flex w-full hidden">
-          <img
-            src="./assets//happy-cutomers-bg.svg"
-            alt="Image" class="w-auto max-h-[28rem]" />
+          <img src="./assets//happy-cutomers-bg.svg" alt="Image" class="w-auto max-h-[28rem]" />
         </div>
       </div>
 
@@ -931,20 +1015,20 @@
           </button>
         </div>
       </div>
-      
 
-        <div class="w-full">
-          <!-- Background Circle -->
-          <div class="absolute top-[-80px] right-0 bottom-0">
-            <img class="w-full h-full" src="./assets/bottom-section-bg.svg" alt="Circle Image" />
-          </div>
-          <!-- <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
+
+      <div class="w-full">
+        <!-- Background Circle -->
+        <div class="absolute top-[-80px] right-0 bottom-0">
+          <img class="w-full h-full" src="./assets/bottom-section-bg_1.svg" alt="Circle Image" />
+        </div>
+        <!-- <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
             <img class="w-[100%] h-[100%]" src="./assets/actor.svg" alt="Actor Image" />
           </div>
           <div class="absolute" style="top: 40px; left: 67px; z-index: 3;">
             <img class="w-[240px] h-[240px]" src="./assets/kotakseal.svg" alt="Kotak Seal" />
           </div> -->
-        </div>
+      </div>
 
 
       <!-- <div class="absolute bottom-0 right-0 flex justify-center items-center">
@@ -1053,11 +1137,8 @@
   <script>
 
     document.addEventListener('DOMContentLoaded', () => {
-      const header = document.getElementById('header');
       const logo = document.getElementById('logo');
       const navLinks = document.getElementById('nav-links');
-      const languageDropdown = document.getElementById('languageDropdown');
-      const languageDropdownIcon = document.getElementById('languageDropdownIcon');
 
       const closeIcon = document.getElementById('myCloseIcon');
       closeIcon.addEventListener('mouseover', () => {
@@ -1072,40 +1153,30 @@
 
       const myDiv = document.getElementById("myDiv");
 
-      // window.addEventListener('scroll', () => {
-      //   if (window.scrollY > 50) {
-      //     header.classList.add('bg-white');
-      //     myDiv.classList.remove("hidden"); // Show the div
-      //     myDiv.classList.add("block"); // Ensure it's displayed
-      //     languageDropdown.classList.remove('text-white');
-      //     languageDropdownIcon.style.filter = 'invert(1)';
-      //     header.classList.add('shadow-md')
-      //     header.classList.remove('bg-transparent');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          myDiv.classList.remove("hidden"); // Show the div
+          myDiv.classList.add("block"); // Ensure it's displayed
 
-      //     logo.classList.add('text-black');
-      //     logo.classList.remove('text-white');
+          logo.classList.add('text-black');
+          logo.classList.remove('text-white');
 
-      //     navLinks.querySelectorAll('a').forEach(link => {
-      //       link.classList.add('text-black');
-      //       link.classList.remove('text-white');
-      //     });
-      //   } else {
-      //     header.classList.remove('bg-white');
-      //     myDiv.classList.add("hidden"); // Hide the div
-      //     myDiv.classList.remove("block"); // Remove the block class
-      //     languageDropdownIcon.style.filter = 'invert(0)';
-      //     header.classList.remove('shadow-md')
-      //     languageDropdown.classList.add('text-white')
-      //     header.classList.add('bg-transparent');
-      //     logo.classList.remove('text-black');
-      //     logo.classList.add('text-white');
+          navLinks.querySelectorAll('a').forEach(link => {
+            link.classList.add('text-black');
+            link.classList.remove('text-white');
+          });
+        } else {
+          myDiv.classList.add("hidden"); // Hide the div
+          myDiv.classList.remove("block"); // Remove the block class
+          logo.classList.remove('text-black');
+          logo.classList.add('text-white');
 
-      //     navLinks.querySelectorAll('a').forEach(link => {
-      //       link.classList.remove('text-black');
-      //       link.classList.add('text-white');
-      //     });
-      //   }
-      // });
+          navLinks.querySelectorAll('a').forEach(link => {
+            link.classList.remove('text-black');
+            link.classList.add('text-white');
+          });
+        }
+      });
     });
 
     const modal = document.getElementById("modal");
@@ -1159,6 +1230,24 @@
         video.pause();
         playIcon.classList.remove('hidden');
         pauseIcon.classList.add('hidden');
+      }
+    });
+
+    const muteUnmuteButton = document.getElementById('muteUnmuteButton');
+    const muteIcon = document.getElementById('muteIcon');
+    const unmuteIcon = document.getElementById('unmuteIcon');
+
+    muteUnmuteButton.addEventListener('click', () => {
+      if (video.muted) {
+        // Unmute the video and show the unmute icon
+        video.muted = false;
+        muteIcon.classList.add('hidden');
+        unmuteIcon.classList.remove('hidden');
+      } else {
+        // Mute the video and show the mute icon
+        video.muted = true;
+        muteIcon.classList.remove('hidden');
+        unmuteIcon.classList.add('hidden');
       }
     });
 
