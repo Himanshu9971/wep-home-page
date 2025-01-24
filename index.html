@@ -76,11 +76,12 @@
         <span class="text-white lg:block hidden">watch the video</span>
       </div>
       <div class="lg:flex hidden flex-col gap-4 items-start">
-        <h2 class="text-white text-5xl font-bold">Together let’s ensure</br>that your legacy</br>continue to
+        <h2 class="text-white text-[44px] font-bold">Together let’s ensure</br>that your legacy</br>continue to
           grow,</br>hamesha.</h2>
-        <p class="text-white text-lg font-normal">Join a movement to build a legacy of protection, care,</br>and
-          security for generations to come with Kotak.</p>
-        <button class="w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-lg font-medium">
+        <p class="text-white text-[16px] font-normal">Join a movement to build a legacy of protection, care,
+
+        </br>andsecurity for generations to come with Kotak.</p>
+        <button class="w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[16px] font-medium">
           Explore your plan
         </button>
       </div>
@@ -88,56 +89,120 @@
 
     <!-- Hidden section initially -->
     <div
-      class="px-8 py-4 absolute bottom-0 left-0 right-0 lg:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full"
+      class=" absolute bottom-0 left-0 right-0 lg:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full"
       id="hiddenSection">
-      <h2 class="text-white text-3xl font-bold">Together let’s ensure</br>that your legacy</br>continue to
-        grow,</br>hamesha.</h2>
-      <p class="text-white text-xs font-normal">Join a movement to build a legacy of protection, care, and</br>security
-        for generations to come with Kotak.</p>
-      <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
-        Explore your plan
+      <div class="px-8 py-4">
+        <h2 class="text-white lg:text-[44px] text-[32px] font-bold">Together let’s ensure</br>that your legacy</br>continue to
+          grow,</br>hamesha.</h2>
+        <p class="text-white  lg:text-[16px] text-[12px] font-normal">Join a movement to build a legacy of protection, care, <br>and security
+          for generations to come with Kotak.</p>
+      </div>
+
+      
+      
+    
+    </div>
+
+  </div>
+
+  <div class="bg-[#191919] lg:hidden z-[99] py-[20px] px-[16px] w-full fixed bottom-0 left-0 flex">
+    <div class="flex w-full  flex-col items-center justify-center text-center">
+      <p class="text-white text-[14px] text-md">
+        Wondering How Much Coverage You Need?
+      </p>
+      <button class="w-full text-[16px] lg:w-auto mt-2 text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
+        Calculate My Plan
       </button>
     </div>
 
   </div>
+  
+  
   <!-- Hero Section End -->
+  <div id="myDiv"
+    class="lg:bg-[#191919] mt-2 lg:text-white lg:px-8 lg:py-8 block w-full flex justify-between items-center fixed bottom-0 hidden"
+    style="z-index: 10;">
+    <span class="flex flex-col items-start">
+      Wondering how much cover you need to protect your ‘Viraasat’? Calculate your cover now
+    </span>
+    <div class="flex justify-end items-center">
+      <button id="myButton" class=" bg-[#FF0000] text-white font-medium py-2 px-4 rounded-full mr-2">
+        Calculate my Plan
+      </button>
+      <svg id="myCloseIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6 close-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Modal Background -->
+  <div id="modal"  class="fixed z-[99] inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+    <!-- Modal Content -->
+    <div class="bg-white rounded-[24px] w-[500px] h-auto p-[40px] relative">
+      <h2 class="text-xl font-semibold text-center mb-4">Secure Your Future Today</h2>
+      <p class="text-sm text-gray-600 text-center mb-4">
+        Fill in your details to get a personalized quote and take the first <br> step toward financial security.
+      </p>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium">Name:</label>
+          <input id="name" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2" placeholder="Enter your full name" />
+        </div>
+        <div class="mb-4">
+          <label for="age" class="block text-sm font-medium">Age:</label>
+          <input id="age" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2" placeholder="How old are you?" />
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="block text-sm font-medium">Phone Number:</label>
+          <input id="phone" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
+            placeholder="Provide your mobile number" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium">Email Address (optional):</label>
+          <input id="email" type="email" class="w-full mt-1 border rounded-[12px] px-3 py-2"
+            placeholder="Enter your email for updates" />
+        </div>
+        <button  id="closeModal" type="button" class="bg-[#FF0000] mt-2 text-white py-4 px-4 rounded-[12px] w-full hover:bg-red-600">
+          Get My Personalized Quote
+        </button>
+      </form>
+      <!-- Close Button -->
+      <button id="closeModalButton" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+
 
   <!-- Grid Section Layout Start -->
   <section class="lg:py-16 py-8 bg-[#F4F3F6]">
 
-    <div class=" mx-auto text-center lg:px-0 ">
+    <div class="container mx-auto text-center  lg:px-0 ">
 
-      <div class="flex flex-col max-w-[1280px] lg:flex-column items-center gap-4 px-4">
-        <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C]">What is Virasat?</h1>
-        <div class="lg:ml-10 lg:mt-0 mt-4">
-          <img src="./assets/image4.svg" alt="virassat" />
-        </div>
+      <div class="flex flex-col lg:flex-column items-center gap-4 px-4">
+        <h1 class="lg:text-[48px] text-[24px] font-light text-[#2C2C2C]">
+          <span class="text-[#FF0000]"> What is </span>
+          <span class="text-[#2651C0]">Viraasat?</span>
+          <div class="lg:ml-10 lg:mt-6 mt-2">
+            <img src="./assets/image4.svg" alt="virassat" />
+          </div>
       </div>
 
-      <p class="lg:mt-4 px-4 lg:text-md text-sm font-light text-[#7A7A7A]">Explore the unique features that make our
-        product
-        stand out from the rest.</p>
-      <div id="myDiv"
-        class="lg:bg-[#191919] mt-2 lg:text-white lg:px-8 lg:py-8 block w-full flex justify-between items-center sticky lg:sticky-top"
-        style="top: 76px;">
-        <span class="flex flex-col items-start">
-          Wondering how much cover you need to protect your ‘Viraasat’?
-          <br>
-          <span>Calculate your cover now</span>
-        </span>
-        <div class="flex justify-end items-center">
-          <button id="myButton" class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-full mr-2">
-            Calculate my Plan
-          </button>
-          <svg id="myCloseIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6 close-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12" />
-          </svg>
-        </div>
-      </div>
+      <p class="lg:mt-4 px-4 text-[12px] lg:text-[16px] font-light text-[#7A7A7A]">Virasat by Kotak Life is more 
+        than economic protection, it is a lasting legacy for your loved ones. With 
+        the right kind of planning, you can ensure your family's financial 
+        stability and peace of mind for generations</p>
+        <p class="lg:mt-4  px-4 text-[12px] lg:text-[16px] font-light text-[#7A7A7A]">
+          That’s why it’s important to ensure that your Viraasat continue to grow, 
+          no matter what.
 
-
+        </p>
 
       <div
         class="mx-auto grid px-4 max-w-[1280px] grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-4 mt-8 lg:bg-white rounded-lg lg:py-16">
@@ -146,9 +211,9 @@
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
             <img src="./assets/Icon1.svg" alt="Icon1" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Build A Legacy of Wealth That Endures
+          <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] lg:text-center text-left">Build A Legacy of Wealth That Endures
           </h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Create a lasting legacy by building
+          <p class="text-[#62696C] font-light mt-2 lg:text-[14px]  text-[12px]  lg:text-center text-left">Create a lasting legacy by building
             wealth that withstands the test of time, ensuring financial security for future generations</p>
         </div>
 
@@ -156,9 +221,9 @@
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
             <img src="./assets/Icon2.svg" alt="Icon2" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Provide Protection In Times Of
+          <h3 class="lg:text-[18px] text-[12px]  font-bold text-[#21272A] lg:text-center text-left">Provide Protection In Times Of
             Uncertainty</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Ensure your peace of mind by
+          <p class="text-[#62696C] font-light mt-2 lg:text-[14px]  text-[12px] lg:text-center text-left">Ensure your peace of mind by
             providing protection in times of uncertainty, safeguarding your future with reliable and secure solutions
           </p>
         </div>
@@ -167,9 +232,9 @@
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
             <img src="./assets/Icon3.svg" alt="Icon3" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Ensure Your Family's Financial
+          <h3 class="lg:text-[18px] text-[12px]  font-bold text-[#21272A] lg:text-center text-left">Ensure Your Family's Financial
             Well-Being</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">Secure your family's future by
+          <p class="text-[#62696C] font-light mt-2 lg:text-[14px]  text-[12px] lg:text-center text-left">Secure your family's future by
             creating a financial plan that guarantees stability, growth, and peace of mind for generations to come</p>
         </div>
 
@@ -177,9 +242,9 @@
           <div class="lg:mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#EFF7CA]">
             <img src="./assets/Icon4.svg" alt="Icon4" />
           </div>
-          <h3 class="text-lg font-bold text-[#21272A] lg:text-center text-left">Guard Against Rising Costs & Evolving
+          <h3 class="lg:text-[18px] text-[12px]  font-bold text-[#21272A] lg:text-center text-left">Guard Against Rising Costs & Evolving
             Needs</h3>
-          <p class="text-[#62696C] font-light mt-2 text-sm lg:text-center text-left">"Protect your finances from the
+          <p class="text-[#62696C] font-light mt-2 lg:text-[14px]  text-[12px] lg:text-center text-left">"Protect your finances from the
             impact of rising costs and changing needs by adopting flexible strategies that adapt to life's uncertainties
           </p>
         </div>
@@ -194,12 +259,16 @@
   <section class="lg:py-16 py-8 bg-white">
 
     <div class="container mx-auto text-center lg:px-0 px-4">
-      <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C] text-center">Wondering why? Let’s see</h1>
-      <div class="flex justify-center lg:ml-10 lg:mt-4 mt-4">
+      <h1 class="lg:text-[40px] text-[24px] font-light text-center">
+        <span class="text-[#FF0000] ">Wondering why?</span>
+        <span class="text-[#2651C0]">Let’s see</span>
+      </h1>
+
+      <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
         <img src="./assets/image4.svg" alt="virassat" />
       </div>
 
-      <p class="lg:mt-4 lg:text-md text-sm font-light text-[#7A7A7A]">No matter where you stand in
+      <p class="lg:mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">No matter where you stand in
         life, Kotak Life Virasat offers tailored plans for you to secure your family's
         <br>future against life's uncertainties
       </p>
@@ -219,13 +288,13 @@
               <img class="w-full h-full object-cover rounded-2xl" src="./assets/youngBur.svg" alt="" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
-              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">
+              <h3 class="text-left lg:text-[48px] text-[24px] font-semibold text-white">
                 Young Jobber
               </h3>
-              <p class="text-left text-white mt-2 text-xs font-bold">
+              <p class="text-left text-white mt-2 lg:text-[20px] text-[13px] lg:text-[20px] font-bold">
                 How can you make your Viraasat continue to grow?
               </p>
-              <p class="text-left text-white mt-2 text-xs">
+              <p class="text-left text-white mt-2 lg:text-[20px] text-[12px]">
                 Kotak Term Insurance Plans provide a strong support system that ensures
                 the continuity of building Viraasat even when you are not around. Our
                 plans are designed to provide a comprehensive cover so that your legacy
@@ -245,19 +314,19 @@
               <img class="w-full h-full object-cover rounded-2xl" src="./assets/familyBlur.svg" alt="The Family Man" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
-              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">
+              <h3 class="text-left lg:text-[48px] text-[24px] font-semibold text-white">
                 The Family Man
               </h3>
-              <p class="text-left text-white mt-2 text-xs font-bold">
+              <p class="text-left text-white mt-2 text-[13px] lg:text-[20px] font-bold">
                 Expand on click
               </p>
-              <p class="text-left text-white mt-2 text-xs">
+              <p class="text-left text-white mt-2 lg:text-[19px] text-[12px]">
                 You are working towards providing a good life to your family - a bigger home, quality education
                 for your kids, and a better lifestyle. These aren’t just your aspirations; they’re part of the
                 Viraasat you’re creating for them. You have put in everything to create this Viraasat and often
                 stretched yourself financially through loans, EMIs, etc.
               </p>
-              <p class="text-left text-white mt-1 text-xs">
+              <p class="text-left text-white mt-1 lg:text-[19px] text-[12px]">
                 But what if life takes an unexpected turn, leaving this Viraasat incomplete? That’s why, it’s
                 equally important to ensure that the Viraasat you desire for your family continues to progress
                 uninterrupted.
@@ -266,32 +335,30 @@
           </div>
 
           <!-- Card 3 -->
-          <div 
-          class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
-          onmouseover="changeImage(this, './assets/girlClear.svg')" 
-          onmouseout="changeImage(this, './assets/girlBlur.svg')"
-        >
-          <div
-            class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
+            onmouseover="changeImage(this, './assets/girlClear.svg')"
+            onmouseout="changeImage(this, './assets/girlBlur.svg')">
+            <div
+              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
+            </div>
+            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlBlur.svg" alt="Working Mothers" />
+            </div>
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+              <h3 class="text-left lg:text-[48px] text-[24px] font-semibold text-white">
+                Self Employed
+              </h3>
+              <p class="text-left text-white mt-2 text-[13px] lg:text-[20px] font-bold">
+                Build Your Dreams by Securing Futures
+              </p>
+              <p class="text-left text-white mt-2 lg:text-[19px] text-[12px]">
+
+                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
+                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+                Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+              </p>
+            </div>
           </div>
-          <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-            <img class="w-full h-full object-cover rounded-2xl"
-              src="./assets/girlBlur.svg"
-              alt="Working Mothers" />
-          </div>
-          <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
-            <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">
-              Self Employed
-            </h3>
-            <p class="text-left text-white mt-2 text-xs font-bold">
-              Build Your Dreams by Securing Futures
-            </p>
-            <p class="text-left text-white mt-2 text-xs">
-             
-              Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
-            </p>
-          </div>
-        </div>
 
           <!-- Card 4 -->
           <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
@@ -305,15 +372,17 @@
                 alt="Working Mothers" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
-              <h3 class="text-left lg:text-4xl text-2xl font-semibold text-white">
+              <h3 class="text-left lg:text-[48px] text-[24px] font-semibold text-white">
                 Working Mothers
               </h3>
-              <p class="text-left text-white mt-2 text-xs font-bold">
+              <p class="text-left text-white mt-2 text-[13px] lg:text-[20px] font-bold">
                 Empowering Women to Nurture Their Legacy
               </p>
-              <p class="text-left text-white mt-2 text-xs">
-               
-                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
+              <p class="text-left text-white mt-2 lg:text-[19px] text-[12px]">
+
+                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
+                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
+                Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
               </p>
             </div>
           </div>
@@ -330,22 +399,25 @@
 
     <div class="container mx-auto text-center lg:px-0 px-4">
 
-      <h1 class="text-4xl font-light text-[#2C2C2C] lg:block hidden">Discover the right plan for you
+      <h1 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] lg:block ">
+        <span class="text-[#FF0000]">Discover the right plan</span>
+        <span class="text-[#2651C0]"> for you</span>
+
       </h1>
-      <h1 class="lg:text-4xl text-2xl font-light text-[#2C2C2C] lg:hidden block">Discover the right plan for you</h1>
-      <div class="flex justify-center lg:ml-10 lg:mt-4 mt-4">
+
+      <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
         <img src="./assets/image4.svg" alt="virassat" />
       </div>
 
       <div
         class="flex mt-4 justify-start items-center bg-[#F7F8F9] rounded-lg p-4 lg:w-[370px] w-full mx-auto text-lg gap-4">
         <button id="tab-1"
-          class="tab-button lg:text-lg text-sm px-4 py-3 rounded-lg font-medium flex justify-between items-center"
+          class="tab-button lg:text-[18px] text-[12px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
           onclick="switchTab('tab-1')">
           Gen2Gen Protect
         </button>
         <button id="tab-2"
-          class="tab-button lg:text-lg text-sm px-4 py-3 rounded-lg font-medium flex justify-between items-center"
+          class="tab-button lg:text-[18px] text-[12px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
           onclick="switchTab('tab-2')">
           Kotak e-Term
         </button>
@@ -356,8 +428,7 @@
         <div id="content-tab-1" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
           <!-- Left side with image -->
           <div class="relative">
-            <img src="./assets//GEN2.svg" alt="Image"
-              class="w-full h-full object-cover rounded-lg shadow-lg" />
+            <img src="./assets//GEN2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
           </div>
 
           <!-- Right side with a 2-column grid -->
@@ -368,8 +439,15 @@
                 <!-- First SVG Icon -->
                 <img src="./assets//gen21.svg" alt="gen2" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Return of Premium</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Life coverage with premiums returned <br> upon maturity.</p>
+              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Return of Premium</h3>
+              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">
+                Life coverage with premiums 
+                <br class="lg:hidden"> 
+                returned 
+                <br class="hidden lg:block"> 
+                upon maturity.
+              </p>
+              
             </div>
 
             <!-- Second item in grid -->
@@ -378,8 +456,10 @@
                 <!-- Second SVG Icon -->
                 <img src="./assets//gen22.svg" alt="gen2" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Two Plan Options</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Flexibility to choose between Life <br> ROP and Legacy ROP options</p>
+              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Two Plan Options</h3>
+              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Flexibility to choose between 
+                Life <br class="hidden lg:block"> ROP and
+                Legacy ROP <br class="lg:hidden">  options</p>
             </div>
             <!-- First item in grid -->
             <div class="flex flex-col">
@@ -387,8 +467,10 @@
                 <!-- First SVG Icon -->
                 <img src="./assets//gen23.svg" alt="gen2" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Dual Generation Plan</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Cover two generations under one <br> plan with seamless transfer of basic <br>sum assured.</p>
+              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Dual Generation Plan</h3>
+              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Cover two generations under one 
+                <br class="hidden lg:block"> plan with
+                seamless <br class="lg:hidden">  transfer of basic <br class="hidden lg:block">sum assured.</p>
             </div>
 
             <!-- Second item in grid -->
@@ -397,8 +479,9 @@
                 <!-- Second SVG Icon -->
                 <img src="./assets//gen24.svg" alt="gen2" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Enhanced Benefits for <br> Women</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">5% additional death benefit <br> exclusively for female lives.</p>
+              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Enhanced Benefits for <br> Women</h3>
+              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">5% additional death benefit <br> exclusively for
+                female lives.</p>
             </div>
             <!-- First item in grid -->
             <div class="flex flex-col">
@@ -406,8 +489,9 @@
                 <!-- First SVG Icon -->
                 <img src="./assets//gen25.svg" alt="gen2" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Wellness Perks</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Inbuilt wellness benefits at no extra <br> cost.</p>
+              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Wellness Perks</h3>
+              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Inbuilt wellness benefits at no extra <br class="hidden lg:block"> cost.
+              </p>
             </div>
 
             <!-- Second item in grid -->
@@ -416,8 +500,9 @@
                 <!-- Second SVG Icon -->
                 <img src="./assets//gen26.svg" alt="gen2" />
               </div>
-              <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Rider Options</h3>
-              <p class="text-[#62696C] font-light text-sm text-left">Enhance your protection with add- <br>on riders.</p>
+              <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Rider Options</h3>
+              <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Enhance your protection with add- <br class="hidden lg:block">on riders.
+              </p>
             </div>
 
           </div>
@@ -428,8 +513,7 @@
         <div id="content-tab-2" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
           <!-- Left side with image -->
           <div class="relative">
-            <img src="./assets//kotak2.svg" alt="Image"
-              class="w-full h-full object-cover rounded-lg shadow-lg" />
+            <img src="./assets//kotak2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
           </div>
 
           <!-- Right side with a 2-column grid -->
@@ -473,17 +557,18 @@
               <p class="text-[#62696C] font-light text-sm text-left">Enjoy savings under Section 80C.</p>
             </div>
             <!-- First item in grid -->
-            
+
 
             <!-- Second item in grid -->
-           
+
 
           </div>
 
         </div>
 
         <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
-          <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
+          <button id="openModal"
+            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
             Get Your Personalized Quote
           </button>
         </div>
@@ -579,17 +664,19 @@
 
     <div class="mx-auto lg:px-0 px-4">
       <div class="flex flex-col items-center">
-        <h2 class="lg:text-4xl text-2xl font-light text-[#2C2C2C] mb-4 lg:text-left text-center">Got Questions? We Have
-          Answers!</h2>
-          <div class="flex justify-center lg:ml-10 lg:mt-4 mt-4">
+        <h2 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] mb-4 lg:text-left text-center">
+          <span class="text-[#FF0000]"> Got Questions?</span>
+          <span class="text-[#2651C0]"> We Have Answers!</span>
+
+          <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
             <img src="./assets/image4.svg" alt="virassat" />
-          </div> 
+          </div>
       </div>
       <div class="mx-auto max-w-4xl lg:mt-8 grid">
         <div class="lg:py-8 py-4">
           <details class="group" open>
             <summary
-              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
               <span> What is Life Insurance?
               </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
@@ -597,42 +684,42 @@
                 <span class="group-open:block hidden">−</span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light lg:text-[18px] text-[12px] text-left">
               Life insurance is a kind of insurance that can provide financial protection to your loved <br>
               ones in case of an untimely death.
-              
+
             </p>
           </details>
         </div>
         <div class="lg:py-8 py-4">
           <details class="group">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
               <span>Why Should I Buy Life Insurance?
-               </span>
+              </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
                 <span class="group-open:hidden">+</span>
                 <span class="group-open:block hidden">−</span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
               With Life Insurance, you can ensure your family’s financial security and help cover their
-            <br>  essential expenses in your absence
+              <br> essential expenses in your absence
             </p>
           </details>
         </div>
         <div class="lg:py-8 py-4">
           <details class="group">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
               <span> How Much Life Insurance Coverage Do I Need?
-                </span>
+              </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
                 <span class="group-open:hidden">+</span>
                 <span class="group-open:block hidden">−</span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
               The amount for your coverage depends on your financial goals and the needs of your dependents.
               <br> Reach out to us at Kotak Life for personalised guidance on getting your Life Insurance.
 
@@ -642,16 +729,17 @@
         <div class="lg:py-8 py-4">
           <details class="group">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
               <span>How Do I Choose the Right Plan for Me?
-                </span>
+              </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
                 <span class="group-open:hidden">+</span>
                 <span class="group-open:block hidden">−</span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
-              Selecting the right plan requires evaluating your needs and matching them to the right plan. Feel free to contact Kotak Life for expert assistance in finding the perfect plan for you.
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
+              Selecting the right plan requires evaluating your needs and matching them to the right plan. Feel free to
+              contact Kotak Life for expert assistance in finding the perfect plan for you.
 
             </p>
           </details>
@@ -659,25 +747,25 @@
         <div class="lg:py-8 py-4">
           <details class="group">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between text-xl font-light text-[#21272A] mb-2 text-left">
+              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
               <span>What Is the Claims Process Like?
-                </span>
+              </span>
               <span class="transition group-open:rotate-180 text-4xl font-medium">
                 <span class="group-open:hidden">+</span>
                 <span class="group-open:block hidden">−</span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-sm text-left">
-              The claims process is a straightforward process that involves the submission of specific 
-             <br> documents required as per the policy together with the claim form.
-              
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
+              The claims process is a straightforward process that involves the submission of specific
+              <br> documents required as per the policy together with the claim form.
+
             </p>
           </details>
         </div>
       </div>
 
       <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
-        <button class="lg:w-auto w-full text-white bg-red-500 px-8 py-3 rounded-lg text-xl font-medium">
+        <button class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
           Got More Questions?
         </button>
       </div>
@@ -688,40 +776,61 @@
   <!-- Faq Section Ends -->
 
   <!-- Bottom Banner Starts -->
-  <div class="container mx-auto text-center lg:py-16 lg:py-8 py-8 lg:px-0 px-4">
+  <div class="container mx-auto text-center lg:py-16 lg:mt-16 lg:py-8 py-8 lg:px-0 px-4">
 
     <div
       class="grid grid-cols-1 relative lg:grid-cols-2 lg:grid-cols-2 gap-4 py-8 lg:px-20 lg:px-10 px-8 rounded-3xl bg-[#013974]">
       <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-0">
-        <h2 class="text-left lg:text-4xl text-2xl font-medium text-white mb-4">
+        <h2 class="text-left lg:text-[40px] text-[24px] font-medium text-white mb-4">
           Your Family Deserves a</br> Future Without</br> Worries
         </h2>
-        <p class="text-md font-light text-white text-left">Life is full of surprise, but your family's future <br> doesn't
-          have to be uncertain. Within virasat by <br> Kotak Life, you take protective 
+        <p class="lg:text-[16px] text-[12px] font-light text-white text-left">Life is full of surprise, but your family's future <br>
+          doesn't
+          have to be uncertain. Within virasat by <br> Kotak Life, you take protective
           steps ton ensure your <br> financial
           security.</p>
         <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
-          <button class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg text-xl font-medium">
+          <button id="openModal"
+            class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
             Get Your Personalized Quote
           </button>
         </div>
       </div>
-      <div>
-        
-      </div>
-      <div class="absolute bottom-0 right-0 flex justify-center items-center">
 
+
+      <div>
+     
+        <div class="relative">
+          <!-- Background Circle -->
+          <div class="absolute" style="top: -4px; right: -79px;">
+            <img class="w-[560px] h-[383px] z-[1] rounded-[24px]" src="./assets/circle.svg" alt="Circle Image" />
+          </div>
+        
+          <!-- Actor Image -->
+          <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
+            <img class="w-[100%] h-[100%]" src="./assets/actor.svg" alt="Actor Image" />
+          </div>
+        
+          <!-- Kotak Seal -->
+          <div class="absolute" style="top: 40px; left: 67px; z-index: 3;">
+            <img class="w-[240px] h-[240px]" src="./assets/kotakseal.svg" alt="Kotak Seal" />
+          </div>
+        </div>
+        
+        
+
+      </div>
+     
       
-        <img class="w-[520px] z-[1] h-[373px]" src="./assets/circle.svg" alt="Image">
+      <!-- <div class="absolute bottom-0 right-0 flex justify-center items-center">
+      
       </div>
       <div class="absolute z-[3] top-[-110px] right-10 flex justify-center items-center">
-        <img class="w-[550px] h-[550px]" src="./assets/actor.svg" alt="Image">
+      
       </div>
       <div class="absolute z-[2] top-[120px] left-[670px] flex justify-center items-center">
-        <img class="w-[240px] h-[240px]" src="./assets/kotakseal.svg" alt="Image">
-      </div>
-      
-      
+       
+      </div> -->
     </div>
 
   </div>
@@ -735,17 +844,17 @@
         src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kotak_Life_Logo-1.png?20210921072346" alt="logo" />
       <div class="flex gap-4 justify-between items-center">
         <ul class="w-full justify-between items-center flex lg:gap-8 gap-2">
-          <li class="lg:text-md text-xs  text-black font-bold">
+          <li class="lg:text-[16px] text-xs  text-black font-bold">
             <a href="">
               What is Virasat?
             </a>
           </li>
-          <li class="lg:text-md text-xs  text-black font-bold">
+          <li class="lg:text-[16px] text-xs  text-black font-bold">
             <a href="">
               Why Kotak?
             </a>
           </li>
-          <li class="lg:text-md text-xs  text-black font-bold">
+          <li class="lg:text-[16px] text-xs  text-black font-bold">
             <a href="">
               Get Questions?
             </a>
@@ -775,16 +884,20 @@
       closeIcon.addEventListener('mouseover', () => {
         closeIcon.style.cursor = 'pointer';
       });
+
+      closeIcon.addEventListener('click', () => {
+        myDiv.style.display = "none"; // Hide the div permanently
+      })
       // const closeBtn = document.getElementById('myButton');
       const div = document.getElementById('myDiv');
 
-      closeIcon.addEventListener('click', () => {
-        div.style.display = 'none';
-      });
+      const myDiv = document.getElementById("myDiv");
 
       window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
           header.classList.add('bg-white');
+          myDiv.classList.remove("hidden"); // Show the div
+          myDiv.classList.add("block"); // Ensure it's displayed
           languageDropdown.classList.remove('text-white');
           languageDropdownIcon.style.filter = 'invert(1)';
           header.classList.add('shadow-md')
@@ -799,6 +912,8 @@
           });
         } else {
           header.classList.remove('bg-white');
+          myDiv.classList.add("hidden"); // Hide the div
+          myDiv.classList.remove("block"); // Remove the block class
           languageDropdownIcon.style.filter = 'invert(0)';
           header.classList.remove('shadow-md')
           languageDropdown.classList.add('text-white')
@@ -812,6 +927,32 @@
           });
         }
       });
+    });
+
+    const modal = document.getElementById("modal");
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const closeModalButton = document.getElementById("closeModalButton");
+    // Open Modal
+    openModal.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+
+    // Close Modal when clicking the close button
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+        // Close Modal when clicking the close button
+        closeModalButton.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    // Close Modal when clicking outside the content
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
     });
 
     const playPauseButton = document.getElementById('playPauseButton');
@@ -861,7 +1002,7 @@
       const allTabButtons = document.querySelectorAll('.tab-button');
 
       allTabButtons.forEach(button => {
-        button.classList.remove('bg-red-500');
+        button.classList.remove('bg-[#FF0000]');
         button.classList.add('bg-transparent');
         button.classList.remove('text-white');
         button.classList.add('text-[#2C2C2C]');
@@ -869,7 +1010,7 @@
 
       const activeTabButton = document.getElementById(tabId);
       activeTabButton.classList.remove('bg-transparent');
-      activeTabButton.classList.add('bg-red-500');
+      activeTabButton.classList.add('bg-[#FF0000]');
       activeTabButton.classList.remove('text-[#2C2C2C]');
       activeTabButton.classList.add('text-white');
 
