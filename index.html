@@ -22,6 +22,28 @@
     html {
       scroll-behavior: smooth;
     }
+
+    .text-section {
+  transform: translateY(100%); /* Move the content below the card */
+  opacity: 0; /* Make the content invisible */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Initially hide the gradient background */
+.gradient-overlay {
+  opacity: 0; /* Make the gradient invisible */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Show the content and gradient background on hover */
+.hover\:content-show:hover .text-section {
+  transform: translateY(0); /* Move content up to its normal position */
+  opacity: 1; /* Make the content visible */
+}
+
+.hover\:content-show:hover .gradient-overlay {
+  opacity: 0.5; /* Show the gradient background on hover */
+}
   </style>
 </head>
 
@@ -291,16 +313,14 @@
         <div class="flex space-x-4 lg:space-x-0 lg:grid lg:grid-cols-2 gap-4 lg:mt-8 lg:container w-max mx-auto">
 
           <!-- Card 1 -->
-          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
-            onmouseover="changeImage(this, './assets/youngClear.svg')"
-            onmouseout="changeImage(this, './assets/youngBur.svg')">
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto hover:content-show">
             <div
-              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
+              class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
             </div>
             <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/youngBur.svg" alt="" />
+              <img class="w-full h-full object-cover rounded-2xl" src="./assets/youngClear.svg" alt="" />
             </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
               <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
                 Young Jobber
               </h3>
@@ -317,16 +337,14 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
-            onmouseover="changeImage(this, './assets/familyClear.svg')"
-            onmouseout="changeImage(this, './assets/familyBlur.svg')">
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto hover:content-show">
             <div
-              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
+              class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
             </div>
             <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/familyBlur.svg" alt="The Family Man" />
+              <img class="w-full h-full object-cover rounded-2xl" src="./assets/familyClear.svg" alt="The Family Man" />
             </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
               <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
                 The Family Man
               </h3>
@@ -353,16 +371,14 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
-            onmouseover="changeImage(this, './assets/girlClear.svg')"
-            onmouseout="changeImage(this, './assets/girlBlur.svg')">
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto hover:content-show">
             <div
-              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
+              class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
             </div>
             <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlBlur.svg" alt="Working Mothers" />
+              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlClear.svg" alt="Working Mothers" />
             </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
               <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
                 Self Employed
               </h3>
@@ -379,17 +395,15 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto"
-            onmouseover="changeImage(this, './assets/girlChildClear.svg')"
-            onmouseout="changeImage(this, './assets/girlChildBlur.svg')">
+          <div class="bg-white rounded-2xl relative lg:h-[720px] h-[400px] w-full lg:w-auto hover:content-show">
             <div
-              class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent rounded-2xl opacity-50">
+              class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
             </div>
             <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlChildBlur.svg"
+              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlChildClear.svg"
                 alt="Working Mothers" />
             </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4">
+            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
               <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
                 Working Mothers
               </h3>
