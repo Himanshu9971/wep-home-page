@@ -61,22 +61,21 @@
 <body>
 
   <!-- Header Section Start -->
-  <header id="header" class="bg-white z-10 fixed top-0 w-full transition-all duration-500 ease-in-out shadow-lg">
+  <header id="header" class="bg-transparent z-10 fixed top-0 w-full transition-all duration-500 ease-in-out">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
       <div id="logo" class="text-2xl font-bold text-white">
         <a href="#">
-          <img src="./assets/kotak-logo1.svg" alt="Logo" />
+          <img src="./assets/kotak-life-white-logo.svg" alt="Logo" />
         </a>
       </div>
 
       <div class="relative">
         <div class="relative">
-          <button id="languageDropdown"
-            class="border border-gray-300 rounded-full py-2 px-4 text-gray-800 flex items-center justify-between">
+          <button id="languageDropdown" class="border rounded-full py-2 px-4 flex items-center justify-between">
             Language
             <span class="ml-2">
-              <img id="languageDropdownIcon" style="filter: invert(1);" src="./assets/chevron-down.svg" alt="Logo" />
+              <img id="languageDropdownIcon" src="./assets/chevron-down.svg" alt="Logo" />
             </span>
           </button>
           <div id="languageMenu" class="absolute left-0 w-full bg-white rounded-b-lg shadow-lg mt-2 hidden">
@@ -492,8 +491,7 @@
 
       <div class="container mx-auto text-center px-4">
 
-        <h1
-          class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] lg:block">
+        <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] lg:block">
           <span class="text-[#FF0000]">Discover the Right Plan</span>
           <span class="text-[#2651C0]"> for You</span>
 
@@ -503,7 +501,8 @@
           <img src="./assets/image4.svg" alt="virassat" />
         </div>
 
-        <div class="flex mt-4 justify-center items-center lg:w-[32rem] w-full mx-auto text-lg gap-4 border-b-2 border-[#FF0000]">
+        <div
+          class="flex mt-4 justify-center items-center lg:w-[32rem] w-full mx-auto text-lg gap-4 border-b-2 border-[#FF0000]">
           <button id="tab-1"
             class="tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
             onclick="switchTab('tab-1')">
@@ -1199,7 +1198,8 @@
       <div
         class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-20 lg:px-10 px-4 rounded-3xl bg-[#013974]">
         <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8">
-          <h2 class="text-left text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-medium text-white mb-4 capitalize">
+          <h2
+            class="text-left text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-medium text-white mb-4 capitalize">
             Your family deserves a</br> future without</br> worries
           </h2>
           <p class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-white text-left">Life is
@@ -1404,6 +1404,36 @@
     //   }
     // });
 
+    const header = document.getElementById('header');
+    const languageDropdown = document.getElementById('languageDropdown');
+    const languageMenuIcon = document.getElementById('languageDropdownIcon');
+    const logo = document.getElementById('logo').getElementsByTagName('img')[0];
+
+    languageDropdown.classList.add('text-white');
+    logo.src = './assets/kotak-life-white-logo.svg';
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.classList.add('bg-white');
+        header.classList.remove('bg-transparent');
+        header.classList.add('shadow-md');
+        languageMenuIcon.style.filter = 'invert(1)';
+
+        languageDropdown.classList.remove('text-white');
+        languageDropdown.classList.add('text-gray-800');
+        logo.src = './assets/kotak-logo1.svg';
+      } else {
+        header.classList.remove('bg-white');
+        header.classList.add('bg-transparent');
+        header.classList.remove('shadow-md');
+        languageMenuIcon.style.filter = 'invert(0)';
+
+        languageDropdown.classList.add('text-white');
+        languageDropdown.classList.remove('text-gray-800');
+        logo.src = './assets/kotak-life-white-logo.svg';
+      }
+    });
+
     const modal = document.getElementById("modal");
     const openModalButton1 = document.getElementById("openModalButton1");
     const openModalButton2 = document.getElementById("openModalButton2");
@@ -1411,26 +1441,20 @@
     const openModalButton4 = document.getElementById("openModalButton4");
     const closeModalButton = document.getElementById("closeModalButton");
 
-    // Function to open the modal
     function openModal() {
       modal.classList.remove("hidden");
     }
 
-    // Function to close the modal
     function closeModal() {
       modal.classList.add("hidden");
     }
 
-    // Add event listeners for buttons
     openModalButton1.addEventListener("click", openModal);
     openModalButton2.addEventListener("click", openModal);
     openModalButton3.addEventListener("click", openModal);
     openModalButton4.addEventListener("click", openModal);
 
-    // Close modal when clicking close button
     closeModalButton.addEventListener("click", closeModal);
-
-    // Optionally, close the modal if clicked outside the modal content
     modal.addEventListener("click", (event) => {
       if (event.target === modal) {
         closeModal();
@@ -1620,27 +1644,15 @@
     function openVideo(videoUrl) {
       const videoPopup = document.getElementById("videoPopup");
       const videoFrame = document.getElementById("videoFrame");
-
-      // Set the iframe source to the YouTube video URL
       videoFrame.src = videoUrl;
-
-      // Show the popup
       videoPopup.classList.remove("hidden");
     }
-
-    // Function to close the video popup
     document.getElementById("closePopup").addEventListener("click", function () {
       const videoPopup = document.getElementById("videoPopup");
       const videoFrame = document.getElementById("videoFrame");
-
-      // Reset the iframe src to stop the video
       videoFrame.src = '';
-
-      // Hide the popup
       videoPopup.classList.add("hidden");
     });
-
-    // Add event listeners to all video cards
     const videoCards = document.querySelectorAll(".video-card");
     videoCards.forEach(card => {
       card.addEventListener("click", function () {
