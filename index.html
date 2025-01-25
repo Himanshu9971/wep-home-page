@@ -1403,18 +1403,18 @@
     function switchTab(tabId) {
       const allTabButtons = document.querySelectorAll('.tab-button');
       allTabButtons.forEach(button => {
-        button.classList.remove('bg-[#FF0000]');
-        button.classList.add('bg-transparent');
-        button.classList.remove('text-white');
-        button.classList.add('text-[#2C2C2C]');
+        button.classList.add('bg-[#FF0000]');
+        button.classList.remove('bg-transparent');
+        button.classList.remove('text-[#2C2C2C]');
+        button.classList.add('text-white');
         button.classList.add('border-[#FF0000]');
       });
 
       const activeTabButton = document.getElementById(tabId);
-      activeTabButton.classList.remove('bg-transparent');
-      activeTabButton.classList.add('bg-[#FF0000]');
-      activeTabButton.classList.remove('text-[#2C2C2C]');
-      activeTabButton.classList.add('text-white');
+      activeTabButton.classList.add('bg-transparent');
+      activeTabButton.classList.remove('bg-[#FF0000]');
+      activeTabButton.classList.add('text-[#2C2C2C]');
+      activeTabButton.classList.remove('text-white');
       activeTabButton.classList.add('border-[#FF0000]');
 
       const allTabPanes = document.querySelectorAll('.tab-pane');
