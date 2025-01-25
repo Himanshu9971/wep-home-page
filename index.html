@@ -56,7 +56,7 @@
 <body>
 
   <!-- Header Section Start -->
-  <header id="header" class="bg-white z-10 fixed top-0 w-full transition-all duration-500 ease-in-out">
+  <header id="header" class="bg-white z-10 fixed top-0 w-full transition-all duration-500 ease-in-out shadow-lg">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
       <div id="logo" class="text-2xl font-bold text-white">
@@ -126,21 +126,22 @@
           <button id="muteUnmuteButton"
             class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
             <img id="muteIcon" src="./assets/unmute-cion.svg" class="h-8 w-8" alt="">
-            
+
             <img id="unmuteIcon" src="./assets/mute-icon.svg" class="h-8 w-8 hidden" alt="">
           </button>
-          <span class="text-white lg:block hidden">Mute/Unmute Video</span>
+          <!-- <span class="text-white lg:block hidden">Mute/Unmute Video</span> -->
         </div>
       </div>
 
       <div class="lg:flex hidden flex-col gap-4 items-start">
-        <h2 class="text-white text-[44px] font-bold">Welcome! together let’s <br> ensure aapki viraasat <br> banke hi
-          rahe.</h2>
-        <p class="text-white text-[16px] font-normal">We know the love and effort it takes to build a legacy. Let’s
-          ensure <br> it continues to
-          build exactly the way you envision</p>
+        <h2 class="text-white text-[28px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-bold">
+          Welcome! together let’s <br> ensure aapki viraasat <br> banke hi rahe.
+        </h2>
+        <p class="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[16px] font-normal">
+          We know the love and effort it takes to build a legacy. Let’s ensure <br> it continues to build exactly the way you envision.
+        </p>
         <a href="#plans-section"
-          class="flex justify-center items-center w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[16px] font-medium">
+          class="flex justify-center items-center w-[200px] sm:w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
           Explore your plan
         </a>
       </div>
@@ -151,10 +152,10 @@
       class=" absolute bottom-0 left-0 right-0 lg:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full"
       id="hiddenSection">
       <div class="px-8 py-4">
-        <h2 class="text-white lg:text-[44px] text-[32px] font-bold">Together let’s ensure</br>that your
-          legacy</br>continue to
-          grow,</br>hamesha.</h2>
-        <p class="text-white  lg:text-[16px] text-[12px] font-normal mb-4">Join a movement to build a legacy of
+        <h2 class="text-white text-[28px] font-bold">Together let’s ensure that your
+          legacy continue to
+          grow, hamesha.</h2>
+        <p class="text-white text-[12px] font-normal mb-4">Join a movement to build a legacy of
           protection,
           care, <br>and security
           for generations to come with Kotak.</p>
@@ -182,34 +183,36 @@
 
   <!-- Hero Section End -->
   <div id="myDiv"
-    class="bg-[#191919] lg:mt-2 text-white lg:px-8 px-[16px] py-[20px] lg:py-8 w-full flex lg:flex-row flex-col justify-between items-center fixed bottom-0 hidden"
+    class="bg-[#191919] lg:mt-2 text-white lg:h-24 h-28 w-full flex lg:flex-row flex-col justify-between items-center fixed bottom-0 hidden"
     style="z-index: 10;">
-    <span class="flex flex-col items-start lg:block hidden">
-      Wondering how much cover you need to protect your ‘Viraasat’? Calculate your cover now
-    </span>
-    <p class="text-white text-[14px] text-md lg:hidden block">
-      Wondering How Much Coverage You Need?
-    </p>
-    <button
-      class="lg:hidden block w-full text-[16px] lg:w-auto mt-2 text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
-      Calculate My Plan
-    </button>
-    <div class="lg:flex justify-end items-center hidden">
-      <button id="myButton" class=" bg-[#FF0000] text-white font-medium py-2 px-4 rounded-full mr-2">
-        Calculate my Plan
+    <div class="container mx-auto flex lg:flex-row flex-col lg:justify-between justify-center items-center h-full">
+      <span class="flex flex-col items-start lg:block hidden">
+        Wondering how much cover you need to protect your ‘Viraasat’?</br>Calculate your cover now
+      </span>
+      <p class="text-white text-[14px] text-md lg:hidden block">
+        Wondering How Much Coverage You Need?
+      </p>
+      <button
+        class="lg:hidden block w-[90%] text-[16px] lg:w-auto mt-2 text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-xl text-lg font-medium">
+        Calculate My Plan
       </button>
-      <svg id="myCloseIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="currentColor" class="w-6 h-6 close-icon">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6" />
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12" />
-      </svg>
+      <div class="lg:flex justify-end items-center lg:gap-4 hidden">
+        <button id="myButton" class=" bg-[#FF0000] text-white font-medium py-2 px-4 rounded-full mr-2">
+          Calculate my Plan
+        </button>
+        <svg id="myCloseIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="w-6 h-6 close-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12" />
+        </svg>
+      </div>
     </div>
   </div>
 
   <!-- Modal Background -->
   <div id="modal" class="fixed z-[99] inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
     <!-- Modal Content -->
-    <div class="bg-white rounded-[24px] w-[500px] h-auto p-[40px] relative">
+    <div class="bg-white lg:rounded-[24px] rounded-[12px] lg:w-[500px] w-[90%] h-auto lg:p-[40px] p-[20px] relative">
       <h2 class="text-xl font-semibold text-center mb-4">Secure Your Future Today</h2>
       <p class="text-sm text-gray-600 text-center mb-4">
         Fill in your details to get a personalized quote and take the first <br> step toward financial security.
@@ -237,13 +240,14 @@
         </div>
         <button id="closeModal" type="button"
           class="bg-[#FF0000] mt-2 text-white py-4 px-4 rounded-[12px] w-full hover:bg-red-600">
-          Get My Personalized Quote
+          Get my personalized quote
         </button>
       </form>
       <!-- Close Button -->
-      <button id="closeModalButton" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600">
+      <button id="closeModalButton"
+        class="absolute lg:top-5 lg:right-5 top-2 right-2 text-gray-400 hover:text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-          class="w-5 h-5">
+          class="lg:w-5 lg:h-5 w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
@@ -258,7 +262,7 @@
     <div class="container mx-auto text-center ">
 
       <div class="flex flex-col lg:flex-column items-center gap-4 px-4 lg:mb-0 mb-4">
-        <h1 class="lg:text-[48px] text-[24px] font-light text-[#2C2C2C]">
+        <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C]">
           <span class="text-[#FF0000]"> Viraasat: </span>
           <span class="text-[#2651C0]"> A reflection of your ambition, <br> dedication and love for your family</span>
           <div class="lg:ml-10 flex justify-center items-center lg:mt-6 mt-2">
@@ -266,18 +270,16 @@
           </div>
       </div>
 
-      <p class="lg:mt-4 px-4 text-[12px] lg:text-[16px] font-light text-[#7A7A7A]">We all aspire to leave behind
+      <p class="lg:mt-4 px-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">We all aspire to leave behind
         something meaningful
         for our family so that their future and dreams are secure. That’s why we put in so much effort to build assets —
         be it saving money, buying gold, or building a home.
       </p>
-      <p class="lg:mt-4  px-4 text-[12px] lg:text-[16px] font-light text-[#7A7A7A]">
+      <p class="lg:mt-4  px-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">
         But have you ever thought about what might happen if life takes an unexpected turn? What if the process of
         building your ‘Viraasat’ remains incomplete?
-
-
       </p>
-      <p class="lg:mt-4  px-4 text-[12px] lg:text-[16px] font-light text-[#7A7A7A]">
+      <p class="lg:mt-4  px-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">
         That’s where Kotak Life steps in — to ensure that your legacy continues to build uninterrupted and your dreams
         for your loved ones are fulfilled, no matter what.
       </p>
@@ -287,10 +289,10 @@
   <!-- Grid Section Layout end -->
 
   <!-- Grid Section Image Start -->
-  <section class="lg:py-16 py-8 bg-white">
+  <section class="lg:pt-16 pt-8 bg-white">
 
     <div class="container mx-auto text-center px-4">
-      <h1 class="lg:text-[40px] text-[24px] font-light text-center">
+      <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-center">
         <span class="text-[#FF0000] "> Because every legacy </span>
         <span class="text-[#2651C0]">deserves to be completed</span>
       </h1>
@@ -299,7 +301,7 @@
         <img src="./assets/image4.svg" alt="virassat" />
       </div>
 
-      <p class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">No matter where you stand in
+      <p class="mt-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">No matter where you stand in
         life, Kotak Life Virasat offers tailored plans for you to secure your family's
         <br>future against life's uncertainties
       </p>
@@ -316,13 +318,13 @@
               <img class="w-full h-full object-cover rounded-2xl" src="./assets/youngClear.svg" alt="" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
+              <h3 class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                 Young Jobber
               </h3>
-              <p class="text-left italic text-white mt-2 lg:text-[20px] text-[13px] lg:text-[20px] font-bold">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold">
                 How can you make your Viraasat continue to grow?
               </p>
-              <p class="text-left italic text-white mt-2 lg:text-[20px] text-[12px]">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
                 Kotak Term Insurance Plans provide a strong support system that ensures
                 the continuity of building Viraasat even when you are not around. Our
                 plans are designed to provide a comprehensive cover so that your legacy
@@ -339,13 +341,10 @@
               <img class="w-full h-full object-cover rounded-2xl" src="./assets/familyClear.svg" alt="The Family Man" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
+              <h3 class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                 The Family Man
               </h3>
-              <p class="text-left italic text-white mt-2 text-[13px] lg:text-[20px] font-bold">
-                Expand on click
-              </p>
-              <p class="text-left italic text-white mt-2 lg:text-[19px] text-[12px]">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
                 You are working tirelessly to build a better life for your family —
                 a bigger home, quality education for your children, and a comfortable
                 lifestyle. These aren’t just dreams, they’re the legacy you’re creating.
@@ -356,7 +355,7 @@
                 ensure your legacy keeps building, no matter whatever hurdle may come.
 
               </p>
-              <p class="text-left italic text-white mt-1 lg:text-[19px] text-[12px]">
+              <p class="text-left italic text-white mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
                 But what if life takes an unexpected turn, leaving this Viraasat incomplete? That’s why, it’s
                 equally important to ensure that the Viraasat you desire for your family continues to progress
                 uninterrupted.
@@ -372,13 +371,13 @@
               <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlClear.svg" alt="Working Mothers" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
+              <h3 class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                 Self Employed
               </h3>
-              <p class="text-left italic text-white mt-2 text-[13px] lg:text-[20px] font-bold">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold">
                 Build Your Dreams by Securing Futures
               </p>
-              <p class="text-left italic text-white mt-2 lg:text-[19px] text-[12px]">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
 
                 Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
                 Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
@@ -396,13 +395,13 @@
                 alt="Working Mothers" />
             </div>
             <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3 class="text-left italic lg:text-[48px] text-[24px] font-semibold text-white">
+              <h3 class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                 Working Mothers
               </h3>
-              <p class="text-left italic text-white mt-2 text-[13px] lg:text-[20px] font-bold">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold">
                 Empowering Women to Nurture Their Legacy
               </p>
-              <p class="text-left italic text-white mt-2 lg:text-[19px] text-[12px]">
+              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
 
                 Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
                 Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
@@ -423,7 +422,7 @@
 
     <div class="container mx-auto text-center px-4">
 
-      <h1 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] lg:block ">
+      <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] lg:block ">
         <span class="text-[#FF0000]">Discover the right plan</span>
         <span class="text-[#2651C0]"> for you</span>
 
@@ -436,23 +435,23 @@
       <div
         class="flex mt-4 justify-start items-center bg-[#F7F8F9] rounded-lg p-4 lg:w-[370px] w-full mx-auto text-lg gap-4">
         <button id="tab-1"
-          class="tab-button lg:text-[18px] text-[12px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
+          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
           onclick="switchTab('tab-1')">
           Kotak e-Term
         </button>
         <button id="tab-2"
-          class="tab-button lg:text-[18px] text-[12px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
+          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-4 py-3 rounded-lg font-medium flex justify-between items-center"
           onclick="switchTab('tab-2')">
           Gen2Gen Protect
         </button>
       </div>
-      <p id="gen2gen-paragraph" class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A]">
+      <p id="gen2gen-paragraph" class="mt-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">
         Kotak Gen2Gen Protect is an industry-first term plan that covers two generations under one plan. It ensures
         <br>your Viraasat is transferred from one generation to another.
       </p>
 
       <!-- Paragraph for Kotak e-Term -->
-      <p id="kotak-eterm-paragraph" class="mt-4 lg:text-[16px] text-[12px] font-light text-[#7A7A7A] hidden">
+      <p id="kotak-eterm-paragraph" class="mt-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A] hidden">
         Kotak e-Term: An ideal choice for those who want a comprehensive yet affordable plan
       </p>
 
@@ -474,9 +473,9 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/covers_two_generations.svg" class="w-6 h-6" alt="gen2" />
                 </div>
-                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Covers two generations
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Covers two generations
                 </h3>
-                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
                   Transfer the cover to your child at no extra cost
                   <!-- <br class="lg:hidden">
                   returned
@@ -492,8 +491,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/return_of-premiums.svg" class="w-6 h-6" alt="gen2" />
                 </div>
-                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
-                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Get back all your premiums at
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Get back all your premiums at
                   survival on maturity
                   <!-- <br class="hidden lg:block"> ROP and
                   Legacy ROP <br class="lg:hidden"> options -->
@@ -505,9 +504,9 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/multi.svg" class="w-6 h-6" alt="gen2" />
                 </div>
-                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Multiple plan options
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Multiple plan options
                 </h3>
-                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Choose between Legacy ROP and
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Choose between Legacy ROP and
                   Life ROP option
                   <!-- <br class="hidden lg:block"> plan with
                   seamless <br class="lg:hidden"> transfer of basic <br class="hidden lg:block">sum assured. -->
@@ -520,8 +519,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/enhanced_protection.svg" class="w-6 h-6" alt="gen2" />
                 </div>
-                <h3 class="lg:text-[18px] text-[12px] font-bold text-[#21272A] mb-2 text-left">Enhanced Protection</h3>
-                <p class="text-[#62696C] font-light lg:text-[16px] text-[12px] text-left">Get comprehensive coverage
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Enhanced Protection</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Get comprehensive coverage
                   with
                   an optional Critical Illness Rider
                   <!-- <br>
@@ -534,8 +533,7 @@
             <div class="flex justify-between items-center mt-32 w-full gap-4">
               <div class="flex flex-col justify-start items-center w-2/3">
                 <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
-                  <span class="text-[#FF0000]">With Kotak Gen2Gen Protect,</br>your legacy With Kotak Gen2Gen
-                    Protect,</span>
+                  <span class="text-[#FF0000]">With <b>Kotak Gen2Gen Protect</b>,</span>
                   <span class="text-[#2651C0]"> your legacy will last for generations, ensuring <b>Viraasat Ban Ke Hi
                       Rahegi.</b></span>
                 </h1>
@@ -570,8 +568,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/lifelong_coverage.svg" alt="gen2" />
                 </div>
-                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Lifelong coverage</h3>
-                <p class="text-[#62696C] font-light text-sm text-left">Get cover up to 85 years*</p>
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Lifelong coverage</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Get cover up to 85 years*</p>
               </div>
               <!-- First item in grid -->
 
@@ -581,8 +579,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/return_of_premiums_2.svg" alt="gen2" />
                 </div>
-                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
-                <p class="text-[#62696C] font-light text-sm text-left">Get your total premiums back at the age of 60
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Return of premiums</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Get your total premiums back at the age of 60
                   through the Special Exit Value option</p>
               </div>
               <!-- First item in grid -->
@@ -593,8 +591,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/flexi_cover_as_you_need.svg" alt="gen2" />
                 </div>
-                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Flexi cover as you need</h3>
-                <p class="text-[#62696C] font-light text-sm text-left">Adjust your life cover as per your life stages**
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Flexi cover as you need</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Adjust your life cover as per your life stages**
                 </p>
               </div>
               <!-- First item in grid -->
@@ -605,8 +603,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/comprehensive_coverage.svg" alt="gen2" />
                 </div>
-                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Comprehensive coverage</h3>
-                <p class="text-[#62696C] font-light text-sm text-left">Get enhanced protection with an optional Critical
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Comprehensive coverage</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Get enhanced protection with an optional Critical
                   Illness Rider</p>
               </div>
               <!-- First item in grid -->
@@ -617,8 +615,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/affordable_cover.svg" alt="gen2" />
                 </div>
-                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Affordable cover</h3>
-                <p class="text-[#62696C] font-light text-sm text-left">Get a high cover at an affordable premium</p>
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Affordable cover</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Get a high cover at an affordable premium</p>
               </div>
               <!-- First item in grid -->
 
@@ -628,8 +626,8 @@
                   <!-- First SVG Icon -->
                   <img src="./assets/discovery_icons/tax_savings.svg" alt="gen2" />
                 </div>
-                <h3 class="text-lg font-bold text-[#21272A] mb-2 text-left">Tax Savings</h3>
-                <p class="text-[#62696C] font-light text-sm text-left">Save taxes under Section 80C for added financial
+                <h3 class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">Tax Savings</h3>
+                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">Save taxes under Section 80C for added financial
                   advantage.</p>
               </div>
               <!-- First item in grid -->
@@ -638,7 +636,7 @@
             <div class="flex justify-between items-center mt-32 w-full gap-4">
               <div class="flex flex-col justify-start items-center w-2/3">
                 <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
-                  <span class="text-[#FF0000]">With Kotak e-Term,</span>
+                  <span class="text-[#FF0000]">With <b>Kotak e-Term</b>,</span>
                   <span class="text-[#2651C0]"><b>Viraasat Ban Ke hi Rahegi.</b></span>
                 </h1>
                 <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
@@ -655,8 +653,8 @@
         </div>
 
         <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
-          <button id="openModal"
-            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
+          <button id="openModalButton1"
+            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
             Get your personalized quote
           </button>
         </div>
@@ -674,7 +672,7 @@
     <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="flex flex-col justify-end items-center">
         <div class="flex flex-col items-center">
-          <h2 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] mb-4 text-center">
+          <h2 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] mb-4 text-center">
             <span class="text-[#FF0000]">Why kotak</span>
             <span class="text-[#2651C0]"> life?</span>
 
@@ -682,10 +680,10 @@
               <img src="./assets/image4.svg" alt="virassat" />
             </div>
         </div>
-        <p class="text-md font-light text-[#7A7A7A] lg:block hidden text-center">At kotak Life insurance, we provide
+        <p class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A] lg:block hidden text-center">At kotak Life insurance, we provide
           peace of mind
-          with our policies,</br> earning the trust of thousands to protect their futures</p>
-        <p class="text-sm text-center font-light text-[#7A7A7A] lg:hidden block text-center">At kotak Life insurance, we
+          with our</br>policies, earning the trust of thousands to protect their futures</p>
+        <p class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center font-light text-[#7A7A7A] lg:hidden block text-center">At kotak Life insurance, we
           provide
           peace of mind with our policies, earning the trust of thousands to protect their futures</p>
         <div class="flex justify-center items-center mt-4 lg:flex w-full hidden">
@@ -693,15 +691,15 @@
         </div>
       </div>
 
-      <div class="w-full lg:pb-8 pb-4">
+      <div class="w-full lg:pb-16 pb-8">
         <div class="grid grid-cols-2 lg:gap-8 gap-4">
 
           <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
             <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <img src="./assets/happy-cst-users.png" class="p-1" alt="virassat" />
+              <img src="./assets/happy-cst-users.svg" class="p-1" alt="virassat" />
             </div>
-            <div class="font-bold lg:text-3xl text-xl mt-4 text-left">1 lakh+
-              <span class="text-gray-400 font-light flex text-2xl">
+            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">1 lakh+
+              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 Trusted agents<sup>θ</sup>
               </span>
             </div>
@@ -709,13 +707,10 @@
 
           <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
             <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
-              </svg>
+              <img src="./assets/happy-cst-ratio.svg" class="p-1" alt="virassat" />
             </div>
-            <div class="font-bold lg:text-3xl text-xl mt-4 text-left">98.29%
-              <span class="text-gray-400 font-light flex text-2xl">
+            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">98.29%
+              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 Claim settlement ratio<sup>#</sup>
               </span>
             </div>
@@ -723,13 +718,10 @@
 
           <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
             <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
-              </svg>
+              <img src="./assets/happy-cst-branches.svg" class="p-1" alt="virassat" />
             </div>
-            <div class="font-bold lg:text-3xl text-xl mt-4 text-left">322
-              <span class="text-gray-400 font-light flex text-2xl">
+            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">322
+              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 Branches as on 31<sup>st</sup> Dec 2024
               </span>
             </div>
@@ -737,13 +729,10 @@
 
           <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
             <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-500" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 21s8-6.2 8-10a4 4 0 0 0-8-4A4 4 0 0 0 4 11c0 3.8 8 10 8 10z"></path>
-              </svg>
+              <img src="./assets/happy-cst-solvency.svg" class="p-1" alt="virassat" />
             </div>
-            <div class="font-bold lg:text-3xl text-xl mt-4 text-left">Solvency ratio
-              <span class="text-gray-400 font-light flex text-2xl">
+            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">Solvency ratio
+              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 2.56<sup>∞</sup>
               </span>
             </div>
@@ -753,7 +742,7 @@
 
         <div class="flex justify-center items-center w-full lg:pt-8 pt-4">
           <button id="openModal"
-            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
+            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
             Join our happy policyholders
           </button>
         </div>
@@ -769,7 +758,7 @@
 
     <div class="mx-auto px-4">
       <div class="flex flex-col items-center">
-        <h2 class="lg:text-[40px] text-[24px] font-light text-[#2C2C2C] mb-4 lg:text-left text-center">
+        <h2 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] mb-4 lg:text-left text-center">
           <span class="text-[#FF0000]">Have questions?</span>
           <span class="text-[#2651C0]"> we’ve got the answers!</span>
 
@@ -778,7 +767,7 @@
           </div>
       </div>
       <div class="mx-auto max-w-5xl lg:mt-8 grid">
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-4 py-2">
           <details class="group" open>
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -803,7 +792,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-4 py-2">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -825,7 +814,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-4 py-2">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -848,7 +837,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-4 py-2">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -872,7 +861,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4">
+        <div class="lg:py-4 py-2">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -896,7 +885,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4 faq-item-hidden">
+        <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -921,7 +910,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4 faq-item-hidden">
+        <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -947,7 +936,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4 faq-item-hidden">
+        <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -972,7 +961,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4 faq-item-hidden">
+        <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -995,7 +984,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4 faq-item-hidden">
+        <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1021,7 +1010,7 @@
             </p>
           </details>
         </div>
-        <div class="lg:py-8 py-4 faq-item-hidden">
+        <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1049,10 +1038,10 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
+      <div class="flex justify-center items-center w-full lg:pt-6 pt-4">
         <button id="load-more"
-          class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
-          Load More
+          class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
+          Load more faq
         </button>
       </div>
 
@@ -1062,23 +1051,23 @@
   <!-- Faq Section Ends -->
 
   <!-- Bottom Banner Starts -->
-  <div class="container mx-auto text-center lg:py-16 lg:py-8 py-8 px-4">
+  <div class="container mx-auto text-center lg:pt-16 pt-8 px-4">
 
     <div
       class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-20 lg:px-10 px-4 rounded-3xl bg-[#013974]">
       <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8">
-        <h2 class="text-left lg:text-[40px] text-[24px] font-medium text-white mb-4">
+        <h2 class="text-left text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-medium text-white mb-4">
           Your family deserves a</br> future without</br> worries
         </h2>
-        <p class="lg:text-[16px] text-[12px] font-light text-white text-left">Life is full of surprise, but your
+        <p class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-white text-left">Life is full of surprise, but your
           family's future <br>
           doesn't
           have to be uncertain. Within virasat by <br> Kotak Life, you take protective
           steps ton ensure your <br> financial
           security.</p>
         <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
-          <button id="openModal"
-            class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg lg:text-[20px] text-[16px] font-medium">
+          <button id="openModalButton2"
+            class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
             Get your personalized quote
           </button>
         </div>
@@ -1214,7 +1203,7 @@
       closeIcon.addEventListener('click', () => {
         myDiv.style.display = "none";
       })
-      
+
       const div = document.getElementById('myDiv');
 
       const myDiv = document.getElementById("myDiv");
@@ -1230,23 +1219,52 @@
       });
     });
 
+    // const modal = document.getElementById("modal");
+    // const openModal = document.getElementById("openModal");
+    // const closeModal = document.getElementById("closeModal");
+    // const closeModalButton = document.getElementById("closeModalButton");
+    // openModal.addEventListener("click", () => {
+    //   modal.classList.remove("hidden");
+    // });
+    // closeModal.addEventListener("click", () => {
+    //   modal.classList.add("hidden");
+    // });
+    // closeModalButton.addEventListener("click", () => {
+    //   modal.classList.add("hidden");
+    // });
+
+    // modal.addEventListener("click", (e) => {
+    //   if (e.target === modal) {
+    //     modal.classList.add("hidden");
+    //   }
+    // });
+
     const modal = document.getElementById("modal");
-    const openModal = document.getElementById("openModal");
-    const closeModal = document.getElementById("closeModal");
+    const openModalButton1 = document.getElementById("openModalButton1");
+    const openModalButton2 = document.getElementById("openModalButton2");
     const closeModalButton = document.getElementById("closeModalButton");
-    openModal.addEventListener("click", () => {
+
+    // Function to open the modal
+    function openModal() {
       modal.classList.remove("hidden");
-    });
-    closeModal.addEventListener("click", () => {
+    }
+
+    // Function to close the modal
+    function closeModal() {
       modal.classList.add("hidden");
-    });
-    closeModalButton.addEventListener("click", () => {
-      modal.classList.add("hidden");
-    });
-    
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.classList.add("hidden");
+    }
+
+    // Add event listeners for buttons
+    openModalButton1.addEventListener("click", openModal);
+    openModalButton2.addEventListener("click", openModal);
+
+    // Close modal when clicking close button
+    closeModalButton.addEventListener("click", closeModal);
+
+    // Optionally, close the modal if clicked outside the modal content
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        closeModal();
       }
     });
 
@@ -1314,26 +1332,26 @@
         button.classList.remove('text-white');
         button.classList.add('text-[#2C2C2C]');
       });
-      
+
       const activeTabButton = document.getElementById(tabId);
       activeTabButton.classList.remove('bg-transparent');
       activeTabButton.classList.add('bg-[#FF0000]');
       activeTabButton.classList.remove('text-[#2C2C2C]');
       activeTabButton.classList.add('text-white');
-      
+
       const allTabPanes = document.querySelectorAll('.tab-pane');
       allTabPanes.forEach(pane => {
         pane.classList.add('hidden');
       });
-      
+
       const selectedTabContent = document.getElementById('content-' + tabId);
       selectedTabContent.classList.remove('hidden');
-      
+
       const gen2genParagraph = document.getElementById('gen2gen-paragraph');
       const kotakEtermParagraph = document.getElementById('kotak-eterm-paragraph');
       gen2genParagraph.classList.add('hidden');
       kotakEtermParagraph.classList.add('hidden');
-      
+
       if (tabId === 'tab-1') {
         gen2genParagraph.classList.remove('hidden');
       } else if (tabId === 'tab-2') {
@@ -1386,7 +1404,7 @@
 
       window.addEventListener('scroll', handleScroll);
       window.addEventListener('resize', handleResize);
-      
+
       function isMobile() {
         const mediaQuery = window.matchMedia('(max-width: 820px)');
         return mediaQuery.matches;
@@ -1410,19 +1428,19 @@
     document.getElementById('load-more').addEventListener('click', function () {
       const hiddenItems = document.querySelectorAll('.faq-item-hidden');
       const allItems = document.querySelectorAll('.faq-item-hidden, .faq-item-visible');
-      
-      if (this.innerText === 'Load More') {
+
+      if (this.innerText === 'Load more faq') {
         hiddenItems.forEach(item => {
           item.classList.remove('faq-item-hidden');
           item.classList.add('faq-item-visible');
         });
-        this.innerText = 'Load Less';
+        this.innerText = 'Load less faq';
       } else {
         allItems.forEach(item => {
           item.classList.remove('faq-item-visible');
           item.classList.add('faq-item-hidden');
         });
-        this.innerText = 'Load More';
+        this.innerText = 'Load more faq';
       }
     });
 
