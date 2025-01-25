@@ -55,6 +55,16 @@
     .faq-item-visible {
       display: block;
     }
+    .tab-button.active-tab:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      background-color: white;
+      height: 15px;
+      z-index: 9999999;
+    }
   </style>
 </head>
 
@@ -330,7 +340,7 @@
               </div>
               <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
                 <h3
-                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  class="text-left text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                   The Family Man
                 </h3>
                 <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
@@ -361,7 +371,7 @@
               </div>
               <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
                 <h3
-                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  class="text-left text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                   Self-Made Business Owner
                 </h3>
                 <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
@@ -395,7 +405,7 @@
               </div>
               <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
                 <h3
-                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  class="text-left text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                   Working Woman
                 </h3>
                 <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
@@ -426,7 +436,7 @@
               </div>
               <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
                 <h3
-                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  class="text-left text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
                   Early Jobber
                 </h3>
                 <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
@@ -504,12 +514,12 @@
         <div
           class="flex mt-4 justify-center items-center lg:w-[32rem] w-full mx-auto text-lg gap-4 border-b-2 border-[#FF0000]">
           <button id="tab-1"
-            class="tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
+            class="relative tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
             onclick="switchTab('tab-1')">
             Kotak e-Term
           </button>
           <button id="tab-2"
-            class="tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
+            class="relative tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
             onclick="switchTab('tab-2')">
             Gen2Gen Protect
           </button>
@@ -1303,7 +1313,7 @@
     </div>
 
     <div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
-      <button id="closePopup" class="absolute lg:top-24 lg:right-24 top-24 right-4 text-white text-xl">
+      <button id="closePopup" class="absolute lg:top-24 lg:right-24 top-24 right-4 text-white text-xl z-10">
         <img src="./assets/close-video.svg" class="lg:w-16 w-8" alt="plus" />
       </button>
       <div class="relative lg:w-[85vw] lg:h-[85vh] flex justify-center items-center">
@@ -1521,20 +1531,22 @@
       const allTabButtons = document.querySelectorAll('.tab-button');
       allTabButtons.forEach(button => {
         button.classList.add('bg-[#FF0000]');
+        button.classList.remove('active-tab')
         button.classList.remove('bg-transparent');
         button.classList.remove('text-[#2C2C2C]');
         button.classList.add('text-white');
         button.classList.add('border-[#FF0000]');
-        button.classList.remove('shadow-[0_0_15px_#FF0000]');
+        button.classList.remove('shadow-[0_-5px_15px_#FF0000]');
       });
 
       const activeTabButton = document.getElementById(tabId);
       activeTabButton.classList.add('bg-transparent');
+      activeTabButton.classList.add('active-tab')
       activeTabButton.classList.remove('bg-[#FF0000]');
       activeTabButton.classList.add('text-[#2C2C2C]');
       activeTabButton.classList.remove('text-white');
       activeTabButton.classList.add('border-[#FF0000]');
-      activeTabButton.classList.add('shadow-[0_0_15px_#FF0000]');
+      activeTabButton.classList.add('shadow-[0_-5px_15px_#FF0000]');
 
       const allTabPanes = document.querySelectorAll('.tab-pane');
       allTabPanes.forEach(pane => {
