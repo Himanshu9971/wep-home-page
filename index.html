@@ -99,82 +99,83 @@
   </header>
   <!-- Header Section end -->
   <main>
-  <!-- Hero Section Start -->
-  <div class="lg:h-[698px] h-screen relative flex justify-center items-center">
-    <!-- Video and overlay -->
-    <video id="video" class="w-full h-full object-cover" autoplay muted loop
-      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div
-      class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent lg:opacity-80 opacity-50">
-    </div>
+    <!-- Hero Section Start -->
+    <div class="lg:h-[698px] h-screen relative flex justify-center items-center">
+      <!-- Video and overlay -->
+      <video id="video" class="w-full h-full object-cover" autoplay muted loop
+        src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div
+        class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out bg-gradient-to-r from-black via-gray-900 to-transparent lg:opacity-80 opacity-50">
+      </div>
 
-    <div
-      class="w-full absolute left-0 right-0 lg:bottom-12 lg:top-auto top-0 bottom-0 container mx-auto flex lg:flex-row flex-col lg:justify-between justify-start lg:items-end items-start p-4 lg:gap-0 lg:pt-4 pt-24 gap-4">
-      <div class="w-1/2 flex justify-start items-center gap-4">
-        <!-- <div class="h-auto flex justify-start gap-4 items-center">
-          <button id="playPauseButton"
-            class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
-            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
-            </svg>
-            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z"></path>
-            </svg>
-          </button>
-          <span class="text-white lg:block hidden">watch the video</span>
-        </div> -->
-        <div class="h-auto flex justify-start gap-4 items-center">
-          <button id="muteUnmuteButton"
-            class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
-            <img id="muteIcon" src="./assets/unmute-cion.svg" class="h-8 w-8" alt="">
+      <div
+        class="w-full absolute left-0 right-0 lg:bottom-12 lg:top-auto top-0 bottom-0 container mx-auto flex lg:flex-row flex-col lg:justify-between justify-start lg:items-end items-start p-4 lg:gap-0 lg:pt-4 pt-24 gap-4">
+        <div class="w-1/2 flex justify-start items-center gap-4">
+          <div class="h-auto flex justify-start gap-4 items-center">
+            <button id="playPauseButton"
+              class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
+              <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+              </svg>
+              <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19h4V5H6zm8 0h4V5h-4z">
+                </path>
+              </svg>
+            </button>
+            <!-- <span class="text-white lg:block hidden">watch the video</span> -->
+          </div>
+          <div class="h-auto flex justify-start gap-4 items-center">
+            <button id="muteUnmuteButton"
+              class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
+              <img id="muteIcon" src="./assets/unmute-cion.svg" class="h-8 w-8" alt="">
 
-            <img id="unmuteIcon" src="./assets/mute-icon.svg" class="h-8 w-8 hidden" alt="">
-          </button>
-          <!-- <span class="text-white lg:block hidden">Mute/Unmute Video</span> -->
+              <img id="unmuteIcon" src="./assets/mute-icon.svg" class="h-8 w-8 hidden" alt="">
+            </button>
+            <!-- <span class="text-white lg:block hidden">Mute/Unmute Video</span> -->
+          </div>
+        </div>
+
+        <div class="lg:flex hidden flex-col gap-4 items-start">
+          <h2 class="text-white text-[28px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-bold capitalize">
+            Welcome! together let’s <br> ensure aapki viraasat <br> banke hi rahe.
+          </h2>
+          <p class="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[16px] font-normal">
+            We know the love and effort it takes to build a legacy. Let’s ensure <br> it continues to build exactly the
+            way you envision.
+          </p>
+          <a href="#plans-section"
+            class="capitalize flex justify-center items-center w-[200px] sm:w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium">
+            Explore your plan
+          </a>
         </div>
       </div>
 
-      <div class="lg:flex hidden flex-col gap-4 items-start">
-        <h2 class="text-white text-[28px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-bold">
-          Welcome! together let’s <br> ensure aapki viraasat <br> banke hi rahe.
-        </h2>
-        <p class="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[16px] font-normal">
-          We know the love and effort it takes to build a legacy. Let’s ensure <br> it continues to build exactly the
-          way you envision.
-        </p>
-        <a href="#plans-section"
-          class="flex justify-center items-center w-[200px] sm:w-[230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
-          Explore your plan
-        </a>
+      <!-- Hidden section initially -->
+      <div
+        class=" absolute bottom-0 left-0 right-0 lg:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full"
+        id="hiddenSection">
+        <div class="px-8 py-4">
+          <h2 class="text-white text-[28px] font-bold capitalize">Together let’s ensure that your
+            legacy continue to
+            grow, hamesha.</h2>
+          <p class="text-white text-[12px] font-normal mb-4">Join a movement to build a legacy of
+            protection,
+            care, <br>and security
+            for generations to come with Kotak.</p>
+          <a href="#plans-section"
+            class="capitalize flex justify-center items-center [230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[16px] font-medium">
+            Explore your plan
+          </a>
+        </div>
       </div>
+
     </div>
 
-    <!-- Hidden section initially -->
-    <div
-      class=" absolute bottom-0 left-0 right-0 lg:hidden hidden flex-col gap-4 items-start transition-transform transform translate-y-full"
-      id="hiddenSection">
-      <div class="px-8 py-4">
-        <h2 class="text-white text-[28px] font-bold">Together let’s ensure that your
-          legacy continue to
-          grow, hamesha.</h2>
-        <p class="text-white text-[12px] font-normal mb-4">Join a movement to build a legacy of
-          protection,
-          care, <br>and security
-          for generations to come with Kotak.</p>
-        <a href="#plans-section"
-          class="flex justify-center items-center [230px] h-[56px] text-white bg-[#FF0000] rounded-lg text-[16px] font-medium">
-          Explore your plan
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- <div id="myDiv" class="bg-[#191919] hidden z-[99] py-[20px] px-[16px] w-full fixed bottom-0 left-0">
+    <!-- <div id="myDiv" class="bg-[#191919] hidden z-[99] py-[20px] px-[16px] w-full fixed bottom-0 left-0">
     <div class="flex w-full  flex-col items-center justify-center text-center">
       <p class="text-white text-[14px] text-md">
         Wondering How Much Coverage You Need?
@@ -187,8 +188,8 @@
   </div> -->
 
 
-  <!-- Hero Section End -->
-  <!-- <div id="myDiv"
+    <!-- Hero Section End -->
+    <!-- <div id="myDiv"
     class="bg-[#191919] lg:mt-2 text-white lg:h-24 h-28 w-full flex lg:flex-row flex-col justify-between items-center fixed bottom-0 hidden"
     style="z-index: 10;">
     <div class="container mx-auto flex lg:flex-row flex-col lg:justify-between justify-center items-center h-full">
@@ -215,787 +216,866 @@
     </div>
   </div> -->
 
-  <!-- Modal Background -->
-  <div id="modal" class="fixed z-[99] inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
-    <!-- Modal Content -->
-    <div class="bg-white lg:rounded-[24px] rounded-[12px] lg:w-[500px] w-[90%] h-auto lg:p-[40px] p-[20px] relative">
-      <h2 class="text-xl font-semibold text-center mb-4">Secure your future today</h2>
-      <p class="text-sm text-gray-600 text-center mb-4">
-        Fill in your details to get a personalized quote and take the first <br> step toward financial security.
-      </p>
-      <form>
-        <div class="mb-4">
-          <label for="name" class="block text-sm font-medium">Name:</label>
-          <input id="name" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
-            placeholder="Enter your full name" />
-        </div>
-        <div class="mb-4">
-          <label for="age" class="block text-sm font-medium">Age:</label>
-          <input id="age" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
-            placeholder="How old are you?" />
-        </div>
-        <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium">Phone Number:</label>
-          <input id="phone" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
-            placeholder="Provide your mobile number" />
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-sm font-medium">Email Address (optional):</label>
-          <input id="email" type="email" class="w-full mt-1 border rounded-[12px] px-3 py-2"
-            placeholder="Enter your email for updates" />
-        </div>
-        <button id="closeModal" type="button"
-          class="bg-[#FF0000] mt-2 text-white py-4 px-4 rounded-[12px] w-full hover:bg-red-600">
-          Get my personalized quote
+    <!-- Modal Background -->
+    <div id="modal" class="fixed z-[99] inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <!-- Modal Content -->
+      <div class="bg-white lg:rounded-[24px] rounded-[12px] lg:w-[500px] w-[90%] h-auto lg:p-[40px] p-[20px] relative">
+        <h2 class="text-xl font-semibold text-center mb-4 capitalize">Secure your future today</h2>
+        <p class="text-sm text-gray-600 text-center mb-4">
+          Fill in your details to get a personalized quote and take the first <br> step toward financial security.
+        </p>
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium">Name:</label>
+            <input id="name" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
+              placeholder="Enter your full name" />
+          </div>
+          <div class="mb-4">
+            <label for="age" class="block text-sm font-medium">Age:</label>
+            <input id="age" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
+              placeholder="How old are you?" />
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-sm font-medium">Phone Number:</label>
+            <input id="phone" type="text" class="w-full mt-1  border rounded-[12px] px-3 py-2"
+              placeholder="Provide your mobile number" />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium">Email Address (optional):</label>
+            <input id="email" type="email" class="w-full mt-1 border rounded-[12px] px-3 py-2"
+              placeholder="Enter your email for updates" />
+          </div>
+          <button id="closeModal" type="button"
+            class="capitalize bg-[#FF0000] mt-2 text-white py-4 px-4 rounded-[12px] w-full hover:bg-red-600">
+            Get my personalized quote
+          </button>
+        </form>
+        <!-- Close Button -->
+        <button id="closeModalButton"
+          class="absolute lg:top-5 lg:right-5 top-2 right-2 text-gray-400 hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="lg:w-5 lg:h-5 w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </button>
-      </form>
-      <!-- Close Button -->
-      <button id="closeModalButton"
-        class="absolute lg:top-5 lg:right-5 top-2 right-2 text-gray-400 hover:text-gray-600">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-          class="lg:w-5 lg:h-5 w-8 h-8">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
-
-
-  <!-- Grid Section Layout Start -->
-  <section class="lg:py-16 py-8 bg-[#F4F3F6]">
-
-    <div class="container mx-auto text-center ">
-
-      <div class="flex flex-col lg:flex-column items-center gap-4 px-4 lg:mb-0 mb-4">
-        <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C]">
-          <span class="text-[#FF0000]"> Viraasat: </span>
-          <span class="text-[#2651C0]"> A reflection of your ambition, <br> dedication and love for your family</span>
-          <div class="lg:ml-10 flex justify-center items-center lg:mt-6 mt-2">
-            <img src="./assets/image4.svg" alt="virassat" />
-          </div>
-      </div>
-
-      <p class="lg:mt-4 px-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">We all
-        aspire to leave behind
-        something meaningful
-        for our family so that their future and dreams are secure. That’s why we put in so much effort to build assets —
-        be it saving money, buying gold, or building a home.
-      </p>
-      <p class="lg:mt-4  px-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">
-        But have you ever thought about what might happen if life takes an unexpected turn? What if the process of
-        building your ‘Viraasat’ remains incomplete?
-      </p>
-      <p class="lg:mt-4  px-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">
-        That’s where Kotak Life steps in — to ensure that your legacy continues to build uninterrupted and your dreams
-        for your loved ones are fulfilled, no matter what.
-      </p>
-    </div>
-
-  </section>
-  <!-- Grid Section Layout end -->
-
-  <!-- Grid Section Image Start -->
-  <section class="lg:pt-16 pt-8 bg-white">
-
-    <div class="container mx-auto text-center px-4">
-      <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-center">
-        <span class="text-[#FF0000] "> Because every legacy </span>
-        <span class="text-[#2651C0]">deserves to be completed</span>
-      </h1>
-
-      <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
-        <img src="./assets/image4.svg" alt="virassat" />
-      </div>
-
-      <p class="mt-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">No matter where
-        you stand in
-        life, Kotak Life Virasat offers tailored plans for you to secure your family's
-        <br>future against life's uncertainties
-      </p>
-
-      <!-- Wrapper for horizontal scrolling on mobile -->
-      <div class="mt-8 overflow-x-auto lg:overflow-hidden">
-        <div class="flex space-x-4 lg:space-x-0 lg:grid lg:grid-cols-2 lg:gap-4 lg:mt-8 lg:container w-max mx-auto">
-
-          <!-- Card 1 -->
-          <div
-            class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
-            data-video-url="https://www.youtube.com/embed/ACYud4vrG0g">
-            <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
-            </div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/youngClear.svg" alt="" />
-            </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3
-                class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
-                Young Jobber
-              </h3>
-              <p
-                class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold">
-                How can you make your Viraasat continue to grow?
-              </p>
-              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-                Kotak Term Insurance Plans provide a strong support system that ensures
-                the continuity of building Viraasat even when you are not around. Our
-                plans are designed to provide a comprehensive cover so that your legacy
-                is always ensured.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
-            data-video-url="https://www.youtube.com/embed/UhxM6qDT2oo">
-            <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
-            </div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/familyClear.svg" alt="The Family Man" />
-            </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3
-                class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
-                The Family Man
-              </h3>
-              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-                You are working tirelessly to build a better life for your family —
-                a bigger home, quality education for your children, and a comfortable
-                lifestyle. These aren’t just dreams, they’re the legacy you’re creating.
-                Building this legacy often requires you to stretch financially through
-                loans, EMIs, etc. While you can handle it all, but what if something happens
-                tomorrow? Will your family be able to carry forward this legacy or will it
-                become a burden for them? That’s why you need a strong support system to
-                ensure your legacy keeps building, no matter whatever hurdle may come.
-
-              </p>
-              <p class="text-left italic text-white mt-1 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-                But what if life takes an unexpected turn, leaving this Viraasat incomplete? That’s why, it’s
-                equally important to ensure that the Viraasat you desire for your family continues to progress
-                uninterrupted.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
-            data-video-url="https://www.youtube.com/embed/cr0T22xYTqU">
-            <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
-            </div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlClear.svg" alt="Working Mothers" />
-            </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3
-                class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
-                Self Employed
-              </h3>
-              <p
-                class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold">
-                Build Your Dreams by Securing Futures
-              </p>
-              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-
-                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
-                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
-                Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div
-            class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
-            data-video-url="https://www.youtube.com/embed/JNaJed6OA3g">
-            <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
-            </div>
-            <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
-              <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlChildClear.svg"
-                alt="Working Mothers" />
-            </div>
-            <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
-              <h3
-                class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
-                Working Mothers
-              </h3>
-              <p
-                class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold">
-                Empowering Women to Nurture Their Legacy
-              </p>
-              <p class="text-left italic text-white mt-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]">
-
-                Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed.
-                Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar.
-                Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.
-              </p>
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
 
-  </section>
-  <!-- Grid Section Image End -->
 
-  <!-- Grow Virasat Section Start -->
-  <section id="plans-section" class="lg:py-16 py-8 bg-white">
 
-    <div class="container mx-auto text-center px-4">
+    <!-- Grid Section Layout Start -->
+    <section class="lg:py-16 py-8 bg-[#F4F3F6]">
 
-      <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] lg:block ">
-        <span class="text-[#FF0000]">Discover the right plan</span>
-        <span class="text-[#2651C0]"> for you</span>
+      <div class="container mx-auto text-center ">
 
-      </h1>
+        <div class="flex flex-col lg:flex-column items-center gap-4 px-4 lg:mb-0 mb-4">
+          <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] capitalize">
+            <span class="text-[#FF0000]"> Viraasat: </span>
+            <span class="text-[#2651C0]"> A reflection of your ambition, <br> dedication and love for your family</span>
+            <div class="lg:ml-10 flex justify-center items-center lg:mt-6 mt-2">
+              <img src="./assets/image4.svg" alt="virassat" />
+            </div>
+        </div>
 
-      <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
-        <img src="./assets/image4.svg" alt="virassat" />
+        <p class="lg:mt-4 px-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">You
+          aspire to leave behind something meaningful for your family so that their future and dreams are
+          secure. That&#39;s why you put in so much effort to build assets – be it saving money, buying gold, or
+          building a home.
+        </p>
+        <p class="lg:mt-4  px-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">
+          But have you ever thought about what might happen if life takes an unexpected turn? What if the
+          process of building your &#39;Viraasat&#39; remains incomplete?
+        </p>
+        <p class="lg:mt-4  px-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">
+          That&#39;s where Kotak Life steps in – to ensure that your ‘Viraasat’ continues to build uninterrupted and
+          your dreams for your loved ones are fulfilled, no matter what!
+        </p>
       </div>
 
-      <div class="flex mt-4 justify-center items-center lg:w-max w-full mx-auto text-lg gap-4">
-        <button id="tab-1"
-          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
-          onclick="switchTab('tab-1')">
-          Kotak e-Term
-        </button>
-        <button id="tab-2"
-          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
-          onclick="switchTab('tab-2')">
-          Gen2Gen Protect
-        </button>
-      </div>
-      <p id="kotak-eterm-paragraph"
-        class="mt-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A]">
-        Kotak Gen2Gen Protect is an industry-first term plan that covers two generations under one plan. It ensures
-        <br>your Viraasat is transferred from one generation to another.
-      </p>
+    </section>
+    <!-- Grid Section Layout end -->
 
-      <!-- Paragraph for Kotak e-Term -->
-      <p id="gen2gen-paragraph"
-        class="mt-4 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A] hidden">
-        Kotak e-Term: An ideal choice for those who want a comprehensive yet affordable plan
-      </p>
+    <!-- Grid Section Image Start -->
+    <section class="lg:pt-16 pt-8 bg-white">
 
-      <div class="tab-content container mx-auto lg:pt-16 pt-8">
-        <!-- Parent Grid Section -->
-        <div id="content-tab-2" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
-          <!-- Left side with image -->
-          <div class="relative">
-            <img src="./assets/GEN2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
-          </div>
+      <div class="container mx-auto text-center px-4">
+        <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-center capitalize">
+          <span class="text-[#FF0000] "> Because every legacy </span>
+          <span class="text-[#2651C0]">deserves to be completed</span>
+        </h1>
 
-          <!-- Right side with a 2-column grid -->
-          <div class="w-full h-full py-6">
+        <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
+          <img src="./assets/image4.svg" alt="virassat" />
+        </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-start w-full">
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/covers_two_generations.svg" class="w-6 h-6" alt="gen2" />
-                </div>
+        <p class="mt-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">No matter
+          where
+          you stand in
+          life, Kotak Life Virasat offers tailored plans for you to secure your family's
+          <br>future against life's uncertainties
+        </p>
+
+        <!-- Wrapper for horizontal scrolling on mobile -->
+        <div class="mt-8 overflow-x-auto lg:overflow-hidden">
+          <div class="flex space-x-4 lg:space-x-0 lg:grid lg:grid-cols-2 lg:gap-4 lg:mt-8 lg:container w-max mx-auto">
+
+            <!-- Card 1 -->
+            <div
+              class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
+              data-video-url="https://www.youtube.com/embed/UhxM6qDT2oo">
+              <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
+              </div>
+              <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+                <img class="w-full h-full object-cover rounded-2xl" src="./assets/familyClear.svg"
+                  alt="The Family Man" />
+              </div>
+              <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
                 <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Covers two generations
+                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  The Family Man
                 </h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Transfer the cover to your child at no extra cost
-                  <!-- <br class="lg:hidden">
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  You are working tirelessly to build a better life for your family — a bigger home, quality education
+                  for
+                  your children, and a comfortable lifestyle. These aren&#39;t just dreams; they are the legacy, the
+                  Viraasat
+                  that you are creating. Building this Viraasat often requires you to stretch financially through loans,
+                  EMIs,
+                  etc. While you can handle it all now, what if something happens tomorrow? Will your family be able to
+                  carry forward this Viraasat, or will it become a burden for them? That&#39;s why you need a strong
+                  support
+                  system to ensure your Viraasat keeps building, no matter what!
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
+              data-video-url="https://www.youtube.com/embed/ACYud4vrG0g">
+              <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
+              </div>
+              <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+                <img class="w-full h-full object-cover rounded-2xl" src="./assets/youngClear.svg" alt="" />
+              </div>
+              <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
+                <h3
+                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  Early Jobber
+                </h3>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  You’re hustling hard, chasing dreams—whether it’s launching your own start-up, pursuing higher
+                  studies, or buying your first home. That’s the legacy, the Viraasat you want to build. Something that
+                  your family can always be proud of.
+                </p>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  But chasing dreams isn’t easy; you have to stretch your time, energy, and money. What if the dreams,
+                  the legacy you are hustling so hard to build, is left incomplete due to any unfortunate circumstances?
+                  Will your Viraasat then become a pressure rather than a source of pride for your family?
+                </p>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  That’s why you need a strong support system, so that you can move ahead with confidence, knowing
+                  that the Viraasat you are building will never be a burden on your family.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
+              data-video-url="https://www.youtube.com/embed/cr0T22xYTqU">
+              <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
+              </div>
+              <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+                <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlClear.svg"
+                  alt="Working Mothers" />
+              </div>
+              <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
+                <h3
+                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  Self-Made Business Owner
+                </h3>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  Your business is your pride, and you are working hard to grow it further. After all, it’s the legacy,
+                  the
+                  Viraasat, that you are building for your family.
+                </p>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+
+                  But being self-made comes with its fair share of challenges – long working hours, business loans, and
+                  financial commitments. While you can handle it all now, what if life’s unexpected turns leave this
+                  process of building Viraasat incomplete? Will your Viraasat then become a burden on your family?
+                </p>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+
+                  That’s why you need a strong support system to ensure your legacy keeps building, no matter what!
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full lg:w-auto hover:content-show video-card"
+              data-video-url="https://www.youtube.com/embed/JNaJed6OA3g">
+              <div class="absolute top-0 left-0 w-full h-full gradient-overlay rounded-2xl opacity-50">
+              </div>
+              <div class="mb-4 text-4xl flex justify-center items-center text-blue-500 h-full">
+                <img class="w-full h-full object-cover rounded-2xl" src="./assets/girlChildClear.svg"
+                  alt="Working Mothers" />
+              </div>
+              <div class="absolute bottom-0 left-0 w-full lg:p-12 p-4 text-section">
+                <h3
+                  class="text-left italic text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] font-semibold text-white">
+                  Working Woman
+                </h3>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+                  As today&#39;s woman, you are not just a caregiver but also an equally important financial provider to
+                  the
+                  family. You are equally contributing to building a Viraasat for your family – whether it&#39;s paying
+                  the EMIs
+                  for the house, saving money, or buying gold.
+                </p>
+                <p class="text-left italic text-white mt-2 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
+
+                  But what if something happens tomorrow? Will it affect the process of building this Viraasat?
+                  That&#39;s why
+                  you need a strong support system to ensure your legacy keeps building, no matter what!
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Grid Section Image End -->
+
+    <!-- Grid Section Layout Start -->
+    <section class="lg:py-16 py-8 bg-[#F4F3F6]">
+
+      <div class="container mx-auto text-center ">
+
+        <div class="flex flex-col lg:flex-column items-center gap-4 px-4 lg:mb-0 mb-4">
+          <h1 class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] capitalize">
+            <span class="text-[#FF0000]">Your Legacy Deserves</br></span>
+            <span class="text-[#2651C0]">a Plan as Strong as Your Aspirations</span>
+            <div class="lg:ml-10 flex justify-center items-center lg:mt-6 mt-2">
+              <img src="./assets/image4.svg" alt="virassat" />
+            </div>
+        </div>
+
+        <p class="lg:mt-4 px-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">You
+          aspire to leave behind something meaningful for your family so that their future and dreams are
+          secure. That&#39;s why you put in so much effort to build assets – be it saving money, buying gold, or
+          building a home.
+        </p>
+        <p class="lg:mt-4  px-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">
+          But have you ever thought about what might happen if life takes an unexpected turn? What if the
+          process of building your &#39;Viraasat&#39; remains incomplete?
+        </p>
+        <p class="lg:mt-4  px-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">
+          That&#39;s where Kotak Life steps in – to ensure that your ‘Viraasat’ continues to build uninterrupted and
+          your dreams for your loved ones are fulfilled, no matter what!
+        </p>
+      </div>
+
+    </section>
+    <!-- Grid Section Layout end -->
+
+    <!-- Grow Virasat Section Start -->
+    <section id="plans-section" class="lg:py-16 py-8 bg-white">
+
+      <div class="container mx-auto text-center px-4">
+
+        <h1
+          class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] lg:block capitalize">
+          <span class="text-[#FF0000]">Discover the right plan</span>
+          <span class="text-[#2651C0]"> for you</span>
+
+        </h1>
+
+        <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
+          <img src="./assets/image4.svg" alt="virassat" />
+        </div>
+
+        <div class="flex mt-4 justify-center items-center lg:w-max w-full mx-auto text-lg gap-4">
+          <button id="tab-1"
+            class="tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
+            onclick="switchTab('tab-1')">
+            Kotak e-Term
+          </button>
+          <button id="tab-2"
+            class="tab-button text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
+            onclick="switchTab('tab-2')">
+            Gen2Gen Protect
+          </button>
+        </div>
+        <p id="kotak-eterm-paragraph"
+          class="mt-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A]">
+          <b>Kotak Gen2Gen Protect:</b> is an industry-first term plan that covers two generations under one plan. It
+          ensures
+          <br>your Viraasat is transferred from one generation to another.
+        </p>
+
+        <!-- Paragraph for Kotak e-Term -->
+        <p id="gen2gen-paragraph"
+          class="mt-4 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A] hidden">
+          <b>Kotak e-Term:</b> An ideal choice for those who want a comprehensive yet affordable plan
+        </p>
+
+        <div class="tab-content container mx-auto lg:pt-16 pt-8">
+          <!-- Parent Grid Section -->
+          <div id="content-tab-2" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
+            <!-- Left side with image -->
+            <div class="relative">
+              <img src="./assets/GEN2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
+            </div>
+
+            <!-- Right side with a 2-column grid -->
+            <div class="w-full h-full py-6">
+
+              <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-start w-full">
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/covers_two_generations.svg" class="w-6 h-6" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Covers two generations
+                  </h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Transfer the cover to your child at no extra cost
+                    <!-- <br class="lg:hidden">
                   returned
                   <br class="hidden lg:block">
                   upon maturity. -->
-                </p>
+                  </p>
 
-              </div>
-
-              <!-- Second item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/return_of-premiums.svg" class="w-6 h-6" alt="gen2" />
                 </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Return of premiums</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Get back all your premiums at
-                  survival on maturity
-                  <!-- <br class="hidden lg:block"> ROP and
+
+                <!-- Second item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/return_of-premiums.svg" class="w-6 h-6" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Return of premiums</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Get back all your premiums at
+                    survival on maturity
+                    <!-- <br class="hidden lg:block"> ROP and
                   Legacy ROP <br class="lg:hidden"> options -->
-                </p>
-              </div>
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/multi.svg" class="w-6 h-6" alt="gen2" />
+                  </p>
                 </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Multiple plan options
-                </h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Choose between Legacy ROP and
-                  Life ROP option
-                  <!-- <br class="hidden lg:block"> plan with
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/multi.svg" class="w-6 h-6" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Multiple plan options
+                  </h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Choose between Legacy ROP and
+                    Life ROP option
+                    <!-- <br class="hidden lg:block"> plan with
                   seamless <br class="lg:hidden"> transfer of basic <br class="hidden lg:block">sum assured. -->
-                </p>
-              </div>
-
-              <!-- Second item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/enhanced_protection.svg" class="w-6 h-6" alt="gen2" />
+                  </p>
                 </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Enhanced Protection</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Get comprehensive coverage
-                  with
-                  an optional Critical Illness Rider
-                  <!-- <br>
+
+                <!-- Second item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/enhanced_protection.svg" class="w-6 h-6" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Enhanced Protection</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Get comprehensive coverage
+                    with
+                    an optional Critical Illness Rider
+                    <!-- <br>
                   exclusively for
                   female lives. -->
-                </p>
-              </div>
-            </div>
+                  </p>
+                </div>
 
-            <div class="flex justify-between items-center lg:mt-32 mt-16 w-full gap-4">
-              <div class="flex flex-col justify-start items-center w-2/3">
-                <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
-                  <span class="text-[#FF0000]">With <b>Kotak Gen2Gen Protect</b>,</span>
-                  <span class="text-[#2651C0]"> your legacy will last for generations, ensuring <b>Viraasat Ban Ke Hi
-                      Rahegi.</b></span>
-                </h1>
-                <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
-                  <img src="./assets/image4.svg" alt="virassat">
+                <!-- Second item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/tax_savings.svg" class="w-6 h-6" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Tax Savings</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Save taxes under Section 80C for added financial advantage.
+                    <!-- <br>
+                  exclusively for
+                  female lives. -->
+                  </p>
                 </div>
               </div>
-              <div class="flex justify-center items-center w-1/3">
-                <img src="./assets/seal_image.svg" class="w-full" alt="icon" />
-              </div>
-            </div>
 
-          </div>
-
-        </div>
-
-        <!-- Parent Grid Section -->
-        <div id="content-tab-1" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
-          <!-- Left side with image -->
-          <div class="relative">
-            <img src="./assets//kotak2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
-          </div>
-
-          <!-- Right side with a 2-column grid -->
-          <div class="w-full h-full py-6">
-
-            <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-start w-full">
-
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/lifelong_coverage.svg" alt="gen2" />
+              <div class="flex justify-between items-center lg:mt-32 mt-16 w-full gap-4">
+                <div class="flex flex-col justify-start items-center w-2/3">
+                  <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
+                    <span class="text-[#FF0000]">With <b>Kotak Gen2Gen Protect</b>,</span>
+                    <span class="text-[#2651C0]"> <b>Viraasat Ban Ke Hi
+                        Rahegi.</b></span>
+                  </h1>
+                  <div class="flex justify-center lg:mt-6 mt-2">
+                    <img src="./assets/image4.svg" alt="virassat">
+                  </div>
                 </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Lifelong coverage</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Get cover up to 85 years*</p>
-              </div>
-              <!-- First item in grid -->
-
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/return_of_premiums_2.svg" alt="gen2" />
-                </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Return of premiums</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Get your total premiums back at the age of 60
-                  through the Special Exit Value option</p>
-              </div>
-              <!-- First item in grid -->
-
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/flexi_cover_as_you_need.svg" alt="gen2" />
-                </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Flexi cover as you need</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Adjust your life cover as per your life stages**
-                </p>
-              </div>
-              <!-- First item in grid -->
-
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/comprehensive_coverage.svg" alt="gen2" />
-                </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Comprehensive coverage</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Get enhanced protection with an optional Critical
-                  Illness Rider</p>
-              </div>
-              <!-- First item in grid -->
-
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/affordable_cover.svg" alt="gen2" />
-                </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Affordable cover</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Get a high cover at an affordable premium</p>
-              </div>
-              <!-- First item in grid -->
-
-              <!-- First item in grid -->
-              <div class="flex flex-col">
-                <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-                  <!-- First SVG Icon -->
-                  <img src="./assets/discovery_icons/tax_savings.svg" alt="gen2" />
-                </div>
-                <h3
-                  class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-[#21272A] mb-2 text-left">
-                  Tax Savings</h3>
-                <p class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
-                  Save taxes under Section 80C for added financial
-                  advantage.</p>
-              </div>
-              <!-- First item in grid -->
-            </div>
-
-            <div class="flex justify-between items-center lg:mt-32 mt-16 w-full gap-4">
-              <div class="flex flex-col justify-start items-center w-2/3">
-                <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
-                  <span class="text-[#FF0000]">With <b>Kotak e-Term</b>,</span>
-                  <span class="text-[#2651C0]"><b>Viraasat Ban Ke hi Rahegi.</b></span>
-                </h1>
-                <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
-                  <img src="./assets/image4.svg" alt="virassat">
+                <div class="flex justify-center items-center w-1/3">
+                  <img src="./assets/seal_image.svg" class="w-full" alt="icon" />
                 </div>
               </div>
-              <div class="flex justify-center items-center w-1/3">
-                <img src="./assets/seal_image.svg" class="w-full" alt="icon" />
-              </div>
+
             </div>
 
           </div>
 
-        </div>
+          <!-- Parent Grid Section -->
+          <div id="content-tab-1" class="grid grid-cols-1 lg:grid-cols-2 gap-8 tab-pane hidden">
+            <!-- Left side with image -->
+            <div class="relative">
+              <img src="./assets//kotak2.svg" alt="Image" class="w-full h-full object-cover rounded-lg shadow-lg" />
+            </div>
 
-        <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
-          <button id="openModalButton1"
-            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
-            Get your personalized quote
-          </button>
+            <!-- Right side with a 2-column grid -->
+            <div class="w-full h-full py-6">
+
+              <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 items-start w-full">
+
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/lifelong_coverage.svg" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Lifelong coverage</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Get cover up to 85 years*</p>
+                </div>
+                <!-- First item in grid -->
+
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/return_of_premiums_2.svg" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Return of premiums</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Get your total premiums back at the age of 60
+                    through the Special Exit Value option</p>
+                </div>
+                <!-- First item in grid -->
+
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/flexi_cover_as_you_need.svg" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Flexi cover as you need</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Adjust your life cover as per your life stages**
+                  </p>
+                </div>
+                <!-- First item in grid -->
+
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/comprehensive_coverage.svg" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Comprehensive coverage</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Get enhanced protection with an optional Critical
+                    Illness Rider</p>
+                </div>
+                <!-- First item in grid -->
+
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/affordable_cover.svg" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Affordable cover</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Get a high cover at an affordable premium</p>
+                </div>
+                <!-- First item in grid -->
+
+                <!-- First item in grid -->
+                <div class="flex flex-col">
+                  <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                    <!-- First SVG Icon -->
+                    <img src="./assets/discovery_icons/tax_savings.svg" alt="gen2" />
+                  </div>
+                  <h3
+                    class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#21272A] mb-2 text-left">
+                    Tax Savings</h3>
+                  <p
+                    class="text-[#62696C] font-light text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] text-left">
+                    Save taxes under Section 80C for added financial
+                    advantage.</p>
+                </div>
+                <!-- First item in grid -->
+              </div>
+
+              <div class="flex justify-between items-center lg:mt-32 mt-16 w-full gap-4">
+                <div class="flex flex-col justify-start items-center w-2/3">
+                  <h1 class="text-xl font-light text-[#2C2C2C] lg:block">
+                    <span class="text-[#FF0000]">With <b>Kotak e-Term</b>,</span>
+                    <span class="text-[#2651C0]"><b>Viraasat Ban Ke hi Rahegi.</b></span>
+                  </h1>
+                  <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
+                    <img src="./assets/image4.svg" alt="virassat">
+                  </div>
+                </div>
+                <div class="flex justify-center items-center w-1/3">
+                  <img src="./assets/seal_image.svg" class="w-full" alt="icon" />
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="flex justify-center items-center w-full lg:pt-16 pt-8">
+            <button id="openModalButton1"
+              class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium capitalize">
+              Get your personalised quote
+            </button>
+          </div>
+
         </div>
 
       </div>
 
+    </section>
+    <!-- Grow Virasat Section End -->
+
+    <!-- Why Kotak Life Starts -->
+    <div class="relative w-full h-full bg-[#F3F4F6] lg:pt-16 pt-8">
+
+      <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="flex flex-col justify-end items-center">
+          <div class="flex flex-col items-center">
+            <h2
+              class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] mb-4 text-center capitalize">
+              <span class="text-[#FF0000]">Why kotak</span>
+              <span class="text-[#2651C0]"> life?</span>
+
+              <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
+                <img src="./assets/image4.svg" alt="virassat" />
+              </div>
+          </div>
+          <p
+            class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-[#7A7A7A] lg:block hidden text-center">
+            &quot;With a legacy of trust and reliability, Kotak Life Insurance is the choice of thousands who want to
+            secure
+            their Viraasat.&quot;
+          <p
+            class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-center font-light text-[#7A7A7A] lg:hidden block text-center">
+            At kotak Life insurance, we
+            provide
+            peace of mind with our policies, earning the trust of thousands to protect their futures</p>
+          <div class="flex justify-center items-center mt-4 lg:flex w-full hidden">
+            <img src="./assets//happy-cutomers-bg.svg" alt="Image" class="w-auto max-h-[28rem]" />
+          </div>
+        </div>
+
+        <div class="w-full lg:pb-16 pb-8">
+          <div class="grid grid-cols-2 lg:gap-8 gap-4">
+
+            <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
+              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                <img src="./assets/happy-cust-smile.svg" class="p-1" alt="virassat" />
+              </div>
+              <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">5 crore+
+                <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
+                  Happy customers
+                </span>
+              </div>
+            </div>
+
+            <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
+              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                <img src="./assets/happy-cst-users.svg" class="p-1" alt="virassat" />
+              </div>
+              <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">1 lakh+
+                <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
+                  Trusted agents<sup>θ</sup>
+                </span>
+              </div>
+            </div>
+
+            <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
+              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                <img src="./assets/happy-cst-ratio.svg" class="p-1" alt="virassat" />
+              </div>
+              <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">98.29%
+                <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
+                  Claim settlement ratio<sup>#</sup>
+                </span>
+              </div>
+            </div>
+
+            <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
+              <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
+                <img src="./assets/happy-cst-branches.svg" class="p-1" alt="virassat" />
+              </div>
+              <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">322
+                <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
+                  Branches as on 31<sup>st</sup> Dec 2024
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center items-center w-full lg:pt-8 pt-4">
+            <button id="openModalButton3"
+              class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium capitalize">
+              Join our happy policyholders
+            </button>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+    <!-- Why Kotak Life Ends -->
 
-  </section>
-  <!-- Grow Virasat Section End -->
+    <!-- Faq Section starts -->
+    <div class="container bg-white lg:py-16 py-8 mx-auto">
 
-  <!-- Why Kotak Life Starts -->
-  <div class="relative w-full h-full bg-[#F3F4F6] lg:pt-16 pt-8">
-
-    <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
-      <div class="flex flex-col justify-end items-center">
+      <div class="mx-auto px-4">
         <div class="flex flex-col items-center">
           <h2
-            class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] mb-4 text-center">
-            <span class="text-[#FF0000]">Why kotak</span>
-            <span class="text-[#2651C0]"> life?</span>
+            class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] mb-4 lg:text-left text-center capitalize">
+            <span class="text-[#FF0000]">Have questions?</span>
+            <span class="text-[#2651C0]"> we’ve got the answers!</span>
 
             <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
               <img src="./assets/image4.svg" alt="virassat" />
             </div>
         </div>
-        <p
-          class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-[#7A7A7A] lg:block hidden text-center">
-          At kotak Life insurance, we provide
-          peace of mind
-          with our</br>policies, earning the trust of thousands to protect their futures</p>
-        <p
-          class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-center font-light text-[#7A7A7A] lg:hidden block text-center">
-          At kotak Life insurance, we
-          provide
-          peace of mind with our policies, earning the trust of thousands to protect their futures</p>
-        <div class="flex justify-center items-center mt-4 lg:flex w-full hidden">
-          <img src="./assets//happy-cutomers-bg.svg" alt="Image" class="w-auto max-h-[28rem]" />
-        </div>
-      </div>
+        <div class="mx-auto max-w-5xl lg:mt-8 grid">
+          <div class="lg:py-4 py-2">
+            <details class="group" open>
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]"> What is Term Insurance?
+                </span>
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                Term insurance is a type of life insurance policy that provides financial security to the
+                policyholder’s family in case of the policyholder’s untimely demise during the policy term. The policy’s
+                proceeds can help loved ones by providing a strong financial support system.
 
-      <div class="w-full lg:pb-16 pb-8">
-        <div class="grid grid-cols-2 lg:gap-8 gap-4">
 
-          <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
-            <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <img src="./assets/happy-cust-smile.svg" class="p-1" alt="virassat" />
-            </div>
-            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">5 crore+
-              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
-                Happy customers
-              </span>
-            </div>
+              </p>
+            </details>
           </div>
+          <div class="lg:py-4 py-2">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]">What is the Best Age to Buy Term Insurance?
+                </span>
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                The best age to buy term insurance is in the 20s or early 30s, as premiums are lower and one can
+                secure a higher coverage for a longer tenure.
 
-          <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
-            <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <img src="./assets/happy-cst-users.svg" class="p-1" alt="virassat" />
-            </div>
-            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">1 lakh+
-              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
-                Trusted agents<sup>θ</sup>
-              </span>
-            </div>
+              </p>
+            </details>
           </div>
+          <div class="lg:py-4 py-2">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]">Is Term Insurance Tax-Free?
+                </span>
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                Yes, term insurance is tax-free in two ways: premiums paid are eligible for deductions under
+                Section 80C of the Income Tax Act, and the claim amount received by the nominee is tax-free under
+                Section 10(10D), subject to certain conditions.
 
-          <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
-            <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <img src="./assets/happy-cst-ratio.svg" class="p-1" alt="virassat" />
-            </div>
-            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">98.29%
-              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
-                Claim settlement ratio<sup>#</sup>
-              </span>
-            </div>
+              </p>
+            </details>
           </div>
+          <div class="lg:py-4 py-2">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]">What is the Age Range to Purchase a Term Insurance Plan?
 
-          <div class="text-center lg:p-8 p-4 bg-white rounded-2xl">
-            <div class="mb-4 w-10 h-10 rounded-md flex justify-center items-center bg-[#CADDF7]">
-              <img src="./assets/happy-cst-branches.svg" class="p-1" alt="virassat" />
-            </div>
-            <div class="font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] mt-4 text-left">322
-              <span class="text-gray-400 font-light block text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
-                Branches as on 31<sup>st</sup> Dec 2024
-              </span>
-            </div>
+                </span>
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                The age range to purchase a term insurance plan starts from 18 years and can be up to 65 years, for
+                Kotak Life’s protection plans.
+
+
+              </p>
+            </details>
           </div>
+          <div class="lg:py-4 py-2">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]">What is a Critical Illness Rider?
 
-        </div>
+                </span>
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                It is an added advantage to be attached to a term insurance plan wherein the policyholder is
+                provided with a lump sum amount if the life insured on that policy is diagnosed with any of the covered
+                critical illnesses under the plan
 
-        <div class="flex justify-center items-center w-full lg:pt-8 pt-4">
-          <button id="openModalButton3"
-            class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
-            Join our happy policyholders
-          </button>
-        </div>
 
-      </div>
-    </div>
-
-  </div>
-  <!-- Why Kotak Life Ends -->
-
-  <!-- Faq Section starts -->
-  <div class="container bg-white lg:py-16 py-8 mx-auto">
-
-    <div class="mx-auto px-4">
-      <div class="flex flex-col items-center">
-        <h2
-          class="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-light text-[#2C2C2C] mb-4 lg:text-left text-center">
-          <span class="text-[#FF0000]">Have questions?</span>
-          <span class="text-[#2651C0]"> we’ve got the answers!</span>
-
-          <div class="flex justify-center lg:ml-10 lg:mt-6 mt-2">
-            <img src="./assets/image4.svg" alt="virassat" />
+              </p>
+            </details>
           </div>
-      </div>
-      <div class="mx-auto max-w-5xl lg:mt-8 grid">
-        <div class="lg:py-4 py-2">
-          <details class="group" open>
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="max-w-3xl"> What is Term Insurance?
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
+          <div class="lg:py-4 py-2 faq-item-hidden">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]">Is there a Term Plan for Smokers?
+
+
                 </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
                 </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light lg:text-[18px] text-[12px] text-left">
-              Term insurance is a type of life insurance policy that provides
-              financial security to your family in case of your untimely demise during the policy term. The death
-              benefits offered under this policy can help your loved ones manage daily expenses, pay off debts, or
-              achieve future goals.
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                Yes, Kotak Life does have term insurance plans that can be availed by smokers.
 
 
-            </p>
-          </details>
-        </div>
-        <div class="lg:py-4 py-2">
-          <details class="group">
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="lg:max-w-max max-w-[80%]">What is the best age to buy term insurance?
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
+              </p>
+            </details>
+          </div>
+          <div class="lg:py-4 py-2 faq-item-hidden">
+            <details class="group">
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
+                <span class="lg:max-w-max max-w-[80%]">Is it Necessary to Buy a Rider with Term Insurance?
+
+
                 </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
+                <span class="transition group-open:rotate-180 text-4xl font-medium">
+                  <span class="group-open:hidden">
+                    <img src="./assets/open-faq.svg" class="w-8" alt="plus" />
+                  </span>
+                  <span class="group-open:block hidden">
+                    <img src="./assets/close-faq.svg" class="w-8" alt="plus" />
+                  </span>
                 </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
-              The best age to buy term insurance is in your 20s or early 30s, as premiums are lower and you can secure a
-              higher coverage for a longer tenure, ensuring financial protection for your family at an affordable cost.
-
-            </p>
-          </details>
-        </div>
-        <div class="lg:py-4 py-2">
-          <details class="group">
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="lg:max-w-max max-w-[80%]"> Is term insurance tax-free?
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
-                </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
-                </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
-              Yes, term insurance is tax-free in two ways: premiums paid are eligible for deductions under Section 80C
-              of the Income Tax Act, and the claim amount received by the nominee is tax-free under Section 10(10D),
-              subject to certain conditions.
-
-            </p>
-          </details>
-        </div>
-        <div class="lg:py-4 py-2">
-          <details class="group">
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="lg:max-w-max max-w-[80%]">What is the age limit to purchase a term insurance plan?
-
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
-                </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
-                </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
-              The maximum age limit to purchase a term insurance plan can be up to 65 years, but it depends on the
-              policy of the insurance company.
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
+                Riders are add-ons that provide additional coverage and benefits in addition to the basic term
+                insurance policy. While there is no compulsion to buy a rider with term insurance, it is always
+                recommended to consider riders in your policy to ensure comprehensive protection at a reasonable
+                cost.
 
 
-            </p>
-          </details>
-        </div>
-        <div class="lg:py-4 py-2">
-          <details class="group">
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="lg:max-w-max max-w-[80%]">What is a critical illness rider?
-
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
-                </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
-                </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
-              It is an added advantage to be attached to a term insurance plan wherein the policyholder is provided with
-              a lump sum amount if the life insured on that policy is diagnosed with any covered critical illness.
-
-
-            </p>
-          </details>
-        </div>
-        <div class="lg:py-4 py-2 faq-item-hidden">
-          <details class="group">
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="lg:max-w-max max-w-[80%]"> Is there a term plan for smokers?
-
-
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
-                </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
-                </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
-              Yes, some insurers specifically provide term plans for smokers, keeping in view the higher health risks
-              that smoking brings to the table.
-
-
-            </p>
-          </details>
-        </div>
-        <div class="lg:py-4 py-2 faq-item-hidden">
-          <details class="group">
-            <summary
-              class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
-              <span class="lg:max-w-max max-w-[80%]"> Is it necessary to buy a rider with term insurance?
-
-
-              </span>
-              <span class="transition group-open:rotate-180 text-4xl font-medium">
-                <span class="group-open:hidden">
-                  <img src="./assets/open-faq.svg" alt="plus" />
-                </span>
-                <span class="group-open:block hidden">
-                  <img src="./assets/close-faq.svg" alt="plus" />
-                </span>
-              </span>
-            </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
-              There is no compulsion to buy a rider with term insurance. It is purely optional and depends upon the
-              needs and choice of a policyholder. Riders are add-ons that provide additional coverage and benefits in
-              addition to the basic term insurance policy
-
-
-            </p>
-          </details>
-        </div>
-        <!-- <div class="lg:py-4 py-2 faq-item-hidden">
+              </p>
+            </details>
+          </div>
+          <!-- <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1012,7 +1092,7 @@
                 </span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
               Kotak Gen2Gen Protect is one of its kind protection plan that offers you a life cover that can be passed
               to your children.
 
@@ -1020,7 +1100,7 @@
             </p>
           </details>
         </div> -->
-        <!-- <div class="lg:py-4 py-2 faq-item-hidden">
+          <!-- <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1036,14 +1116,14 @@
                 </span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
               There are 2 plan options under Kotak Gen2Gen Protect. Legacy ROP and Life ROP.
 
 
             </p>
           </details>
         </div> -->
-        <!-- <div class="lg:py-4 py-2 faq-item-hidden">
+          <!-- <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1061,7 +1141,7 @@
                 </span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
               You have the flexibility to select the age at which you wish to receive the return of premium, only on
               survival. After which under Legacy ROP, your life cover will be transferred to your child.
 
@@ -1069,7 +1149,7 @@
             </p>
           </details>
         </div> -->
-        <!-- <div class="lg:py-4 py-2 faq-item-hidden">
+          <!-- <div class="lg:py-4 py-2 faq-item-hidden">
           <details class="group">
             <summary
               class="flex cursor-pointer list-none items-center justify-between lg:text-[24px] text-[16px] font-light text-[#21272A] mb-2 text-left">
@@ -1087,7 +1167,7 @@
                 </span>
               </span>
             </summary>
-            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  lg:text-[18px] text-[12px] text-left">
+            <p class="group-open:animate-fadeIn mt-3 text-[#62696C] font-light  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-left">
               Life ROP is like a regular insurance plan where you get a return of premium on your survival till
               maturity.
 
@@ -1095,60 +1175,61 @@
             </p>
           </details>
         </div> -->
-      </div>
+        </div>
 
-      <!-- <div class="flex justify-center items-center w-full lg:pt-6 pt-4">
+        <!-- <div class="flex justify-center items-center w-full lg:pt-6 pt-4">
         <button id="load-more"
-          class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
+          class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium">
           Load more faq
         </button>
       </div> -->
 
-    </div>
-
-  </div>
-  <!-- Faq Section Ends -->
-
-  <!-- Bottom Banner Starts -->
-  <div class="container mx-auto text-center lg:pt-16 pt-8 px-4">
-
-    <div
-      class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-20 lg:px-10 px-4 rounded-3xl bg-[#013974]">
-      <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8">
-        <h2 class="text-left text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-medium text-white mb-4">
-          Your family deserves a</br> future without</br> worries
-        </h2>
-        <p class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-white text-left">Life is full
-          of surprise, but your
-          family's future <br>
-          doesn't
-          have to be uncertain. Within virasat by <br> Kotak Life, you take protective
-          steps ton ensure your <br> financial
-          security.</p>
-        <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
-          <button id="openModalButton2"
-            class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-medium">
-            Get your personalized quote
-          </button>
-        </div>
       </div>
 
+    </div>
+    <!-- Faq Section Ends -->
 
-      <div class="w-full">
-        <!-- Background Circle -->
-        <div class="lg:absolute top-[-80px] right-0 bottom-0 lg:w-auto w-full">
-          <img class="w-full h-full" src="./assets/bottom-section-bg_1.svg" alt="Circle Image" />
+    <!-- Bottom Banner Starts -->
+    <div class="container mx-auto text-center lg:pt-16 pt-8 px-4">
+
+      <div
+        class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-20 lg:px-10 px-4 rounded-3xl bg-[#013974]">
+        <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8">
+          <h2 class="text-left text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-medium text-white mb-4 capitalize">
+            Your family deserves a</br> future without</br> worries
+          </h2>
+          <p class="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-light text-white text-left">Life is
+            full
+            of surprise, but your
+            family's future <br>
+            doesn't
+            have to be uncertain. Within virasat by <br> Kotak Life, you take protective
+            steps ton ensure your <br> financial
+            security.</p>
+          <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
+            <button id="openModalButton2"
+              class="lg:w-auto w-full text-[#FF0000] bg-white px-8 py-3 rounded-lg text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium capitalize">
+              Get your personalised quote
+            </button>
+          </div>
         </div>
-        <!-- <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
+
+
+        <div class="w-full">
+          <!-- Background Circle -->
+          <div class="lg:absolute top-[-80px] right-0 bottom-0 lg:w-auto w-full">
+            <img class="w-full h-full" src="./assets/bottom-section-bg_1.svg" alt="Circle Image" />
+          </div>
+          <!-- <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
             <img class="w-[100%] h-[100%]" src="./assets/actor.svg" alt="Actor Image" />
           </div>
           <div class="absolute" style="top: 40px; left: 67px; z-index: 3;">
             <img class="w-[240px] h-[240px]" src="./assets/kotakseal.svg" alt="Kotak Seal" />
           </div> -->
-      </div>
+        </div>
 
 
-      <!-- <div class="absolute bottom-0 right-0 flex justify-center items-center">
+        <!-- <div class="absolute bottom-0 right-0 flex justify-center items-center">
       
       </div>
       <div class="absolute z-[3] top-[-110px] right-10 flex justify-center items-center">
@@ -1157,113 +1238,117 @@
       <div class="absolute z-[2] top-[120px] left-[670px] flex justify-center items-center">
        
       </div> -->
-    </div>
-
-  </div>
-  <!-- Bottom Banner Ends -->
-
-  <!-- Disclaimer Starts -->
-
-  <div class="lg:container w-full h-full lg:pt-16 pt-8 lg:8 mx-auto px-4">
-    <div class="w-full mb-8">
-      <h4 class="text-2xl font-semibold text-[#12396B]">DISCLAIMER:</h4>
-    </div>
-    <div class="w-full mb-4">
-      <p class="text-md text-[#12396B] mb-2">
-        <b>Kotak Gen2Gen Protect -</b> UIN: 107N132V02, <b>Kotak Permanent Disability Benefit Rider -</b> UIN:
-        107B002V03, <b>Kotak Critical Illness Plus Benefit Rider -</b> 107B020V02, <b>Kotak Accidental Death Benefit
-          Rider -</b> UIN: 107B001V04,
-      </p>
-
-      <p class="text-md text-[#12396B] mb-2">This is a non-participating non-linked life insurance individual savings
-        product. For sub-standard lives, extra premium may be charged based on Kotak Mahindra Life Insurance Company’s
-        underwriting policy. The sales brochure gives only the salient features of the plan. Please refer to the Policy
-        Document for specific details on all terms and conditions. please read sales brochure carefully before
-        concluding a sale. For more details on riders please read the Rider Brochure.</p>
-
-      <p class="text-md text-[#12396B]"><b>Kotak e-Term;</b> UIN No.: 107N129V03, Kotak Critical Illness Plus Benefit
-        Rider UIN No.: 107B020V02, Kotak Permanent Disability Benefit Rider UIN No.: 107B002V03.</p>
-
-      <p class="text-md text-[#12396B] mb-2">This is a non-participating non-linked life insurance individual pure risk
-        product. For more details on risk factors, terms and conditions, please read sales brochure carefully before
-        concluding a sale. For more details on riders, please read the Rider Brochure.</p>
-    </div>
-    <div class="p-8 border-gray-500 border rounded-md">
-      <h6 class="font-bold text-lg text-[#12396B]">BEWARE OF SPURIOUS PHONE CALLS AND FICTITIOUS / FRAUDULENT OFFERS
-      </h6>
-
-      <p class="mt-4 text-md text-gray-500">IRDAI or its officials do not involve in activities like selling insurance
-        policies, announcing bonus or
-        investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.</p>
-      <p class="mt-4 text-md text-gray-500">Beware of spurious emails with fictitious/fraudulent offers. Persons
-        receiving such emails mentioning Kotak
-        Life are requested to highlight the same immediately to <a rel="nofollow"
-          href="mailto:kli.riskcontrol@kotak.com" class="text-blue-500">kli.riskcontrol@kotak.com </a> with "Spurious
-        Email" in
-        the subject line.</p>
+      </div>
 
     </div>
-    <div class="mb-8">
-      <p class="mt-4 text-md text-gray-500">Trade Logo displayed above belongs to Kotak Mahindra Bank Limited and is
-        used by Kotak Mahindra Life Insurance Company Ltd. under license.</p>
-      <p class="mt-4 text-md text-gray-500">Kotak Mahindra Life Insurance Company Ltd. Regd. Office: 8th Floor, Plot #
-        C- 12, G- Block, BKC, Bandra (E), Mumbai - 400 051. Website: www.kotaklife.com I Email:kli.in/WECARE I Toll Free
-        No.: 1800 209 8800. Registered with Insurance Regulatory &amp; Development Authority (IRDAI) as Life Insurance
-        Company. Regn. No. 107. CIN : U66030MH2000PLC128503
-      </p>
-    </div>
-  </div>
+    <!-- Bottom Banner Ends -->
 
-  <div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
-    <button id="closePopup" class="absolute lg:top-24 lg:right-24 top-24 right-4 text-white text-xl">
-      <img src="./assets/close-video.svg" class="lg:w-16 w-8" alt="plus" />
-    </button>
-    <div class="relative lg:w-[85vw] lg:h-[85vh] flex justify-center items-center">
-      <iframe id="videoFrame" class="lg:w-[90%] lg:h-[90%] w-auto h-auto rounded-lg" frameborder="0"
-        allowfullscreen></iframe>
-    </div>
-  </div>
+    <!-- Disclaimer Starts -->
 
-  <!-- Disclaimer Starts -->
+    <div class="lg:container w-full h-full lg:pt-16 pt-8 lg:8 mx-auto px-4">
+      <div class="w-full mb-8">
+        <h4 class="text-2xl font-semibold text-[#12396B]">DISCLAIMER:</h4>
+      </div>
+      <div class="w-full mb-4 p-8 border-gray-500 border rounded-md">
+        <p class="text-md text-[#12396B] mb-2">
+          <b>Kotak Gen2Gen Protect -</b> UIN: 107N132V02, <b>Kotak Permanent Disability Benefit Rider -</b> UIN:
+          107B002V03, <b>Kotak Critical Illness Plus Benefit Rider -</b> 107B020V02, <b>Kotak Accidental Death Benefit
+            Rider -</b> UIN: 107B001V04,
+        </p>
 
-  <!-- Footer Blocks Starts -->
-  <section class="text-white lg:pt-12 pt-6 lg:pb-8 pb-4 w-full">
-    <div
-      class="lg:container container mx-auto rounded-lg lg:bg-[#E9E7E7] bg-[#E9E7E7] justify-between items-center p-6 flex lg:flex-row flex-col lg:gap-0 gap-4">
-      <img class="w-[180px]"
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kotak_Life_Logo-1.png?20210921072346" alt="logo" />
-      <div class="flex gap-4 justify-between items-center">
-        <ul class="w-full justify-between items-center flex lg:gap-8 gap-2">
-          <li class="lg:text-[16px] text-xs  text-black font-bold">
-            <a href="">
-              What is Virasat?
-            </a>
-          </li>
-          <li class="lg:text-[16px] text-xs  text-black font-bold">
-            <a href="">
-              Why Kotak?
-            </a>
-          </li>
-          <li class="lg:text-[16px] text-xs  text-black font-bold">
-            <a href="">
-              Get Questions?
-            </a>
-          </li>
-        </ul>
+        <p class="text-md text-[#12396B] mb-2">This is a non-participating non-linked life insurance individual savings
+          product. For sub-standard lives, extra premium may be charged based on Kotak Mahindra Life Insurance Company’s
+          underwriting policy. The sales brochure gives only the salient features of the plan. Please refer to the
+          Policy
+          Document for specific details on all terms and conditions. please read sales brochure carefully before
+          concluding a sale. For more details on riders please read the Rider Brochure.</p>
+
+        <p class="text-md text-[#12396B]"><b>Kotak e-Term;</b> UIN No.: 107N129V03, Kotak Critical Illness Plus Benefit
+          Rider UIN No.: 107B020V02, Kotak Permanent Disability Benefit Rider UIN No.: 107B002V03.</p>
+
+        <p class="text-md text-[#12396B] mb-2">This is a non-participating non-linked life insurance individual pure
+          risk
+          product. For more details on risk factors, terms and conditions, please read sales brochure carefully before
+          concluding a sale. For more details on riders, please read the Rider Brochure.</p>
+      </div>
+      <div class="p-8 border-gray-500 border rounded-md mb-4">
+        <h6 class="font-bold text-lg text-[#12396B]">BEWARE OF SPURIOUS PHONE CALLS AND FICTITIOUS / FRAUDULENT OFFERS
+        </h6>
+
+        <p class="mt-4 text-md text-gray-500">IRDAI or its officials do not involve in activities like selling insurance
+          policies, announcing bonus or
+          investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.</p>
+        <p class="mt-4 text-md text-gray-500">Beware of spurious emails with fictitious/fraudulent offers. Persons
+          receiving such emails mentioning Kotak
+          Life are requested to highlight the same immediately to <a rel="nofollow"
+            href="mailto:kli.riskcontrol@kotak.com" class="text-blue-500">kli.riskcontrol@kotak.com </a> with "Spurious
+          Email" in
+          the subject line.</p>
+
+      </div>
+      <div class="mb-8 p-8 border-gray-500 border rounded-md">
+        <p class="mt-4 text-md text-gray-500">Trade Logo displayed above belongs to Kotak Mahindra Bank Limited and is
+          used by Kotak Mahindra Life Insurance Company Ltd. under license.</p>
+        <p class="mt-4 text-md text-gray-500">Kotak Mahindra Life Insurance Company Ltd. Regd. Office: 8th Floor, Plot #
+          C- 12, G- Block, BKC, Bandra (E), Mumbai - 400 051. Website: www.kotaklife.com I Email:kli.in/WECARE I Toll
+          Free
+          No.: 1800 209 8800. Registered with Insurance Regulatory &amp; Development Authority (IRDAI) as Life Insurance
+          Company. Regn. No. 107. CIN : U66030MH2000PLC128503
+        </p>
       </div>
     </div>
-    <div class="lg:hidden flex justify-center items-center w-full mt-4">
-      <p class="text-[#7A7A7A] text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
-    </div>
-    <div class="lg:flex hidden justify-center items-center w-full mt-4">
-      <p class="text-white text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
-    </div>
-  </section>
-  <!-- Footer Blocks Ends -->
 
-  <div id="openModalButton4" class="cursor-pointer fixed top-1/2 transform -translate-y-1/2 right-0 p-2 bg-[#FF0000] rounded-tl-full rounded-bl-full shadow-lg w-16 h-16 flex justify-center items-center">
-    <img src="./assets/floating-icon.svg" alt="floating-icon" class="w-10 h-10">
-  </div>
+    <div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <button id="closePopup" class="absolute lg:top-24 lg:right-24 top-24 right-4 text-white text-xl">
+        <img src="./assets/close-video.svg" class="lg:w-16 w-8" alt="plus" />
+      </button>
+      <div class="relative lg:w-[85vw] lg:h-[85vh] flex justify-center items-center">
+        <iframe id="videoFrame" class="lg:w-[90%] lg:h-[90%] w-auto h-auto rounded-lg" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Disclaimer Starts -->
+
+    <!-- Footer Blocks Starts -->
+    <section class="text-white lg:pt-12 pt-6 lg:pb-8 pb-4 w-full">
+      <div
+        class="lg:container container mx-auto rounded-lg lg:bg-[#E9E7E7] bg-[#E9E7E7] justify-between items-center p-6 flex lg:flex-row flex-col lg:gap-0 gap-4">
+        <img class="w-[180px]"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Kotak_Life_Logo-1.png?20210921072346" alt="logo" />
+        <div class="flex gap-4 justify-between items-center">
+          <ul class="w-full justify-between items-center flex lg:gap-8 gap-2">
+            <li class="lg:text-[16px] text-xs  text-black font-bold">
+              <a href="">
+                What is Virasat?
+              </a>
+            </li>
+            <li class="lg:text-[16px] text-xs  text-black font-bold">
+              <a href="">
+                Why Kotak?
+              </a>
+            </li>
+            <li class="lg:text-[16px] text-xs  text-black font-bold">
+              <a href="">
+                Get Questions?
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="lg:hidden flex justify-center items-center w-full mt-4">
+        <p class="text-[#7A7A7A] text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
+      </div>
+      <div class="lg:flex hidden justify-center items-center w-full mt-4">
+        <p class="text-gray-500 text-md font-light">Kotak Life @ 2025. All rights reserved.</p>
+      </div>
+    </section>
+    <!-- Footer Blocks Ends -->
+
+    <div id="openModalButton4"
+      class="cursor-pointer fixed top-1/2 transform -translate-y-1/2 right-0 p-2 bg-[#FF0000] rounded-tl-full rounded-bl-full shadow-lg w-16 h-16 flex justify-center items-center">
+      <img src="./assets/floating-icon.svg" alt="floating-icon" class="w-10 h-10">
+    </div>
 
   </main>
 
@@ -1348,31 +1433,31 @@
       }
     });
 
-    // const playPauseButton = document.getElementById('playPauseButton');
-    // const video = document.getElementById('video');
-    // const playIcon = document.getElementById('playIcon');
-    // const pauseIcon = document.getElementById('pauseIcon');
+    const playPauseButton = document.getElementById('playPauseButton');
+    const video = document.getElementById('video');
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
 
-    // function changeImage(element, newSrc) {
-    //   const img = element.querySelector('img');
-    //   img.src = newSrc;
-    // }
+    function changeImage(element, newSrc) {
+      const img = element.querySelector('img');
+      img.src = newSrc;
+    }
 
-    // video.play();
-    // pauseIcon.classList.remove('hidden');
-    // playIcon.classList.add('hidden');
+    video.play();
+    pauseIcon.classList.remove('hidden');
+    playIcon.classList.add('hidden');
 
-    // playPauseButton.addEventListener('click', () => {
-    //   if (video.paused) {
-    //     video.play();
-    //     playIcon.classList.add('hidden');
-    //     pauseIcon.classList.remove('hidden');
-    //   } else {
-    //     video.pause();
-    //     playIcon.classList.remove('hidden');
-    //     pauseIcon.classList.add('hidden');
-    //   }
-    // });
+    playPauseButton.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playIcon.classList.add('hidden');
+        pauseIcon.classList.remove('hidden');
+      } else {
+        video.pause();
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+      }
+    });
 
     const muteUnmuteButton = document.getElementById('muteUnmuteButton');
     const muteIcon = document.getElementById('muteIcon');
