@@ -94,7 +94,7 @@
     </div>
   </header>
   <!-- Header Section end -->
-
+  <main>
   <!-- Hero Section Start -->
   <div class="lg:h-[698px] h-screen relative flex justify-center items-center">
     <!-- Video and overlay -->
@@ -451,14 +451,14 @@
         <img src="./assets/image4.svg" alt="virassat" />
       </div>
 
-      <div class="flex mt-4 justify-center items-center rounded-lg lg:w-auto w-full mx-auto text-lg gap-4">
+      <div class="flex mt-4 justify-center items-center lg:w-max w-full mx-auto text-lg gap-4">
         <button id="tab-1"
-          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-2 border-transparent hover:border-[#FF0000] transition-colors"
+          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
           onclick="switchTab('tab-1')">
           Kotak e-Term
         </button>
         <button id="tab-2"
-          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-2 border-transparent hover:border-[#FF0000] transition-colors"
+          class="tab-button text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] px-6 py-2 rounded-t-lg font-medium flex justify-center items-center border-b-0 border-2 border-[#FF0000] transition-colors"
           onclick="switchTab('tab-2')">
           Gen2Gen Protect
         </button>
@@ -1257,6 +1257,12 @@
   </section>
   <!-- Footer Blocks Ends -->
 
+  <div id="openModalButton4" class="cursor-pointer fixed top-1/2 transform -translate-y-1/2 right-0 p-2 bg-[#FF0000] rounded-tl-full rounded-bl-full shadow-lg w-16 h-16 flex justify-center items-center">
+    <img src="./assets/floating-icon.svg" alt="floating-icon" class="w-10 h-10">
+  </div>
+
+  </main>
+
   <script>
 
     // document.addEventListener('DOMContentLoaded', () => {
@@ -1309,6 +1315,7 @@
     const openModalButton1 = document.getElementById("openModalButton1");
     const openModalButton2 = document.getElementById("openModalButton2");
     const openModalButton3 = document.getElementById("openModalButton3");
+    const openModalButton4 = document.getElementById("openModalButton4");
     const closeModalButton = document.getElementById("closeModalButton");
 
     // Function to open the modal
@@ -1325,6 +1332,7 @@
     openModalButton1.addEventListener("click", openModal);
     openModalButton2.addEventListener("click", openModal);
     openModalButton3.addEventListener("click", openModal);
+    openModalButton4.addEventListener("click", openModal);
 
     // Close modal when clicking close button
     closeModalButton.addEventListener("click", closeModal);
@@ -1399,7 +1407,7 @@
         button.classList.add('bg-transparent');
         button.classList.remove('text-white');
         button.classList.add('text-[#2C2C2C]');
-        button.classList.remove('border-[#FF0000]');
+        button.classList.add('border-[#FF0000]');
       });
 
       const activeTabButton = document.getElementById(tabId);
@@ -1407,7 +1415,7 @@
       activeTabButton.classList.add('bg-[#FF0000]');
       activeTabButton.classList.remove('text-[#2C2C2C]');
       activeTabButton.classList.add('text-white');
-      activeTabButton.classList.add('border-[#FF0000]'); // Border for active tab
+      activeTabButton.classList.add('border-[#FF0000]');
 
       const allTabPanes = document.querySelectorAll('.tab-pane');
       allTabPanes.forEach(pane => {
