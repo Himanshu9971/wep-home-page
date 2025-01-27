@@ -96,8 +96,15 @@ body {
   }
 
   @supports (-webkit-touch-callout: none) {
-    /* Safari specific styles */
     details summary {
-      list-style-type: none; /* Removes the triangle marker */
+      list-style: none;
+      cursor: pointer;
+    }
+    details summary::marker {
+      display: none;
+    }
+  
+    details {
+      text-align: left;
     }
   }
