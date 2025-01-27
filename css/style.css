@@ -76,15 +76,6 @@ body {
     border: none;
   }
 
-  details summary {
-    list-style: none;  /* Removes the triangle marker */
-    cursor: pointer;   /* Ensures it's clickable */
-  }
-  
-  details summary::marker {
-    display: none;  /* Removes the marker */
-  }
-
   @media screen and (max-width: 929.5px) {
 
     .video-container {
@@ -93,18 +84,4 @@ body {
       padding-bottom: 80%;
     }
 
-  }
-
-  @supports (-webkit-touch-callout: none) {
-    details summary {
-      list-style: none;
-      cursor: pointer;
-    }
-    details summary::marker {
-      display: none;
-    }
-  
-    details {
-      text-align: left;
-    }
   }
