@@ -181,32 +181,55 @@ muteUnmuteButton.addEventListener('click', () => {
 let startX;
 let scrollLeft;
 const slider = document.querySelector('.overflow-x-auto');
-const cards = document.querySelectorAll('.overflow-x-auto .bg-white');  // Grabbing all cards
-const cardWidth = cards[0].offsetWidth;  // Get the width of one card
+const cards = document.querySelectorAll('.overflow-x-auto .bg-white');
+const cardWidth = cards[0].offsetWidth;
 
-// Start swipe action
+let isDragging = false;
+const sensitivity = 1;
+
 slider.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;  // Get the starting X position of touch
-    scrollLeft = slider.scrollLeft;  // Get the current scroll position
+    startX = e.touches[0].clientX;
+    scrollLeft = slider.scrollLeft;
+    isDragging = true;
 });
 
-// Move swipe action
 slider.addEventListener('touchmove', (e) => {
-    if (!startX) return;
+    if (!isDragging) return;
 
-    const moveX = e.touches[0].clientX - startX;  // Calculate the move distance
-    slider.scrollLeft = scrollLeft - moveX;  // Adjust scroll position
+    const moveX = e.touches[0].clientX - startX;
+    slider.scrollLeft = scrollLeft - moveX * sensitivity;
 });
 
-// End swipe action
 slider.addEventListener('touchend', () => {
-    // Determine which card the scroll should land on
-    const scrollDistance = slider.scrollLeft;  // The current scroll position
-    const cardIndex = Math.round(scrollDistance / cardWidth);  // Calculate the index of the card
-
-    // Scroll to the closest card
-    slider.scrollLeft = cardIndex * cardWidth;
+    isDragging = false;
+    
+    const scrollDistance = slider.scrollLeft;
+    
+    const cardIndex = Math.round(scrollDistance / cardWidth);
+    
+    smoothScrollTo(cardIndex * cardWidth);
 });
+
+function smoothScrollTo(target) {
+    const currentScroll = slider.scrollLeft;
+    const distance = target - currentScroll;
+    const duration = 100;
+    let startTime;
+
+    function animateScroll(time) {
+        if (!startTime) startTime = time;
+        const progress = time - startTime;
+        const easeProgress = Math.min(progress / duration, 1);
+
+        slider.scrollLeft = currentScroll + (distance * easeProgress);
+
+        if (progress < duration) {
+            requestAnimationFrame(animateScroll);
+        }
+    }
+
+    requestAnimationFrame(animateScroll);
+}
 
 
 function switchTab(tabId) {
