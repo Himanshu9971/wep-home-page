@@ -164,19 +164,50 @@ muteUnmuteButton.addEventListener('click', () => {
     }
 });
 
-let startX;
-const slider = document.querySelector('.overflow-x-auto');
+// let startX;
+// const slider = document.querySelector('.overflow-x-auto');
 
+// slider.addEventListener('touchstart', (e) => {
+//     startX = e.touches[0].clientX;
+// });
+
+// slider.addEventListener('touchmove', (e) => {
+//     if (!startX) return;
+//     const moveX = e.touches[0].clientX - startX;
+//     slider.scrollLeft -= moveX;
+//     startX = e.touches[0].clientX;
+// });
+
+let startX;
+let scrollLeft;
+const slider = document.querySelector('.overflow-x-auto');
+const cards = document.querySelectorAll('.overflow-x-auto .bg-white');  // Grabbing all cards
+const cardWidth = cards[0].offsetWidth;  // Get the width of one card
+
+// Start swipe action
 slider.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
+    startX = e.touches[0].clientX;  // Get the starting X position of touch
+    scrollLeft = slider.scrollLeft;  // Get the current scroll position
 });
 
+// Move swipe action
 slider.addEventListener('touchmove', (e) => {
     if (!startX) return;
-    const moveX = e.touches[0].clientX - startX;
-    slider.scrollLeft -= moveX;
-    startX = e.touches[0].clientX;
+
+    const moveX = e.touches[0].clientX - startX;  // Calculate the move distance
+    slider.scrollLeft = scrollLeft - moveX;  // Adjust scroll position
 });
+
+// End swipe action
+slider.addEventListener('touchend', () => {
+    // Determine which card the scroll should land on
+    const scrollDistance = slider.scrollLeft;  // The current scroll position
+    const cardIndex = Math.round(scrollDistance / cardWidth);  // Calculate the index of the card
+
+    // Scroll to the closest card
+    slider.scrollLeft = cardIndex * cardWidth;
+});
+
 
 function switchTab(tabId) {
     const allTabButtons = document.querySelectorAll('.tab-button');
@@ -329,29 +360,15 @@ videoCards.forEach(card => {
 });
 
 document.querySelectorAll('.read-more').forEach(button => {
-    button.addEventListener('click', function (event) {
-        event.stopImmediatePropagation();
-        var card = this.closest('.video-card');
-        var description = card.querySelector('.text-section p');
+    button.addEventListener('click', function () {
+        var description = this.closest('.text-section').querySelector('p'); // Get the description inside the closest .text-section
 
+        // Toggle the 'line-clamp-none' class on the description
         description.classList.toggle('line-clamp-none');
+        
+        // Update the button text based on the class
         this.textContent = description.classList.contains('line-clamp-none') ? 'Read Less' : 'Read More';
     });
-});
-
-document.querySelectorAll('.video-card').forEach(card => {
-    const playIcon = card.querySelector('img[src*="play-you-tube-icon"]');
-    playIcon.addEventListener('click', function () {
-        var videoUrl = card.getAttribute('data-video-url');
-
-        document.getElementById('videoPopup').classList.remove('hidden');
-        document.getElementById('videoFrame').src = videoUrl;
-    });
-});
-
-document.getElementById('closePopup').addEventListener('click', function () {
-    document.getElementById('videoPopup').classList.add('hidden');
-    document.getElementById('videoFrame').src = '';
 });
 
 window.addEventListener('DOMContentLoaded', () => {

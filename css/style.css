@@ -58,7 +58,7 @@ body {
     bottom: -12px;
     background-color: white;
     height: 15px;
-    z-index: 99;
+    z-index: 9;
   }
 
   .video-container {
