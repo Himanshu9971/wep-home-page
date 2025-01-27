@@ -330,38 +330,35 @@ videoCards.forEach(card => {
 
 document.querySelectorAll('.read-more').forEach(button => {
     button.addEventListener('click', function (event) {
-        // Prevent the popup opening when the Read More button is clicked
         event.stopImmediatePropagation();
-
-        // Find the closest .video-card (parent container) for this button
         var card = this.closest('.video-card');
-
-        // Find the description (paragraph) inside this specific card
         var description = card.querySelector('.text-section p');
 
-        // Toggle the class between clamped and un-clamped
         description.classList.toggle('line-clamp-none');
-
-        // Toggle button text
         this.textContent = description.classList.contains('line-clamp-none') ? 'Read Less' : 'Read More';
     });
 });
 
-// Code to handle video popup logic separately
 document.querySelectorAll('.video-card').forEach(card => {
     const playIcon = card.querySelector('img[src*="play-you-tube-icon"]');
     playIcon.addEventListener('click', function () {
-        // Get the video URL from the data attribute
         var videoUrl = card.getAttribute('data-video-url');
-        
-        // Show the video popup and set the iframe source
+
         document.getElementById('videoPopup').classList.remove('hidden');
         document.getElementById('videoFrame').src = videoUrl;
     });
 });
 
-// Close the video popup
 document.getElementById('closePopup').addEventListener('click', function () {
     document.getElementById('videoPopup').classList.add('hidden');
-    document.getElementById('videoFrame').src = '';  // Stop the video when closing
+    document.getElementById('videoFrame').src = '';
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('video');
+    if (video) {
+        video.play().catch((error) => {
+            console.log("Video autoplay failed:", error);
+        });
+    }
 });
