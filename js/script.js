@@ -308,25 +308,25 @@ window.addEventListener('click', function (event) {
 //   }
 // });
 
-// function openVideo(videoUrl) {
-//     const videoPopup = document.getElementById("videoPopup");
-//     const videoFrame = document.getElementById("videoFrame");
-//     videoFrame.src = videoUrl;
-//     videoPopup.classList.remove("hidden");
-// }
-// document.getElementById("closePopup").addEventListener("click", function () {
-//     const videoPopup = document.getElementById("videoPopup");
-//     const videoFrame = document.getElementById("videoFrame");
-//     videoFrame.src = '';
-//     videoPopup.classList.add("hidden");
-// });
-// const videoCards = document.querySelectorAll(".video-card");
-// videoCards.forEach(card => {
-//     card.addEventListener("click", function () {
-//         const videoUrl = card.getAttribute("data-video-url");
-//         openVideo(videoUrl);
-//     });
-// });
+function openVideo(videoUrl) {
+    const videoPopup = document.getElementById("videoPopup");
+    const videoFrame = document.getElementById("videoFrame");
+    videoFrame.src = videoUrl;
+    videoPopup.classList.remove("hidden");
+}
+document.getElementById("closePopup").addEventListener("click", function () {
+    const videoPopup = document.getElementById("videoPopup");
+    const videoFrame = document.getElementById("videoFrame");
+    videoFrame.src = '';
+    videoPopup.classList.add("hidden");
+});
+const videoCards = document.querySelectorAll(".video-card");
+videoCards.forEach(card => {
+    card.addEventListener("click", function () {
+        const videoUrl = card.getAttribute("data-video-url");
+        openVideo(videoUrl);
+    });
+});
 
 document.querySelectorAll('.read-more').forEach(button => {
     button.addEventListener('click', function (event) {
