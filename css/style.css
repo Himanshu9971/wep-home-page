@@ -1,0 +1,84 @@
+body {
+    font-family: "Roboto", serif;
+  }
+
+  #hiddenSection {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .text-section {
+    transform: translateY(100%);
+    opacity: 0;
+    overflow: hidden;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .gradient-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .hover\:content-show:hover .text-section {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .hover\:content-show:hover .gradient-overlay {
+    opacity: 0.5;
+  }
+
+  .overflow-x-auto {
+    overflow: hidden !important;
+  }
+
+  .container {
+    max-width: 1280px !important;
+  }
+
+  /* .faq-item-hidden {
+    display: none;
+  } */
+
+  .faq-item-visible {
+    display: block;
+  }
+
+  .tab-button.active-tab:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background-color: white;
+    height: 15px;
+    z-index: 99;
+  }
+
+  .video-container {
+    width: 75%;
+    height: 0;
+    padding-bottom: 40%;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .video-container {
+      width: 95%;
+      height: 0;
+      padding-bottom: 80%;
+    }
+
+  }
