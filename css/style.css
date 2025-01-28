@@ -27,6 +27,8 @@ body {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0 0 1rem 1rem;
+    max-height: 340px;
+    overflow-y: auto;
   }
 
   .hover\:content-show:hover .gradient-overlay {
