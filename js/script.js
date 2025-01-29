@@ -122,31 +122,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-const playPauseButton = document.getElementById('playPauseButton');
-const video = document.getElementById('video');
-const playIcon = document.getElementById('playIcon');
-const pauseIcon = document.getElementById('pauseIcon');
+// const playPauseButton = document.getElementById('playPauseButton');
+// const video = document.getElementById('video');
+// const playIcon = document.getElementById('playIcon');
+// const pauseIcon = document.getElementById('pauseIcon');
 
-function changeImage(element, newSrc) {
-    const img = element.querySelector('img');
-    img.src = newSrc;
-}
+// function changeImage(element, newSrc) {
+//     const img = element.querySelector('img');
+//     img.src = newSrc;
+// }
 
-video.play();
-pauseIcon.classList.remove('hidden');
-playIcon.classList.add('hidden');
+// video.play();
+// pauseIcon.classList.remove('hidden');
+// playIcon.classList.add('hidden');
 
-playPauseButton.addEventListener('click', () => {
-    if (video.paused) {
-        video.play();
-        playIcon.classList.add('hidden');
-        pauseIcon.classList.remove('hidden');
-    } else {
-        video.pause();
-        playIcon.classList.remove('hidden');
-        pauseIcon.classList.add('hidden');
-    }
-});
+// playPauseButton.addEventListener('click', () => {
+//     if (video.paused) {
+//         video.play();
+//         playIcon.classList.add('hidden');
+//         pauseIcon.classList.remove('hidden');
+//     } else {
+//         video.pause();
+//         playIcon.classList.remove('hidden');
+//         pauseIcon.classList.add('hidden');
+//     }
+// });
 
 const muteUnmuteButton = document.getElementById('muteUnmuteButton');
 const muteIcon = document.getElementById('muteIcon');
