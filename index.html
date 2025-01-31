@@ -37,13 +37,11 @@
             <ul class="">
               <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">English</a></li>
               <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Hindi</a></li>
-              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Marathi</a></li>
-              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Gujrati</a></li>
-              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Bengali</a></li>
-              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Telegu</a></li>
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Kannada</a></li>
               <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Tamil</a></li>
-              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Malyalam</a></li>
-              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Asamese</a></li>
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Telugu</a></li>
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Bengali</a></li>
+              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Assamese</a></li>
             </ul>
           </div>
         </div>
@@ -84,15 +82,15 @@
             </button>
             <!-- <span class="text-white lg:block hidden">watch the video</span> -->
           </div>
-          <div class="h-auto flex justify-start gap-4 items-center">
+          <!-- <div class="h-auto flex justify-start gap-4 items-center">
             <button id="muteUnmuteButton"
               class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-50 hover:opacity-100 focus:outline-none">
               <img id="muteIcon" src="./assets/unmute-cion.svg" class="h-8 w-8" alt="">
 
               <img id="unmuteIcon" src="./assets/mute-icon.svg" class="h-8 w-8 hidden" alt="">
             </button>
-            <!-- <span class="text-white lg:block hidden">Mute/Unmute Video</span> -->
-          </div>
+            <span class="text-white lg:block hidden">Mute/Unmute Video</span>
+          </div> -->
         </div>
 
         <div class="lg:flex hidden flex-col gap-4 items-start">
@@ -283,9 +281,9 @@
             <div
               class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full min-w-[90%] max-w-full lg:w-auto lg:min-w-auto hover:content-show">
               <div class="absolute top-4 right-4 z-10">
-                <button
+                <button id="cardOnePlay"
               class="video-card lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-75 hover:opacity-100 focus:outline-none"
-              data-video-url="https://www.youtube.com/embed/UhxM6qDT2oo?rel=0">
+              data-video-url="https://www.youtube.com/embed/UhxM6qDT2oo?rel=0&autoplay=1&mute=0&controls=0">
                 <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
@@ -323,9 +321,9 @@
             <div
               class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full min-w-[90%] max-w-full lg:w-auto lg:min-w-auto hover:content-show">
               <div class="absolute top-4 right-4 z-10">
-                <button
+                <button id="cardTwoPlay"
               class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-75 hover:opacity-100 focus:outline-none video-card"
-              data-video-url="https://www.youtube.com/embed/cr0T22xYTqU?rel=0">
+              data-video-url="https://www.youtube.com/embed/cr0T22xYTqU?rel=0&autoplay=1&mute=0&controls=0">
                 <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
@@ -362,9 +360,9 @@
             <div
               class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full min-w-[90%] max-w-full lg:w-auto lg:min-w-auto hover:content-show">
               <div class="absolute top-4 right-4 z-10">
-                <button
+                <button id="cardThreePlay"
               class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-75 hover:opacity-100 focus:outline-none video-card"
-              data-video-url="https://www.youtube.com/embed/JNaJed6OA3g?rel=0">
+              data-video-url="https://www.youtube.com/embed/JNaJed6OA3g?rel=0&autoplay=1&mute=0&controls=0">
                 <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
@@ -395,15 +393,15 @@
                 <button class="w-full text-right read-more text-blue-500 z-20">Read More</button>
               </div>
             </div>
-            <!-- Card 4 -->
+            <!-- Card 3 -->
 
             <!-- Card 4 -->
             <div
               class="bg-white rounded-2xl relative lg:h-[720px] h-[340px] w-full min-w-[90%] max-w-full lg:w-auto lg:min-w-auto hover:content-show">
               <div class="absolute top-4 right-4 z-10">
-                <button
+                <button id="cardFourPlay"
               class="lg:bg-black bg-gray-500 text-white p-4 rounded-full opacity-75 hover:opacity-100 focus:outline-none video-card"
-              data-video-url="https://www.youtube.com/embed/ACYud4vrG0g?rel=0">
+              data-video-url="https://www.youtube.com/embed/ACYud4vrG0g?rel=0&autoplay=1&mute=0&controls=0">
                 <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
@@ -857,7 +855,7 @@
           </div>
 
           <div class="flex justify-center items-center w-full lg:pt-8 pt-4">
-            <button id="openModalButton3"
+            <button id="openModalButton2"
               class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium capitalize">
               Join our happy policyholders
             </button>
@@ -1162,12 +1160,14 @@
     <!-- Faq Section Ends -->
 
     <!-- Bottom Banner Starts -->
-    <div class="container mx-auto text-center lg:pt-16 pt-8 px-4">
+    <div class="container mx-auto text-center lg:h-[608px] h-auto rounded-2xl px-4">
 
       <div
-        class="relative grid grid-cols-1 relative lg:grid-cols-2 grid-cols-1 gap-4 lg:py-8 lg:px-16 px-0 rounded-3xl bg-[#013974]">
-        <div class="flex flex-col justify-start items-start lg:pt-16 lg:pt-8 pt-8 lg-px-0 px-4">
-          <h2
+        class="relative w-full flex relative justify-start items-center h-full rounded-2xl">
+        <div class="flex w-full lg:flex-row flex-col justify-between lg:items-center items-center h-full p-4 rounded-2xl lg:gap-0 gap-4">
+          <img class="w-full lg:flex hidden h-full absolute left-0 right-0 top-0 bottom-0 rounded-2xl" src="./assets/banner.png" alt="Circle Image" />
+          <img class="w-full lg:hidden flex h-full rounded-2xl" src="./assets/bottom-mobile-bg.png" />
+          <!-- <h2
             class="text-left text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-medium text-white mb-4 capitalize">
             Your family deserves a</br> future without</br> worries
           </h2>
@@ -1178,39 +1178,21 @@
             doesn't
             have to be uncertain. Within Viraasat by Kotak Life, you take protective
             steps ton ensure your financial
-            security.</p>
-          <div class="flex justify-start items-center w-full lg:pt-8 pt-4">
-            <button id="openModalButton2"
-              class="lg:w-auto w-full text-[#FF0000] bg-white lg:px-8 px-4 py-3 rounded-lg text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium capitalize">
-              Get your personalised quote now
+            security.</p> -->
+          <div class="lg:w-[57%] lg:mt-20 w-full flex justify-center items-center w-full z-10">
+            <button id="openModalButton3"
+              class="lg:w-auto w-full text-white bg-[#FF0000] px-8 py-3 rounded-lg text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium capitalize">
+                Get your personalised quote now
             </button>
           </div>
         </div>
 
 
-        <div class="w-full">
-          <!-- Background Circle -->
-          <div class="lg:absolute top-[-80px] right-0 bottom-0 lg:w-auto w-full">
-            <img class="w-full h-full" src="./assets/bottom-section-bg_1.svg" alt="Circle Image" />
+        <!-- <div class="w-full">
+          <div class="lg:w-auto w-full">
+            <img class="w-full h-full" src="./assets/banner.png" alt="Circle Image" />
           </div>
-          <!-- <div class="absolute" style="bottom: -380px; left: 100px; z-index: 2;">
-            <img class="w-[100%] h-[100%]" src="./assets/actor.svg" alt="Actor Image" />
-          </div>
-          <div class="absolute" style="top: 40px; left: 67px; z-index: 3;">
-            <img class="w-[240px] h-[240px]" src="./assets/kotakseal.svg" alt="Kotak Seal" />
-          </div> -->
-        </div>
-
-
-        <!-- <div class="absolute bottom-0 right-0 flex justify-center items-center">
-      
-      </div>
-      <div class="absolute z-[3] top-[-110px] right-10 flex justify-center items-center">
-      
-      </div>
-      <div class="absolute z-[2] top-[120px] left-[670px] flex justify-center items-center">
-       
-      </div> -->
+        </div> -->
       </div>
 
     </div>

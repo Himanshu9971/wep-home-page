@@ -76,6 +76,31 @@ window.addEventListener('scroll', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    let currentLanguage = 'English';
+    
+    function updateVideoUrl(language) {
+        const playPauseButton = document.getElementById('playPauseButton');
+        const videoUrl = headerVideoData[language] ? headerVideoData[language][0] : '';
+        playPauseButton.setAttribute('data-video-url', videoUrl);
+    }
+    const languageOptions = document.querySelectorAll('#languageMenu li a');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const selectedLanguage = this.textContent;
+            const dropdownButton = document.getElementById('languageDropdown');
+            dropdownButton.textContent = selectedLanguage;
+
+            currentLanguage = selectedLanguage;
+            updateVideoUrl(currentLanguage);
+            
+            document.getElementById('languageMenu').classList.add('hidden');
+        });
+    });
+    
+    updateVideoUrl(currentLanguage);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("modal");
     const openModalButton1 = document.getElementById("openModalButton1");
@@ -148,21 +173,21 @@ document.addEventListener("DOMContentLoaded", function () {
 //     }
 // });
 
-const muteUnmuteButton = document.getElementById('muteUnmuteButton');
-const muteIcon = document.getElementById('muteIcon');
-const unmuteIcon = document.getElementById('unmuteIcon');
+// const muteUnmuteButton = document.getElementById('muteUnmuteButton');
+// const muteIcon = document.getElementById('muteIcon');
+// const unmuteIcon = document.getElementById('unmuteIcon');
 
-muteUnmuteButton.addEventListener('click', () => {
-    if (video.muted) {
-        video.muted = false;
-        muteIcon.classList.add('hidden');
-        unmuteIcon.classList.remove('hidden');
-    } else {
-        video.muted = true;
-        muteIcon.classList.remove('hidden');
-        unmuteIcon.classList.add('hidden');
-    }
-});
+// muteUnmuteButton.addEventListener('click', () => {
+//     if (video.muted) {
+//         video.muted = false;
+//         muteIcon.classList.add('hidden');
+//         unmuteIcon.classList.remove('hidden');
+//     } else {
+//         video.muted = true;
+//         muteIcon.classList.remove('hidden');
+//         unmuteIcon.classList.add('hidden');
+//     }
+// });
 
 // let startX;
 // const slider = document.querySelector('.overflow-x-auto');
@@ -291,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isFirstScrollDown) {
                 hiddenSection.style.transform = 'translateY(0)';
                 hiddenSection.style.display = 'flex';
-                muteUnmuteButton.style.display = 'none';
+                // muteUnmuteButton.style.display = 'none';
                 playPauseButton.style.display = 'none';
                 isFirstScrollDown = true;
             } else if (!isSecondScrollDown) {
@@ -301,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentScroll === 0) {
                 hiddenSection.style.transform = 'translateY(100%)';
                 hiddenSection.style.display = 'none';
-                muteUnmuteButton.style.display = 'block';
+                // muteUnmuteButton.style.display = 'block';
                 playPauseButton.style.display = 'block';
                 isFirstScrollDown = false;
                 isSecondScrollDown = false;
@@ -401,4 +426,202 @@ window.addEventListener('DOMContentLoaded', () => {
             console.log("Video autoplay failed:", error);
         });
     }
+});
+
+let headerVideoData = {
+    'English': [
+        "https://www.youtube.com/embed/ngQi2AHWkLM?si=fQ0Nlar6VaqjC-4Z&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Hindi': [
+        "https://www.youtube.com/embed/ngQi2AHWkLM?si=fQ0Nlar6VaqjC-4Z&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Tamil': [
+        "https://www.youtube.com/embed/3g_2CD8MHy8?si=KHcqbKgQ_SIBNT8M&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Bengali': [
+        "https://www.youtube.com/embed/BeYDpIlQqNY?si=wDbblcID28aeawHn&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Assamese': [
+        "https://www.youtube.com/embed/yZGiKsk0xFw?si=7A2re0xE8_81GFr9&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+};
+
+let cardOneVideoData = {
+    'English': [
+        "https://www.youtube.com/embed/UhxM6qDT2oo?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Hindi': [
+        "https://www.youtube.com/embed/UhxM6qDT2oo?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Tamil': [
+        "https://www.youtube.com/embed/3g_2CD8MHy8?si=KHcqbKgQ_SIBNT8M&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Bengali': [
+        "https://www.youtube.com/embed/BeYDpIlQqNY?si=wDbblcID28aeawHn&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Assamese': [
+        "https://www.youtube.com/embed/yZGiKsk0xFw?si=7A2re0xE8_81GFr9&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+};
+
+let cardTwoVideoData = {
+    'English': [
+        "https://www.youtube.com/embed/cr0T22xYTqU?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Hindi': [
+        "https://www.youtube.com/embed/cr0T22xYTqU?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Tamil': [
+        "https://www.youtube.com/embed/3g_2CD8MHy8?si=KHcqbKgQ_SIBNT8M&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Bengali': [
+        "https://www.youtube.com/embed/BeYDpIlQqNY?si=wDbblcID28aeawHn&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Assamese': [
+        "https://www.youtube.com/embed/yZGiKsk0xFw?si=7A2re0xE8_81GFr9&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+};
+
+let cardThreeVideoData = {
+    'English': [
+        "https://www.youtube.com/embed/JNaJed6OA3g?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Hindi': [
+        "https://www.youtube.com/embed/JNaJed6OA3g?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Tamil': [
+        "https://www.youtube.com/embed/3g_2CD8MHy8?si=KHcqbKgQ_SIBNT8M&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Bengali': [
+        "https://www.youtube.com/embed/BeYDpIlQqNY?si=wDbblcID28aeawHn&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Assamese': [
+        "https://www.youtube.com/embed/yZGiKsk0xFw?si=7A2re0xE8_81GFr9&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+};
+
+let cardFourVideoData = {
+    'English': [
+        "https://www.youtube.com/embed/ACYud4vrG0g?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Hindi': [
+        "https://www.youtube.com/embed/ACYud4vrG0g?rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Tamil': [
+        "https://www.youtube.com/embed/3g_2CD8MHy8?si=KHcqbKgQ_SIBNT8M&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Bengali': [
+        "https://www.youtube.com/embed/BeYDpIlQqNY?si=wDbblcID28aeawHn&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+    'Assamese': [
+        "https://www.youtube.com/embed/yZGiKsk0xFw?si=7A2re0xE8_81GFr9&rel=0&autoplay=1&mute=0&controls=0",
+    ],
+};
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let currentLanguage = 'English';
+    
+    function updateVideoUrl(language) {
+        const playPauseButton = document.getElementById('cardOnePlay');
+        const videoUrl = cardOneVideoData[language] ? cardOneVideoData[language][0] : '';
+        playPauseButton.setAttribute('data-video-url', videoUrl);
+    }
+    const languageOptions = document.querySelectorAll('#languageMenu li a');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const selectedLanguage = this.textContent;
+            const dropdownButton = document.getElementById('languageDropdown');
+            dropdownButton.textContent = selectedLanguage;
+
+            currentLanguage = selectedLanguage;
+            updateVideoUrl(currentLanguage);
+            
+            document.getElementById('languageMenu').classList.add('hidden');
+        });
+    });
+    
+    updateVideoUrl(currentLanguage);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let currentLanguage = 'English';
+    
+    function updateVideoUrl(language) {
+        const playPauseButton = document.getElementById('cardTwoPlay');
+        const videoUrl = cardTwoVideoData[language] ? cardTwoVideoData[language][0] : '';
+        playPauseButton.setAttribute('data-video-url', videoUrl);
+    }
+    const languageOptions = document.querySelectorAll('#languageMenu li a');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const selectedLanguage = this.textContent;
+            const dropdownButton = document.getElementById('languageDropdown');
+            dropdownButton.textContent = selectedLanguage;
+
+            currentLanguage = selectedLanguage;
+            updateVideoUrl(currentLanguage);
+            
+            document.getElementById('languageMenu').classList.add('hidden');
+        });
+    });
+    
+    updateVideoUrl(currentLanguage);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let currentLanguage = 'English';
+    
+    function updateVideoUrl(language) {
+        const playPauseButton = document.getElementById('cardThreePlay');
+        const videoUrl = cardThreeVideoData[language] ? cardThreeVideoData[language][0] : '';
+        playPauseButton.setAttribute('data-video-url', videoUrl);
+    }
+    const languageOptions = document.querySelectorAll('#languageMenu li a');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const selectedLanguage = this.textContent;
+            const dropdownButton = document.getElementById('languageDropdown');
+            dropdownButton.textContent = selectedLanguage;
+
+            currentLanguage = selectedLanguage;
+            updateVideoUrl(currentLanguage);
+            
+            document.getElementById('languageMenu').classList.add('hidden');
+        });
+    });
+    
+    updateVideoUrl(currentLanguage);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let currentLanguage = 'English';
+    
+    function updateVideoUrl(language) {
+        const playPauseButton = document.getElementById('cardFourPlay');
+        const videoUrl = cardFourVideoData[language] ? cardFourVideoData[language][0] : '';
+        playPauseButton.setAttribute('data-video-url', videoUrl);
+    }
+    const languageOptions = document.querySelectorAll('#languageMenu li a');
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const selectedLanguage = this.textContent;
+            const dropdownButton = document.getElementById('languageDropdown');
+            dropdownButton.textContent = selectedLanguage;
+
+            currentLanguage = selectedLanguage;
+            updateVideoUrl(currentLanguage);
+            
+            document.getElementById('languageMenu').classList.add('hidden');
+        });
+    });
+    
+    updateVideoUrl(currentLanguage);
 });
